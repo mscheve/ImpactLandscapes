@@ -147,7 +147,7 @@ Promise.all(dataRead).then(files => {
             color,
             d3.max(maxTreeValues),
             d3.max(adjustedHierarchies.map(d => d.height)),
-            7
+            5
         ))
     })
 
