@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Impact Landscapes</title>
+    <meta name="description" content="d3-voronoi-treemap plugin to remake 'The Costs of Being Fat, in Actual Dollars'">
+    <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="https://rawcdn.githack.com/Kcnarf/d3-weighted-voronoi/v1.1.0/build/d3-weighted-voronoi.js"></script>
+    <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-map/v2.1.0/build/d3-voronoi-map.js"></script>
+    <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-treemap/v1.1.1/build/d3-voronoi-treemap.js"></script>
+    <script src="https://unpkg.com/textures@1.2.0/dist/textures.js"></script>
+    <script src="https://unpkg.com/geometric@1.0.0/build/geometric.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js" integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="web-layout">
+      <div class="info-layout" id="info-area">
+        <div class="info-item" id="info-title" >Impact Landscapes</div>
+        <div class="info-item" >
+          This visualization tries to give both a high and low 
+          level insight into the environmental impact of product 
+          lifecycles by offering a "helicopter view" over the 
+          involved processes and products (i.e. fields).</div>
+        <div class="info-item" >
+          The underlying data is of a hierarchical nature, meaning
+          that every process is the aggregate of its subprocesses.
+          As such, all fields can be subdivided into smaller fields,
+          where the size of a field indicates the impact of the corresponding
+          process/product relative to the whole landscape in view.
+        </div>
+        <div class="info-item" id="info-roadmap">
+          The menu, or "roadmap", above every landscape indicates the subject of
+          the landscape that is in view (circle 1). Circle 2 indicates how many
+          layers lay on top of the current landscape, while circle 3 indicates
+          how many underlying layers are displayed in the current landscape. 
+          This menu can be used to navigate through the landscape by clicking on 
+          the circles.
+          <br><br>
+        </div>
+        <div class="info-item" id="info-color">
+          The color of a field indicates its impact normalized over all fields
+          of all landscapes. In other words, a nice green landscape is preferred
+          over an arid brown landscape. Water (i.e. blue fields), are not part of
+          the landscape and indicate the improvement in relation to the worst landscape.
+          <br><br>
+        </div>
+        <div class="info-item" ><a href="https://www.linkedin.com/in/martijnscheve/">contact</a> | disclaimer</div>
+      </div>
+      <div id="plotting-area">
+        <svg></svg>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/DrawingFunctions/tooltip.js"></script>
+    <script src="js/DrawingFunctions/landscapeMap.js"></script>
+    <script src="js/helpers.js"></script>
+  </body>
+</html>

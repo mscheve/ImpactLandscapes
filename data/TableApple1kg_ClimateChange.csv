@@ -1,0 +1,114 @@
+Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
+Table Apple,0.2842123556,kg CO2 eq,0,0,,root,-,Table Apple
+Farm,0.1298022586,kg CO2 eq,1,1,0,farm,France,Farm
+"Apple, conventional, national average, at orchard/kg",0.0983917831,kg CO2 eq,2,2,1,farm,France,Apple
+"Apple, conventional, control, at orchard/kg",0.0893546207,kg CO2 eq,3,3,2,farm,France,Apple
+"Apple, conventional, full production years (phase), at orchard/kg",0.0666528677,kg CO2 eq,4,4,3,farm,France,Apple
+"Maintenance, with platform self-propelled (special crops)/hr",0.0293088421,kg CO2 eq,5,5,4,farm,France,Maintenance
+"Diesel combustion, in tractor/kg",0.0186332967,kg CO2 eq,6,6,5,farm,France,Diesel combustion
+"Harvester/Machine with engine, LT >10'000h, production/kg",0.0072329489,kg CO2 eq,7,6,5,farm,France,Harvester/Machine with engine
+"heat production, light fuel oil, at industrial furnace 1MW",0.0020417335,kg CO2 eq,8,7,7,farm,Europe without Switzerland,heat production
+synthetic rubber production,0.0017465533,kg CO2 eq,9,7,7,farm,Europe,synthetic rubber production
+"steel production, converter, unalloyed",0.0012771317,kg CO2 eq,10,7,7,farm,Europe,steel production
+"aluminium, wrought alloy",0.000542672,kg CO2 eq,11,7,7,farm,Global,aluminium
+diesel,0.0031406281,kg CO2 eq,12,6,5,farm,Europe without Switzerland,diesel
+Shed,0.0003019684,kg CO2 eq,13,6,5,farm,France,Shed
+"Plant protection, spraying, with atomiser/sprayer, 2000 l/hr",0.0133328313,kg CO2 eq,14,5,4,farm,France,Plant protection
+"Diesel combustion, in tractor/kg",0.0102898043,kg CO2 eq,15,6,14,farm,France,Diesel combustion
+diesel,0.0017343388,kg CO2 eq,16,6,14,farm,Europe without Switzerland,diesel
+"Tractor, LT 10'000h, production/kg",0.0007695766,kg CO2 eq,17,6,14,farm,France,Tractor
+"General machinery, without tires, LT 8000h, production/kg",0.0005213749,kg CO2 eq,18,6,14,farm,France,General machinery
+"Average mineral fertilizer, as N, at regional storehouse/kg",0.002090803,kg CO2 eq,19,5,4,farm,France,Average mineral fertilizer
+"Urea, as N, at plant (WFLDB 3.5)",0.0008524693,kg CO2 eq,20,6,19,farm,Europe,Urea
+"Urea (46% N), at plant (WFLDB 3.5)",0.0008524693,kg CO2 eq,21,7,20,farm,Europe,Urea (46% N)
+"Ammonia, steam reforming, at plant (WFLDB 3.5)",0.0010378416,kg CO2 eq,22,8,21,farm,Europe,Ammonia
+"steam production, in chemical industry",0.0003089151,kg CO2 eq,23,8,21,farm,Europe,steam production
+"Ammonium nitrate phosphate, as P2O5, at plant (WFLDB 3.5)",0.0006600953,kg CO2 eq,24,6,19,farm,Europe,Ammonium nitrate phosphate
+"Ammonium nitrate phosphate, at plant (WFLDB 3.5)",0.0006600953,kg CO2 eq,25,7,24,farm,Europe,Ammonium nitrate phosphate
+"Plant protection, chemical weeding, with atomiser 400 l | Plant protection, chemical weeding, with atomiser 400 l",0.0016923695,kg CO2 eq,26,5,4,farm,France,Plant protection
+"Diesel combustion, in tractor/kg",0.0011692959,kg CO2 eq,27,6,26,farm,France,Diesel combustion
+"Average mineral fertilizer, as P2O5, at regional storehouse/kg",0.0015393087,kg CO2 eq,28,5,4,farm,France,Average mineral fertilizer
+"Triple superphosphate, as P2O5, at plant (WFLDB 3.5)",0.0008592688,kg CO2 eq,29,6,28,farm,Europe,Triple superphosphate
+"Triple superphosphate (46% P2O5), at plant (WFLDB 3.5)",0.0008592688,kg CO2 eq,30,7,29,farm,Europe,Triple superphosphate (46% P2O5)
+"Phosphoric acid (54% P2O5), at plant (WFLDB 3.5)",0.0006421108,kg CO2 eq,31,8,30,farm,Europe,Phosphoric acid (54% P2O5)
+"Crushing wood, with hammer mill/hr",0.0014811513,kg CO2 eq,32,5,4,farm,France,Crushing wood
+"Diesel combustion, in tractor/kg",0.0011567229,kg CO2 eq,33,6,32,farm,France,Diesel combustion
+"Average mineral fertilizer, as K2O, at regional storehouse/kg",0.0011523691,kg CO2 eq,34,5,4,farm,France,Average mineral fertilizer
+"Potassium chloride, as K2O, at plant (WFLDB 3.5)",0.0009275025,kg CO2 eq,35,6,34,farm,Europe,Potassium chloride
+"Potassium chloride (60% K2O), at plant (WFLDB 3.5)",0.0009275025,kg CO2 eq,36,7,35,farm,Europe,Potassium chloride (60% K2O)
+"steam production, in chemical industry",0.0006766454,kg CO2 eq,37,8,36,farm,Europe,steam production
+"Plant protection, weeding, with rotary beater/hr",0.0009186672,kg CO2 eq,38,5,4,farm,France,Plant protection
+"Diesel combustion, in tractor/kg",0.0006552282,kg CO2 eq,39,6,38,farm,France,Diesel combustion
+dithiocarbamate-compound,0.0008379595,kg CO2 eq,40,5,4,farm,Global,dithiocarbamate-compound
+"pesticide, unspecified",0.0008369016,kg CO2 eq,41,5,4,farm,Global,pesticide
+"Harvesting assistence, with trailer (orchard)/hr",0.0008161828,kg CO2 eq,42,5,4,farm,France,Harvesting assistence
+"Diesel combustion, in tractor/kg",0.000542151,kg CO2 eq,43,6,42,farm,France,Diesel combustion
+"electricity, low voltage",0.0007694875,kg CO2 eq,44,5,4,farm,France,electricity
+"Swath, with swather (orchard)/hr",0.0007615527,kg CO2 eq,45,5,4,farm,France,Swath
+"Diesel combustion, in tractor/kg",0.000586207,kg CO2 eq,46,6,45,farm,France,Diesel combustion
+"Potassium chloride, as K2O, at plant (WFLDB 3.5)",0.0006857588,kg CO2 eq,47,5,4,farm,Europe,Potassium chloride
+"Potassium chloride (60% K2O), at plant (WFLDB 3.5)",0.0006857588,kg CO2 eq,48,6,47,farm,Europe,Potassium chloride (60% K2O)
+"steam production, in chemical industry",0.000500285,kg CO2 eq,49,7,48,farm,Europe,steam production
+captan,0.0004100412,kg CO2 eq,50,5,4,farm,Global,captan
+cyclic N-compound,0.0003663574,kg CO2 eq,51,5,4,farm,Global,cyclic N-compound
+copper oxide production,0.0003098559,kg CO2 eq,52,5,4,farm,Europe,copper oxide production
+"Fertilizing, with spreader/broadcaster, 500 l (orchard)/hr",0.0002998707,kg CO2 eq,53,5,4,farm,France,Fertilizing
+nitrile-compound,0.0002867626,kg CO2 eq,54,5,4,farm,Global,nitrile-compound
+"Apple, conventional, plantation and destruction (phase), at orchard/p",0.0152013159,kg CO2 eq,55,4,3,farm,France,Apple
+"polyethylene production, high density, granulate",0.0028282728,kg CO2 eq,56,5,55,farm,Europe,polyethylene production
+"Maintenance, with platform self-propelled (special crops)/hr",0.0019442817,kg CO2 eq,57,5,55,farm,France,Maintenance
+"Diesel combustion, in tractor/kg",0.0012360904,kg CO2 eq,58,6,57,farm,France,Diesel combustion
+"Harvester/Machine with engine, LT >10'000h, production/kg",0.0004798173,kg CO2 eq,59,6,57,farm,France,Harvester/Machine with engine
+"steel production, low-alloyed, hot rolled",0.0016653895,kg CO2 eq,60,5,55,farm,Europe,steel production
+"sawnwood, softwood, dried (u=20%), planed",0.0012325163,kg CO2 eq,61,5,55,farm,Europe,sawnwood
+"Rooting up trees, with tractopelle/hr",0.0007194339,kg CO2 eq,62,5,55,farm,France,Rooting up trees
+"Diesel combustion, in tractor/kg",0.000502923,kg CO2 eq,63,6,62,farm,France,Diesel combustion
+"Plant protection, spraying, with atomiser/sprayer, 2000 l/hr",0.0006720177,kg CO2 eq,64,5,55,farm,France,Plant protection
+"Diesel combustion, in tractor/kg",0.0005186393,kg CO2 eq,65,6,64,farm,France,Diesel combustion
+"Apple and Pear seedlings, conventional, at production site/p",0.0005492372,kg CO2 eq,66,5,55,farm,France,Apple and Pear seedlings
+"zinc coating, coils",0.0004310122,kg CO2 eq,67,5,55,farm,Europe,zinc coating
+"Triple superphosphate, as P2O5, at plant (WFLDB 3.5)",0.0004083356,kg CO2 eq,68,5,55,farm,Europe,Triple superphosphate
+"Triple superphosphate (46% P2O5), at plant (WFLDB 3.5)",0.0004083356,kg CO2 eq,69,6,68,farm,Europe,Triple superphosphate (46% P2O5)
+"Phosphoric acid (54% P2O5), at plant (WFLDB 3.5)",0.0003051393,kg CO2 eq,70,7,69,farm,Europe,Phosphoric acid (54% P2O5)
+"chemical production, organic",0.0003203012,kg CO2 eq,71,5,55,farm,Global,chemical production
+"Ploughing, with 1 soc plough/hr",0.0002944915,kg CO2 eq,72,5,55,farm,France,Ploughing
+"Diesel combustion, in tractor/kg",0.000290218,kg CO2 eq,73,5,55,farm,France,Diesel combustion
+"Apple, conventional, first production years (phase), at orchard/kg",0.007500437,kg CO2 eq,74,4,3,farm,France,Apple
+"Plant protection, spraying, with atomiser/sprayer, 2000 l/hr",0.0024999059,kg CO2 eq,75,5,74,farm,France,Plant protection
+"Diesel combustion, in tractor/kg",0.0019293383,kg CO2 eq,76,6,75,farm,France,Diesel combustion
+diesel,0.0003251885,kg CO2 eq,77,6,75,farm,Europe without Switzerland,diesel
+"Maintenance, with platform self-propelled (special crops)/hr",0.0021210346,kg CO2 eq,78,5,74,farm,France,Maintenance
+"Diesel combustion, in tractor/kg",0.0013484623,kg CO2 eq,79,6,78,farm,France,Diesel combustion
+"Harvester/Machine with engine, LT >10'000h, production/kg",0.0005234371,kg CO2 eq,80,6,78,farm,France,Harvester/Machine with engine
+"Plant protection, chemical weeding, with atomiser 400 l | Plant protection, chemical weeding, with atomiser 400 l",0.0003173193,kg CO2 eq,81,5,74,farm,France,Plant protection
+"Apple, conventional, scab resistant, at orchard/kg",0.0090371624,kg CO2 eq,82,3,2,farm,France,Apple
+"Apple, conv., scab resistant, full production years (phase), at orchard/kg",0.00668904,kg CO2 eq,83,4,82,farm,France,Apple
+"Maintenance, with platform self-propelled (special crops)/hr",0.003256538,kg CO2 eq,84,5,83,farm,France,Maintenance
+"Diesel combustion, in tractor/kg",0.0020703663,kg CO2 eq,85,6,84,farm,France,Diesel combustion
+"Harvester/Machine with engine, LT >10'000h, production/kg",0.000803661,kg CO2 eq,86,6,84,farm,France,Harvester/Machine with engine
+diesel,0.0003489587,kg CO2 eq,87,6,84,farm,Europe without Switzerland,diesel
+"Plant protection, spraying, with atomiser/sprayer, 2000 l/hr",0.0007646068,kg CO2 eq,88,5,83,farm,France,Plant protection
+"Diesel combustion, in tractor/kg",0.0005900963,kg CO2 eq,89,6,88,farm,France,Diesel combustion
+"Apple, conv.,scab resistant, plantation and destruction (phase), at orchard/p",0.0016248989,kg CO2 eq,90,4,82,farm,France,Apple
+"polyethylene production, high density, granulate",0.0003142525,kg CO2 eq,91,5,90,farm,Europe,polyethylene production
+"Apple, conv., scab resistant, first production years (phase), at orchard/kg",0.0007232236,kg CO2 eq,92,4,82,farm,France,Apple
+"transport, freight, lorry 16-32 metric ton, EURO6",0.0299395619,kg CO2 eq,93,2,1,farm,Europe,transport
+"transport, freight train",0.001224849,kg CO2 eq,94,2,1,farm,Europe,transport
+Distribution,0.095522504,kg CO2 eq,95,1,0,distribution,France,Distribution
+"transport, freight, lorry 16-32 metric ton, EURO6",0.0839659956,kg CO2 eq,96,2,95,distribution,Europe,transport
+"heat, central or small-scale, natural gas",0.0108243103,kg CO2 eq,97,2,95,distribution,Europe without Switzerland,heat
+"electricity, low voltage",0.0007304778,kg CO2 eq,98,2,95,distribution,France,electricity
+Retail,0.0465702964,kg CO2 eq,99,1,0,retail,France,Retail
+"transport, freight, lorry 16-32 metric ton, EURO6",0.0251897987,kg CO2 eq,100,2,99,retail,Europe,transport
+"electricity, low voltage",0.0175329387,kg CO2 eq,101,2,99,retail,France,electricity
+treatment of biowaste by anaerobic digestion,0.0017416483,kg CO2 eq,102,2,99,retail,Rest-of-World,treatment of biowaste by anaerobic digestion
+"treatment of biowaste, municipal incineration | Biowaste",0.0013788768,kg CO2 eq,103,2,99,retail,Global,treatment of biowaste
+tap water,0.0004644071,kg CO2 eq,104,2,99,retail,Europe without Switzerland,tap water
+Consumption,0.0123172966,kg CO2 eq,105,1,0,consumption,France,Consumption
+"treatment of municipal solid waste, unsanitary landfill, wet infiltration class",0.0114039286,kg CO2 eq,106,2,105,consumption,Global,treatment of municipal solid waste
+"treatment of biowaste, municipal incineration | Biowaste",0.000913368,kg CO2 eq,107,2,105,consumption,Global,treatment of biowaste
+Collateral impact,0.009246228599999996,kg CO2 eq,108,5,4,farm,-,Collateral impact
+Collateral impact,0.000573723,kg CO2 eq,109,9,22,farm,-,Collateral impact
+Collateral impact,0.001916333600000002,kg CO2 eq,110,5,55,farm,-,Collateral impact
+Collateral impact,0.0009617758999999997,kg CO2 eq,111,5,74,farm,-,Collateral impact
+Collateral impact,0.0010273588000000002,kg CO2 eq,112,5,83,farm,-,Collateral impact
