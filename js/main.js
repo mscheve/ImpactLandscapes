@@ -33,17 +33,17 @@ d3.select('body').on('keydown', (event, d) => {
     })
 })
 
-const dataList = [
-    { name: 'Table Apple (1kg)', path: 'data/TableApple1kg_ClimateChange.csv' },
-]
-
 // const dataList = [
-//     { name: 'Chocolate (average consumption mix)', path: 'data/MilkChocolate180g_ClimateChange.csv' },
-//     // { name: 'Chocolate (sourced from Ghana)', path: 'data/MilkChocolate180g_GHsourced_ClimateChange.csv' },
-//     { name: 'Chocolate (sourced from Indonesia)', path: 'data/MilkChocolate180g_IDsourced_ClimateChange.csv' },
-//     { name: "Chocolate (sourced from Cote d'Ivoire)", path: 'data/MilkChocolate180g_CIsourced_ClimateChange.csv' },
-
+//     { name: 'Table Apple (1kg)', path: 'data/TableApple1kg_ClimateChange.csv' },
 // ]
+
+const dataList = [
+    { name: 'Chocolate (average consumption mix)', path: 'data/MilkChocolate180g_ClimateChange.csv' },
+    // { name: 'Chocolate (sourced from Ghana)', path: 'data/MilkChocolate180g_GHsourced_ClimateChange.csv' },
+    { name: 'Chocolate (sourced from Indonesia)', path: 'data/MilkChocolate180g_IDsourced_ClimateChange.csv' },
+    // { name: "Chocolate (sourced from Cote d'Ivoire)", path: 'data/MilkChocolate180g_CIsourced_ClimateChange.csv' },
+
+]
 
 const dataRead = []
 dataList.forEach(entry => dataRead.push(d3.csv(entry.path)))
