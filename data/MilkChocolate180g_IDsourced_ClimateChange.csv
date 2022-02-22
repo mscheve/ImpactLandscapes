@@ -1,6 +1,6 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Milk Chocolate (sourced from Indonesia),4.89631559,kg CO2 eq,0,0,,-,Global,Milk Chocolate (sourced from Indonesia)
-Cocoa liquor (sourced from Indonesia),2.6188253622,kg CO2 eq,1,1,0,-,Europe,Cocoa liquor (sourced from Indonesia)
+"Milk Chocolate, sourced from Indonesia",4.89631559,kg CO2 eq,0,0,,-,Global,Milk Chocolate
+"Cocoa liquor, sourced from Indonesia",2.6188253622,kg CO2 eq,1,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",2.5918737659,kg CO2 eq,2,2,1,-,Indonesia,Cocoa beans
 "Land use change, perennial crop (WFLDB 3.1)",2.4441527756,kg CO2 eq,3,3,2,-,Indonesia,Land use change
 "clear-cutting, primary forest to arable land",1.2966824928,kg CO2 eq,4,4,3,-,Indonesia,clear-cutting
@@ -15,7 +15,7 @@ Rooting up trees (WFLDB 3.1),0.0137670149,kg CO2 eq,9,3,2,-,Global,Rooting up tr
 "Cocoa beans processing, at plant (WFLDB 3.1)",0.0269515963,kg CO2 eq,13,2,1,-,Europe,Cocoa beans processing
 "diesel, burned in building machine",0.0119430353,kg CO2 eq,14,3,13,-,Global,diesel
 "transport, freight, lorry 7.5-16 metric ton, EURO3",0.0052070069,kg CO2 eq,15,3,13,-,Europe,transport
-Cocoa liquor (sourced from Indonesia),1.2357433651,kg CO2 eq,16,1,0,-,Europe,Cocoa liquor (sourced from Indonesia)
+"Cocoa liquor, sourced from Indonesia",1.2357433651,kg CO2 eq,16,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",1.2230257334,kg CO2 eq,17,2,16,-,Indonesia,Cocoa beans
 "Land use change, perennial crop (WFLDB 3.1)",1.153320729,kg CO2 eq,18,3,17,-,Indonesia,Land use change
 "clear-cutting, primary forest to arable land",0.6118646971,kg CO2 eq,19,4,18,-,Indonesia,clear-cutting
@@ -142,22 +142,22 @@ Milking (WFLDB 3.1),0.0073084358,kg CO2 eq,58,6,56,-,United States,Milking (WFLD
 "Land use change, annual crop (WFLDB 3.1)",0.0051413218,kg CO2 eq,140,4,139,-,Argentina,Land use change
 "transport, freight, lorry, unspecified",0.0064961059,kg CO2 eq,141,1,0,-,Europe,transport
 "transport, freight, sea, transoceanic ship",0.0055976553,kg CO2 eq,142,1,0,-,Global,transport
-Collateral impact,0.07709317770000101,kg CO2 eq,143,3,2,-,-,Collateral impact
-Collateral impact,0.2512081732000002,kg CO2 eq,144,4,3,-,-,Collateral impact
-Collateral impact,1.2886381875,kg CO2 eq,145,5,4,-,-,Collateral impact
-Collateral impact,0.8815832649,kg CO2 eq,146,5,6,-,-,Collateral impact
-Collateral impact,0.03637790570000021,kg CO2 eq,147,3,17,-,-,Collateral impact
-Collateral impact,0.11853743199999989,kg CO2 eq,148,4,18,-,-,Collateral impact
-Collateral impact,0.6080688362000001,kg CO2 eq,149,5,19,-,-,Collateral impact
-Collateral impact,0.41599210319999996,kg CO2 eq,150,5,20,-,-,Collateral impact
-Collateral impact,0.0116796617,kg CO2 eq,151,11,34,-,-,Collateral impact
-Collateral impact,0.0105799699,kg CO2 eq,152,9,35,-,-,Collateral impact
-Collateral impact,0.0080564084,kg CO2 eq,153,11,38,-,-,Collateral impact
-Collateral impact,0.0076976694,kg CO2 eq,154,11,68,-,-,Collateral impact
-Collateral impact,0.0069728998,kg CO2 eq,155,9,69,-,-,Collateral impact
-Collateral impact,0.0053097058,kg CO2 eq,156,11,72,-,-,Collateral impact
-Collateral impact,0.006701528499999999,kg CO2 eq,157,8,75,-,-,Collateral impact
-Collateral impact,0.0097824577,kg CO2 eq,158,11,85,-,-,Collateral impact
-Collateral impact,0.008861396300000001,kg CO2 eq,159,9,86,-,-,Collateral impact
-Collateral impact,0.0067477532,kg CO2 eq,160,11,89,-,-,Collateral impact
-Collateral impact,0.005055656400000002,kg CO2 eq,161,4,130,-,-,Collateral impact
+"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.07709317770000101,kg CO2 eq,143,3,2,-,Indonesia,Cocoa beans
+"Land use change, perennial crop (WFLDB 3.1)",0.2512081732000002,kg CO2 eq,144,4,3,-,Indonesia,Land use change
+"clear-cutting, primary forest to arable land",1.2886381875,kg CO2 eq,145,5,4,-,Indonesia,clear-cutting
+"clear-cutting, secondary forest to arable land",0.8815832649,kg CO2 eq,146,5,6,-,Indonesia,clear-cutting
+"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.03637790570000021,kg CO2 eq,147,3,17,-,Indonesia,Cocoa beans
+"Land use change, perennial crop (WFLDB 3.1)",0.11853743199999989,kg CO2 eq,148,4,18,-,Indonesia,Land use change
+"clear-cutting, primary forest to arable land",0.6080688362000001,kg CO2 eq,149,5,19,-,Indonesia,clear-cutting
+"clear-cutting, secondary forest to arable land",0.41599210319999996,kg CO2 eq,150,5,20,-,Indonesia,clear-cutting
+"clear-cutting, primary forest to arable land",0.0116796617,kg CO2 eq,151,11,34,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0105799699,kg CO2 eq,152,9,35,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0080564084,kg CO2 eq,153,11,38,-,Argentina,clear-cutting
+"clear-cutting, primary forest to arable land",0.0076976694,kg CO2 eq,154,11,68,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0069728998,kg CO2 eq,155,9,69,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0053097058,kg CO2 eq,156,11,72,-,Argentina,clear-cutting
+"Rice, at farm (WFLDB 3.1)/kg",0.006701528499999999,kg CO2 eq,157,8,75,-,India,Rice
+"clear-cutting, primary forest to arable land",0.0097824577,kg CO2 eq,158,11,85,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.008861396300000001,kg CO2 eq,159,9,86,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0067477532,kg CO2 eq,160,11,89,-,Argentina,clear-cutting
+"Sugar beet, at farm (WFLDB 3.1)/kg",0.005055656400000002,kg CO2 eq,161,4,130,-,United States,Sugar beet

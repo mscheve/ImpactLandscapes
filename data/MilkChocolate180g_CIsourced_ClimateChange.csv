@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Milk Chocolate (sourced from Cote d'Ivoire),1.9997465369,kg CO2 eq,0,0,,-,Global,Milk Chocolate (sourced from Cote d'Ivoire)
+"Milk Chocolate, sourced from Cote d'Ivoire",1.9997465369,kg CO2 eq,0,0,,-,Global,Milk Chocolate
 "Milk powder, skimmed, spray dried, at dairy (WFLDB 3.1)",0.7876136277,kg CO2 eq,1,1,0,-,Global,Milk powder
 "Liquid milk, whole milk, pasteurised, at dairy (WFLDB 3.1)",0.762613328,kg CO2 eq,2,2,1,-,Global,Liquid milk
 "Raw milk, production mix, at farm",0.7189433106,kg CO2 eq,3,3,2,-,Global,Raw milk
@@ -162,7 +162,7 @@ Milking (WFLDB 3.1),0.0026405783,kg CO2 eq,114,6,112,-,Russia,Milking (WFLDB 3.1
 "heat production, natural gas, at industrial furnace >100kW",0.0136306509,kg CO2 eq,160,3,159,-,Europe without Switzerland,heat production
 "Evaporation, dairy products, at dairy (WFLDB 3.1)",0.0099712302,kg CO2 eq,161,2,1,-,Global,Evaporation
 "heat production, natural gas, at industrial furnace >100kW",0.0090516027,kg CO2 eq,162,3,161,-,Europe without Switzerland,heat production
-Cocoa liquor (sourced from Cote d'Ivoire),0.6508727749,kg CO2 eq,163,1,0,-,Europe,Cocoa liquor (sourced from Cote d'Ivoire)
+"Cocoa liquor, sourced from Cote d'Ivoire",0.6508727749,kg CO2 eq,163,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.6239211786,kg CO2 eq,164,2,163,-,Cote d'Ivoire,Cocoa beans
 "Land use change, perennial crop (WFLDB 3.1)",0.5392763036,kg CO2 eq,165,3,164,-,Cote d'Ivoire,Land use change
 "clear-cutting, secondary forest to arable land",0.4720841047,kg CO2 eq,166,4,165,-,Cote d'Ivoire,clear-cutting
@@ -186,7 +186,7 @@ calcium ammonium nitrate production,0.0022339923,kg CO2 eq,180,3,164,-,Europe,ca
 "transport, freight, lorry 7.5-16 metric ton, EURO3",0.0052070069,kg CO2 eq,184,3,182,-,Europe,transport
 "transport, freight, lorry 16-32 metric ton, EURO4",0.0039900256,kg CO2 eq,185,3,182,-,Europe,transport
 "transport, freight, sea, transoceanic ship",0.0038639659,kg CO2 eq,186,3,182,-,Global,transport
-Cocoa liquor (sourced from Cote d'Ivoire),0.3071268992,kg CO2 eq,187,1,0,-,Europe,Cocoa liquor (sourced from Cote d'Ivoire)
+"Cocoa liquor, sourced from Cote d'Ivoire",0.3071268992,kg CO2 eq,187,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.2944092676,kg CO2 eq,188,2,187,-,Cote d'Ivoire,Cocoa beans
 "Land use change, perennial crop (WFLDB 3.1)",0.2544679473,kg CO2 eq,189,3,188,-,Cote d'Ivoire,Land use change
 "clear-cutting, secondary forest to arable land",0.2227620095,kg CO2 eq,190,4,189,-,Cote d'Ivoire,clear-cutting
@@ -225,36 +225,36 @@ ammonium nitrate production,0.0020738858,kg CO2 eq,209,4,208,-,Europe,ammonium n
 "transport, freight, lorry, unspecified",0.0064961059,kg CO2 eq,223,1,0,-,Europe,transport
 "transport, freight, sea, transoceanic ship",0.0055976553,kg CO2 eq,224,1,0,-,Global,transport
 "transport, freight train",0.0023727314,kg CO2 eq,225,1,0,-,Europe without Switzerland,transport
-Collateral impact,0.002028313300000001,kg CO2 eq,226,9,8,-,-,Collateral impact
-Collateral impact,0.0116796617,kg CO2 eq,227,11,10,-,-,Collateral impact
-Collateral impact,0.0105799699,kg CO2 eq,228,9,11,-,-,Collateral impact
-Collateral impact,0.0080564084,kg CO2 eq,229,11,14,-,-,Collateral impact
-Collateral impact,0.0048712061999999995,kg CO2 eq,230,11,27,-,-,Collateral impact
-Collateral impact,0.0044125603,kg CO2 eq,231,9,28,-,-,Collateral impact
-Collateral impact,0.0033600653000000003,kg CO2 eq,232,11,31,-,-,Collateral impact
-Collateral impact,0.0026080282,kg CO2 eq,233,11,40,-,-,Collateral impact
-Collateral impact,0.0023624708,kg CO2 eq,234,9,41,-,-,Collateral impact
-Collateral impact,0.0076976694,kg CO2 eq,235,11,59,-,-,Collateral impact
-Collateral impact,0.0069728998,kg CO2 eq,236,9,60,-,-,Collateral impact
-Collateral impact,0.0053097058,kg CO2 eq,237,11,63,-,-,Collateral impact
-Collateral impact,0.006701528499999999,kg CO2 eq,238,8,72,-,-,Collateral impact
-Collateral impact,0.0097824577,kg CO2 eq,239,11,88,-,-,Collateral impact
-Collateral impact,0.008861396300000001,kg CO2 eq,240,9,89,-,-,Collateral impact
-Collateral impact,0.0067477532,kg CO2 eq,241,11,92,-,-,Collateral impact
-Collateral impact,0.0033612278000000003,kg CO2 eq,242,5,157,-,-,Collateral impact
-Collateral impact,0.02595385480000001,kg CO2 eq,243,3,164,-,-,Collateral impact
-Collateral impact,0.469098788,kg CO2 eq,244,5,166,-,-,Collateral impact
-Collateral impact,0.0470280046,kg CO2 eq,245,5,168,-,-,Collateral impact
-Collateral impact,0.0197727743,kg CO2 eq,246,5,169,-,-,Collateral impact
-Collateral impact,0.0110168787,kg CO2 eq,247,5,171,-,-,Collateral impact
-Collateral impact,0.0024027734000000005,kg CO2 eq,248,5,174,-,-,Collateral impact
-Collateral impact,0.012246828100000107,kg CO2 eq,249,3,188,-,-,Collateral impact
-Collateral impact,0.2213533301,kg CO2 eq,250,5,190,-,-,Collateral impact
-Collateral impact,0.0221910729,kg CO2 eq,251,5,191,-,-,Collateral impact
-Collateral impact,0.0093301657,kg CO2 eq,252,5,192,-,-,Collateral impact
-Collateral impact,0.005198527200000001,kg CO2 eq,253,5,194,-,-,Collateral impact
-Collateral impact,0.005055656400000002,kg CO2 eq,254,4,206,-,-,Collateral impact
-Collateral impact,0.004106314599999997,kg CO2 eq,255,4,208,-,-,Collateral impact
-Collateral impact,0.0040868602,kg CO2 eq,256,4,210,-,-,Collateral impact
-Collateral impact,0.0034540806,kg CO2 eq,257,4,212,-,-,Collateral impact
-Collateral impact,0.0046873597,kg CO2 eq,258,6,222,-,-,Collateral impact
+"soybeans, at farm | Soybean, at farm (WFLDB 3.1)",0.002028313300000001,kg CO2 eq,226,9,8,-,Brazil,soybeans
+"clear-cutting, primary forest to arable land",0.0116796617,kg CO2 eq,227,11,10,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0105799699,kg CO2 eq,228,9,11,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0080564084,kg CO2 eq,229,11,14,-,Argentina,clear-cutting
+"clear-cutting, primary forest to arable land",0.0048712061999999995,kg CO2 eq,230,11,27,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0044125603,kg CO2 eq,231,9,28,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0033600653000000003,kg CO2 eq,232,11,31,-,Argentina,clear-cutting
+"clear-cutting, primary forest to arable land",0.0026080282,kg CO2 eq,233,11,40,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0023624708,kg CO2 eq,234,9,41,-,United States,soybeans
+"clear-cutting, primary forest to arable land",0.0076976694,kg CO2 eq,235,11,59,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0069728998,kg CO2 eq,236,9,60,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0053097058,kg CO2 eq,237,11,63,-,Argentina,clear-cutting
+"Rice, at farm (WFLDB 3.1)/kg",0.006701528499999999,kg CO2 eq,238,8,72,-,India,Rice
+"clear-cutting, primary forest to arable land",0.0097824577,kg CO2 eq,239,11,88,-,Brazil,clear-cutting
+"soybeans, at farm/kg",0.008861396300000001,kg CO2 eq,240,9,89,-,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0067477532,kg CO2 eq,241,11,92,-,Argentina,clear-cutting
+"operation, lorry 16-32t, EURO5 | Operation, chilled, lorry 16-32t, EURO5 (WFLDB 3.1)",0.0033612278000000003,kg CO2 eq,242,5,157,-,Europe,operation
+"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.02595385480000001,kg CO2 eq,243,3,164,-,Cote d'Ivoire,Cocoa beans
+"clear-cutting, secondary forest to arable land",0.469098788,kg CO2 eq,244,5,166,-,Cote d'Ivoire,clear-cutting
+"clear-cutting, primary forest to arable land",0.0470280046,kg CO2 eq,245,5,168,-,Cote d'Ivoire,clear-cutting
+"land already in use, perennial cropland",0.0197727743,kg CO2 eq,246,5,169,-,Cote d'Ivoire,land already in use
+"diesel, burned water pump/MJ",0.0110168787,kg CO2 eq,247,5,171,-,Global,diesel
+"Diesel, burned in agricultural machinery (WFLDB 3.1)",0.0024027734000000005,kg CO2 eq,248,5,174,-,Global,Diesel
+"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.012246828100000107,kg CO2 eq,249,3,188,-,Cote d'Ivoire,Cocoa beans
+"clear-cutting, secondary forest to arable land",0.2213533301,kg CO2 eq,250,5,190,-,Cote d'Ivoire,clear-cutting
+"clear-cutting, primary forest to arable land",0.0221910729,kg CO2 eq,251,5,191,-,Cote d'Ivoire,clear-cutting
+"land already in use, perennial cropland",0.0093301657,kg CO2 eq,252,5,192,-,Cote d'Ivoire,land already in use
+"diesel, burned water pump/MJ",0.005198527200000001,kg CO2 eq,253,5,194,-,Global,diesel
+"Sugar beet, at farm (WFLDB 3.1)/kg",0.005055656400000002,kg CO2 eq,254,4,206,-,United States,Sugar beet
+"Sugar beet, at farm (WFLDB 3.1)/kg",0.004106314599999997,kg CO2 eq,255,4,208,-,Russia,Sugar beet
+"Sugar beet, at farm (WFLDB 3.1)/kg",0.0040868602,kg CO2 eq,256,4,210,-,France,Sugar beet
+"Sugar beet, at farm (WFLDB 3.1)/kg",0.0034540806,kg CO2 eq,257,4,212,-,Germany,Sugar beet
+"clear-cutting, secondary forest to arable land",0.0046873597,kg CO2 eq,258,6,222,-,Argentina,clear-cutting
