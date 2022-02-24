@@ -45,6 +45,15 @@ const dataList = [
 
 ]
 
+// const dataList = [
+//     { name: 'Pizza Bolognese (300g)', path: 'data/PizzaBolognese300g_ClimateChange.csv' },
+//     // { name: 'Pizza Four Cheeses (300g)', path: 'data/PizzaFourCheeses300g_ClimateChange.csv' },
+//     { name: 'Pizza Margherita (300g)', path: 'data/PizzaMargherita300g_ClimateChange.csv' },
+//     // { name: 'Pizza Quattro Stagioni (300g)', path: 'data/PizzaQuattroStagioni300g_ClimateChange.csv' },
+//     // { name: 'Pizza Salami (300g)', path: 'data/PizzaSalami300g_ClimateChange.csv' },
+//     { name: 'Pizza Tuna (300g)', path: 'data/PizzaTuna300g_ClimateChange.csv' },
+// ]
+
 const dataRead = []
 dataList.forEach(entry => dataRead.push(d3.csv(entry.path)))
 
@@ -52,6 +61,7 @@ Promise.all(dataRead).then(files => {
 
     const hierarchies = []
 
+    files.sort((a, b) =>  d3.max(b.map(d => d.Amount)) - d3.max(a.map(d => d.Amount)))
     files.forEach(data => {
         data.forEach(d => {
             d.Amount = Number(d.Amount)
@@ -247,6 +257,5 @@ roadmapLegend.selectAll('.rmAxis .tick text')
     .attr('color', d => (d === 1) ? 'white' : 'black')
 
 // roadmap legend code end
-
 
 

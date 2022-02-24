@@ -216,7 +216,27 @@ class LandscapeMap {
 
         const menu = vis.treemapContainer.select('.menu-container')
         menu.append('g').classed('menu-roadmap', true)
-        const menuRoadMap = menu.select('.menu-roadmap', true)
+
+        let menuTitleContent = menu.selectAll('.menu-title-container')
+            .data([hierarchy.depth], d => d)
+
+        menuTitleContent.exit().remove()
+
+        menuTitleContent = menuTitleContent.enter().append('g')
+            .attr('class', 'menu-title-container')
+            .append('foreignObject')
+            .attr('width', vis.menuBands.range()[1])
+            .attr('height', vis.menuHeight)
+            .attr('transform', `translate(0, ${-vis.menuBandWidth - vis.menuHeight - 10})`)
+            .append('xhtml:div')
+            .append('div')
+            .classed('menu-title-parent', true)
+            .append('div')
+            .classed('menu-title', true)
+            .html(hierarchy.data.Process)
+            .merge(menuTitleContent)
+
+        const menuRoadMap = menu.select('.menu-roadmap')
 
         const menuLines = menuRoadMap.selectAll('.menu-line')
             .data(_.range(hierarchy.depth, hierarchy.depth + hierarchy.height + 1), d => d)
@@ -262,8 +282,10 @@ class LandscapeMap {
             .attr('transform', `translate(0, ${-vis.menuBandWidth})`)
             .call(manuXAxis)
         menuRoadMap.selectAll('.manuXAxis .tick text')
-            .attr('dy', (_d, i, element) => (vis.menuBandWidth / 2) - (element[i].clientHeight / 2))
+            .attr('dy', (_d, i, element) => - element[i].getBBox().y)
             .attr('color', d => (d === hierarchy.depth) ? 'white' : d <= hierarchy.ancestors().reverse()[0].height ? 'black' : 'white')
+            .attr('font-size', Math.max(vis.menuBandWidth * 0.3, 10))
+            .attr('transform', `translate(0, ${vis.menuBandWidth/2})`)
             .text(d => d === 0 ? '\u29BF' : d)
 
         menuRoadMap.attr('transform', `translate(${(vis.maxHeight - hierarchy.ancestors().reverse()[0].height) * ((vis.menuBands(1) - vis.menuBands(0)) / 2)},0)`)
@@ -307,27 +329,9 @@ class LandscapeMap {
                 vis.currentHierarchy = hierarchy
             })
 
-        let menuTitleContent = menu.selectAll('.menu-title-container')
-            .data([hierarchy.depth], d => d)
-
-        menuTitleContent.exit().remove()
-
-        menuTitleContent = menuTitleContent.enter().append('g')
-            .attr('class', 'menu-title-container')
-            .append('foreignObject')
-            .attr('width', vis.menuBands.range()[1])
-            .attr('height', vis.menuHeight)
-            .attr('transform', `translate(0, ${-vis.menuBandWidth - vis.menuHeight - 10})`)
-            .append('xhtml:div')
-            .append('div')
-            .classed('menu-title-parent', true)
-            .append('div')
-            .classed('menu-title', true)
-            .html(hierarchy.data.Process)
-            .merge(menuTitleContent)
-
         //after first draw, set inital run to false to activate transition animations
         vis.initialRun = false
+        
     }
 
     drawAnnotations(annotationContainer, hierarchy, marking) {
@@ -343,10 +347,8 @@ class LandscapeMap {
             // return (d.depth === 1)
         }).sort((a, b) => { return b.value - a.value }).slice(0, vis.annotationNumber)
 
-        console.log(vis.markedIds)
         let markAdditions = vis.markedIds.filter(x => !vis.markedCells.map(d => d.id).includes(x))
         let markDeletions = vis.markedIds.filter(x => vis.markedCells.map(d => d.id).includes(x))
-        console.log(markDeletions)
 
         hierarchy.descendants().filter(d => {
             return (markAdditions.includes(d.id) & d.depth <= vis.currentDepth)

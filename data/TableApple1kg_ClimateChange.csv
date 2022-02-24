@@ -107,8 +107,8 @@ tap water,0.0004644071,kg CO2 eq,104,2,99,retail,Europe without Switzerland,tap 
 Consumption,0.0123172966,kg CO2 eq,105,1,0,consumption,France,Consumption
 "treatment of municipal solid waste, unsanitary landfill, wet infiltration class",0.0114039286,kg CO2 eq,106,2,105,consumption,Global,treatment of municipal solid waste
 "treatment of biowaste, municipal incineration | Biowaste",0.000913368,kg CO2 eq,107,2,105,consumption,Global,treatment of biowaste
-Collateral impact,0.009246228599999996,kg CO2 eq,108,5,4,farm,-,Collateral impact
-Collateral impact,0.000573723,kg CO2 eq,109,9,22,farm,-,Collateral impact
-Collateral impact,0.001916333600000002,kg CO2 eq,110,5,55,farm,-,Collateral impact
-Collateral impact,0.0009617758999999997,kg CO2 eq,111,5,74,farm,-,Collateral impact
-Collateral impact,0.0010273588000000002,kg CO2 eq,112,5,83,farm,-,Collateral impact
+"Apple, conventional, full production years (phase), at orchard/kg",0.009246228599999996,kg CO2 eq,108,5,4,farm,France,Apple
+"Ammonia, steam reforming, at plant (WFLDB 3.5)",0.000573723,kg CO2 eq,109,9,22,farm,Europe,Ammonia
+"Apple, conventional, plantation and destruction (phase), at orchard/p",0.001916333600000002,kg CO2 eq,110,5,55,farm,France,Apple
+"Apple, conventional, first production years (phase), at orchard/kg",0.0009617758999999997,kg CO2 eq,111,5,74,farm,France,Apple
+"Apple, conv., scab resistant, full production years (phase), at orchard/kg",0.0010273588000000002,kg CO2 eq,112,5,83,farm,France,Apple
