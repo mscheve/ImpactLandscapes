@@ -33,186 +33,250 @@ d3.select('body').on('keydown', (event, d) => {
     })
 })
 
-// const dataList = [
-//     { name: 'Table Apple (1kg)', path: 'data/TableApple1kg_ClimateChange.csv' },
-// ]
-
 const dataList = [
-    { name: 'Chocolate (average consumption mix)', path: 'data/MilkChocolate180g_ClimateChange.csv' },
-    // { name: 'Chocolate (sourced from Ghana)', path: 'data/MilkChocolate180g_GHsourced_ClimateChange.csv' },
-    { name: 'Chocolate (sourced from Indonesia)', path: 'data/MilkChocolate180g_IDsourced_ClimateChange.csv' },
-    // { name: "Chocolate (sourced from Cote d'Ivoire)", path: 'data/MilkChocolate180g_CIsourced_ClimateChange.csv' },
-
+    {
+        caseName: "Apple",
+        datasets: [
+            { name: 'Table Apple (1kg)', path: 'data/TableApple1kg_ClimateChange.csv' }
+        ]
+    },
+    {
+        caseName: "Chocolate",
+        datasets: [
+            { name: 'Milk Chocolate (180g) (average consumption mix)', path: 'data/MilkChocolate180g_ClimateChange.csv' },
+            { name: 'Milk Chocolate (180g) (sourced from Ghana)', path: 'data/MilkChocolate180g_GHsourced_ClimateChange.csv' },
+            { name: 'Milk Chocolate (180g) (sourced from Indonesia)', path: 'data/MilkChocolate180g_IDsourced_ClimateChange.csv' },
+            { name: "Milk Chocolate (180g) (sourced from Cote d'Ivoire)", path: 'data/MilkChocolate180g_CIsourced_ClimateChange.csv' },
+        ]
+    },
+    {
+        caseName: "Pizza",
+        datasets: [
+            { name: 'Pizza Bolognese (300g)', path: 'data/PizzaBolognese300g_ClimateChange.csv' },
+            { name: 'Pizza Four Cheeses (300g)', path: 'data/PizzaFourCheeses300g_ClimateChange.csv' },
+            { name: 'Pizza Margherita (300g)', path: 'data/PizzaMargherita300g_ClimateChange.csv' },
+            { name: 'Pizza Quattro Stagioni (300g)', path: 'data/PizzaQuattroStagioni300g_ClimateChange.csv' },
+            { name: 'Pizza Salami (300g)', path: 'data/PizzaSalami300g_ClimateChange.csv' },
+            { name: 'Pizza Tuna (300g)', path: 'data/PizzaTuna300g_ClimateChange.csv' },
+        ]
+    }
 ]
 
-// const dataList = [
-//     { name: 'Pizza Bolognese (300g)', path: 'data/PizzaBolognese300g_ClimateChange.csv' },
-//     // { name: 'Pizza Four Cheeses (300g)', path: 'data/PizzaFourCheeses300g_ClimateChange.csv' },
-//     { name: 'Pizza Margherita (300g)', path: 'data/PizzaMargherita300g_ClimateChange.csv' },
-//     // { name: 'Pizza Quattro Stagioni (300g)', path: 'data/PizzaQuattroStagioni300g_ClimateChange.csv' },
-//     // { name: 'Pizza Salami (300g)', path: 'data/PizzaSalami300g_ClimateChange.csv' },
-//     { name: 'Pizza Tuna (300g)', path: 'data/PizzaTuna300g_ClimateChange.csv' },
-// ]
+let caseSelect = d3.select('#case-select').node(),
+    option,
+    i = 0,
+    il = dataList.length;
 
-const dataRead = []
-dataList.forEach(entry => dataRead.push(d3.csv(entry.path)))
+for (; i < il; i += 1) {
+    option = document.createElement('option');
+    option.setAttribute('value', i);
+    option.appendChild(document.createTextNode(dataList[i].caseName));
+    caseSelect.appendChild(option);
+}
 
-Promise.all(dataRead).then(files => {
+function populateDatasets() {
+    const sets = dataList[$("#case-select").val()].datasets
+    d3.selectAll('#data-select option').remove()
+    let dataSelect = d3.select('#data-select').node()
+    option,
+        i = 0,
+        il = sets.length;
 
-    const hierarchies = []
-
-    files.sort((a, b) =>  d3.max(b.map(d => d.Amount)) - d3.max(a.map(d => d.Amount)))
-    files.forEach(data => {
-        data.forEach(d => {
-            d.Amount = Number(d.Amount)
-            d.value = d.Amount
-        })
-        data.columns.push('value')
-        hierarchies.push(
-            d3.stratify()
-                .id(d => d.id)
-                .parentId(d => d.parent_id)(data)
-                .each(d => d.value = d.data.value)
-        )
-    })
-
-    const maxTreeValues = []
-    hierarchies.forEach((d, i) => {
-        maxTreeValues.push(maxTreeValue(d))
-    })
-
-    const maxTreeDifference = []
-    maxTreeValues.forEach((d, i) => {
-        maxTreeDifference.push(d3.max(maxTreeValues) - maxTreeValues[i])
-    })
-
-    const adjustedHierarchies = []
-    files.forEach((data, i) => {
-        if (maxTreeDifference[i] > 0) {
-            const improvementEntry = {
-                Process: "Improvement relative to the product with the highest impact",
-                Amount: 0,
-                Unit: "kg CO2 eq",
-                id: '-',
-                hierarchy_level: 1,
-                parent_id: '0',
-                Phase: "Relative Improvement",
-                Location: "-",
-                Process_shorthand: 'Improvement',
-                value: maxTreeDifference[i]
-            }
-            data.push(improvementEntry)
-        }
-        adjustedHierarchies.push(
-            d3.stratify()
-                .id(d => d.id)
-                .parentId(d => d.parent_id)(data)
-                .each(d => d.value = d.data.value)
-        )
-    })
-
-
-    function colorCollapse() {
-        const tempColorMaxs = []
-        hierarchies.forEach(d => {
-            tempColorMaxs.push(leaveValues(d))
-        })
-        let min = [],
-            max = [],
-            mid = []
-
-        tempColorMaxs.forEach(d => {
-            min.push(d[0])
-            max.push(d[1])
-            mid.push(d[2])
-        })
-
-        min = d3.min(min)
-        max = d3.max(max)
-        mid = d3.mean(mid)
-        return [min, max, mid]
+    for (; i < il; i += 1) {
+        option = document.createElement('option');
+        option.setAttribute('value', sets[i].path);
+        option.appendChild(document.createTextNode(sets[i].name));
+        dataSelect.appendChild(option);
     }
+}
 
-    colorMaxs = colorCollapse()
+populateDatasets() //initial population of datasets
+
+$('#case-select').on('change', d => {
+    populateDatasets()
+})
+
+$('#data-select').on('change', d => {
+    console.log($('#data-select').val())
+})
+
+// initial rendering data
+const dataRead = []
+const indexDataList = 1
+const indexDataSets = [0, 2]
+dataList[indexDataList].datasets.forEach((entry, i) => indexDataSets.includes(i) ? dataRead.push(d3.csv(entry.path)) : null)
+redrawCanvas(dataRead)
+// end initial rendering data
+
+$('#apply-settings').on('click', d => {
+    const dataRead = []
+    $('#data-select').val().forEach(path => dataRead.push(d3.csv(path)))
+    redrawCanvas(dataRead)
+})
+
+function redrawCanvas(sets) {
+    Promise.all(sets).then(files => {
+
+        d3.select("#plotting-area svg").selectAll('*').remove()
+
+        const hierarchies = []
+
+        files.sort((a, b) => d3.max(b.map(d => d.Amount)) - d3.max(a.map(d => d.Amount)))
+        files.forEach(data => {
+            data.forEach(d => {
+                d.Amount = Number(d.Amount)
+                d.value = d.Amount
+            })
+            data.columns.push('value')
+            hierarchies.push(
+                d3.stratify()
+                    .id(d => d.id)
+                    .parentId(d => d.parent_id)(data)
+                    .each(d => d.value = d.data.value)
+            )
+        })
+
+        const maxTreeValues = []
+        hierarchies.forEach((d, i) => {
+            maxTreeValues.push(maxTreeValue(d))
+        })
+
+        const maxTreeDifference = []
+        maxTreeValues.forEach((d, i) => {
+            maxTreeDifference.push(d3.max(maxTreeValues) - maxTreeValues[i])
+        })
+
+        const adjustedHierarchies = []
+        files.forEach((data, i) => {
+            if (maxTreeDifference[i] > 0) {
+                const improvementEntry = {
+                    Process: "Improvement relative to the product with the highest impact",
+                    Amount: 0,
+                    Unit: "kg CO2 eq",
+                    id: '-',
+                    hierarchy_level: 1,
+                    parent_id: '0',
+                    Phase: "Relative Improvement",
+                    Location: "-",
+                    Process_shorthand: 'Improvement',
+                    value: maxTreeDifference[i]
+                }
+                data.push(improvementEntry)
+            }
+            adjustedHierarchies.push(
+                d3.stratify()
+                    .id(d => d.id)
+                    .parentId(d => d.parent_id)(data)
+                    .each(d => d.value = d.data.value)
+            )
+        })
 
 
-    color.domain([colorMaxs[0], colorMaxs[2], colorMaxs[1]])
+        function colorCollapse() {
+            const tempColorMaxs = []
+            hierarchies.forEach(d => {
+                tempColorMaxs.push(leaveValues(d))
+            })
+            let min = [],
+                max = [],
+                mid = []
 
-    const landscapePosition = d3.scaleBand()
-        .domain([...Array(files.length).keys()])
-        .range([0, svgWidth])
-        .paddingInner(0.35) // edit the inner padding value in [0,1]
-        .paddingOuter(0.25) // edit the outer padding value in [0,1]
+            tempColorMaxs.forEach(d => {
+                min.push(d[0])
+                max.push(d[1])
+                mid.push(d[2])
+            })
 
-    adjustedHierarchies.forEach((data, i) => {
-        svg.append('g')
-            .classed('landscape-container', true)
-            .attr('id', `landscape-${i}`)
+            min = d3.min(min)
+            max = d3.max(max)
+            mid = d3.mean(mid)
+            return [min, max, mid]
+        }
 
-        landscapes.push(new LandscapeMap(
-            `#landscape-${i}`,
-            data,
-            landscapePosition.bandwidth(),
-            svgHeight,
-            color,
-            d3.max(maxTreeValues),
-            d3.max(adjustedHierarchies.map(d => d.height)),
-            5
-        ))
-    })
+        colorMaxs = colorCollapse()
 
-    d3.selectAll('.landscape-container').attr('transform', (d, i) => `translate(${landscapePosition(i)}, 0)`)
 
-    // color legend code
-    const legendWidth = 260
-    const colorLegend = d3.select('#info-color')
-        .append('svg')
-        .attr('width', legendWidth)
-        .attr('height', 50)
+        color.domain([colorMaxs[0], colorMaxs[2], colorMaxs[1]])
 
-    const noColors = 9
-    const colorPadding = 1
-    const legendLinear = d3.legendColor()
-        .shapeWidth(legendWidth/(noColors+1) - colorPadding)
-        .cells(noColors)
-        .orient('horizontal')
-        .scale(color)
-        .labelOffset(0)
-        .shapePadding(colorPadding)
-        .ascending(true)
-        .labels(d => d.i === 0 || d.i === noColors-1 || d.i === Math.round(noColors/2)-1 ? d.generatedLabels[d.i] : '')
-        .title(`Impact (${files[0][0].Unit})`)
-        .labelFormat('.02f')
+        const landscapePosition = d3.scaleBand()
+            .domain([...Array(files.length).keys()])
+            .range([0, svgWidth])
+            .paddingInner(0.35) // edit the inner padding value in [0,1]
+            .paddingOuter(0.25) // edit the outer padding value in [0,1]
 
-    colorLegend.append('g')
-        .classed('color-axis', true)
-        .attr('transform', 'translate(0, 3)')
-        .call(legendLinear)
+        adjustedHierarchies.forEach((data, i) => {
+            svg.append('g')
+                .classed('landscape-container', true)
+                .attr('id', `landscape-${i}`)
 
-    colorLegend.select('.color-axis .legendTitle')
-        .attr('transform', 'translate(0, 6)')
-        .style('font-family', "'Work Sans', sans-serif")
+            landscapes.push(new LandscapeMap(
+                `#landscape-${i}`,
+                data,
+                landscapePosition.bandwidth(),
+                svgHeight,
+                color,
+                d3.max(maxTreeValues),
+                d3.max(adjustedHierarchies.map(d => d.height)),
+                5
+            ))
+        })
 
-    const colorBlockCopy = colorLegend.select('.color-axis .legendCells .cell rect')
+        d3.selectAll('.landscape-container').attr('transform', (d, i) => `translate(${landscapePosition(i)}, 0)`)
 
-    const waterGroup = colorLegend.select('.color-axis .legendCells').append('g')
-        .attr('transform', `translate(${(Number(colorBlockCopy.attr('width'))+colorPadding)*noColors}, 0)`)
+        // color legend code        
+        d3.select('.color-axis-container').remove()
 
-    waterGroup.append('rect')
+        const legendWidth = 260
+        const colorLegend = d3.select('#info-color')
+            .append('svg')
+            .classed('color-axis-container', true)
+            .attr('width', legendWidth)
+            .attr('height', 50)
+
+        const noColors = 9
+        const colorPadding = 1
+        const legendLinear = d3.legendColor()
+            .shapeWidth(legendWidth / (noColors + 1) - colorPadding)
+            .cells(noColors)
+            .orient('horizontal')
+            .scale(color)
+            .labelOffset(0)
+            .shapePadding(colorPadding)
+            .ascending(true)
+            .labels(d => d.i === 0 || d.i === noColors - 1 || d.i === Math.round(noColors / 2) - 1 ? d.generatedLabels[d.i] : '')
+            .title(`Impact (${files[0][0].Unit})`)
+            .labelFormat('.02f')
+
+        colorLegend.append('g')
+            .classed('color-axis', true)
+            .attr('transform', 'translate(0, 3)')
+            .call(legendLinear)
+
+        colorLegend.select('.color-axis .legendTitle')
+            .attr('transform', 'translate(0, 6)')
+            .style('font-family', "'Work Sans', sans-serif")
+
+        const colorBlockCopy = colorLegend.select('.color-axis .legendCells .cell rect')
+
+        const waterGroup = colorLegend.select('.color-axis .legendCells').append('g')
+            .attr('transform', `translate(${(Number(colorBlockCopy.attr('width')) + colorPadding) * noColors}, 0)`)
+
+        waterGroup.append('rect')
             .attr('class', colorBlockCopy.attr('class'))
             .attr('width', colorBlockCopy.attr('width'))
-            .attr('height',colorBlockCopy.attr('height'))
+            .attr('height', colorBlockCopy.attr('height'))
             .attr('fill', '#237dc2')
 
-    const colorTextCopy = colorLegend.select('.color-axis .legendCells .cell text')
+        const colorTextCopy = colorLegend.select('.color-axis .legendCells .cell text')
 
-    waterGroup.append('text')
+        waterGroup.append('text')
             .attr('class', colorTextCopy.attr('class'))
             .attr('transform', colorTextCopy.attr('transform'))
             .attr('style', colorTextCopy.attr('style'))
             .text('\u25BC')
-        
-});
+
+    })
+};
 
 
 // roadmap legend code
