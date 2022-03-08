@@ -83,14 +83,22 @@ function leaveValues(hierarchy) {
     return [leaveMin, leaveMax, leaveMiddle]
 }
 
-function lineGenerator(parentElement, background, fill, size) {
+function lineGenerator(parentElement, background, fill, size, improv) {
     const texture = textures
         .lines()
         .thicker()
         .stroke(fill)
         .background(background)
-        .orientation(`${[1, 2, 3, 4, 5, 6, 7, 8].sample()}/8`)
-    // .size(size);
+        .orientation(`${[1, 2, 3, 5, 6, 7].sample()}/8`)
+    
+    if (size) {
+        texture.size(size);
+    }
+
+    if (improv) {
+        texture.lighter(5)
+        // texture.stroke("firebrick")
+    }
 
     parentElement.call(texture);
     return texture.url()
@@ -163,4 +171,16 @@ function drag() {
 
     return d3.drag()
         .on("drag", dragged)
+}
+
+function landscapeValueSync(vis, hierarchy) {
+    if (landscapeGlobalValues) {
+        let index
+        landscapes.forEach((landscape,i) => {
+            if (landscape === vis) {
+                index = i
+            }
+        })
+        landscapeGlobalValues[index] = hierarchy.value
+    }
 }

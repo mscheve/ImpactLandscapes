@@ -7,31 +7,14 @@ let svg = d3.select('#plotting-area svg')
     .attr('width', svgWidth)
     .attr('height', svgHeight)
     .attr('transform', `translate(${margin.left}, ${margin.top})`)
-
-let landscapes = []
-
+    
+let landscapes
+let landscapeGlobalValues = []
 const minColor = '#4e8200'
 const midColor = '#ffe600'
 const maxColor = '#4f3515'
 const color = d3.scaleLinear()
     .range([minColor, midColor, maxColor])
-
-
-
-
-d3.select('body').on('keydown', (event, d) => {
-    landscapes.forEach(landscape => {
-        const vis = landscape
-        switch (event.key) {
-            case 'ArrowDown':
-                vis.currentDepth -= vis.currentDepth > 1 ? 1 : 0
-                break
-            case 'ArrowUp':
-                vis.currentDepth += vis.currentDepth < vis.hierarchy.depth + vis.hierarchy.height ? 1 : 0
-        }
-        vis.drawTreemap(vis.currentHierarchy, vis.currentDepth)
-    })
-})
 
 const dataList = [
     {
@@ -141,37 +124,6 @@ function redrawCanvas(sets) {
             maxTreeValues.push(maxTreeValue(d))
         })
 
-        const maxTreeDifference = []
-        maxTreeValues.forEach((d, i) => {
-            maxTreeDifference.push(d3.max(maxTreeValues) - maxTreeValues[i])
-        })
-
-        const adjustedHierarchies = []
-        files.forEach((data, i) => {
-            if (maxTreeDifference[i] > 0) {
-                const improvementEntry = {
-                    Process: "Improvement relative to the product with the highest impact",
-                    Amount: 0,
-                    Unit: "kg CO2 eq",
-                    id: '-',
-                    hierarchy_level: 1,
-                    parent_id: '0',
-                    Phase: "Relative Improvement",
-                    Location: "-",
-                    Process_shorthand: 'Improvement',
-                    value: maxTreeDifference[i]
-                }
-                data.push(improvementEntry)
-            }
-            adjustedHierarchies.push(
-                d3.stratify()
-                    .id(d => d.id)
-                    .parentId(d => d.parent_id)(data)
-                    .each(d => d.value = d.data.value)
-            )
-        })
-
-
         function colorCollapse() {
             const tempColorMaxs = []
             hierarchies.forEach(d => {
@@ -202,9 +154,11 @@ function redrawCanvas(sets) {
             .domain([...Array(files.length).keys()])
             .range([0, svgWidth])
             .paddingInner(0.35) // edit the inner padding value in [0,1]
-            .paddingOuter(0.25) // edit the outer padding value in [0,1]
+            .paddingOuter(0.35) // edit the outer padding value in [0,1]
 
-        adjustedHierarchies.forEach((data, i) => {
+        landscapes = []
+        landscapeGlobalValues = []
+        hierarchies.forEach((data, i) => {
             svg.append('g')
                 .classed('landscape-container', true)
                 .attr('id', `landscape-${i}`)
@@ -212,11 +166,12 @@ function redrawCanvas(sets) {
             landscapes.push(new LandscapeMap(
                 `#landscape-${i}`,
                 data,
+                files[i],
                 landscapePosition.bandwidth(),
                 svgHeight,
                 color,
                 d3.max(maxTreeValues),
-                d3.max(adjustedHierarchies.map(d => d.height)),
+                d3.max(hierarchies.map(d => d.height)),
                 5
             ))
         })
@@ -275,7 +230,22 @@ function redrawCanvas(sets) {
             .attr('style', colorTextCopy.attr('style'))
             .text('\u25BC')
 
+        // d3.select('body').on('keydown', (event, d) => {
+        //     landscapes.forEach(landscape => {
+        //         const vis = landscape
+        //         switch (event.key) {
+        //             case 'ArrowLeft':
+        //                 vis.currentDepth -= vis.currentDepth > 1 ? 1 : 0
+        //                 break
+        //             case 'ArrowRight':
+        //                 vis.currentDepth += vis.currentDepth < vis.hierarchy.depth + vis.hierarchy.height ? 1 : 0
+        //         }
+        //         vis.drawTreemap(vis.currentHierarchy, vis.currentDepth)
+        //     })
+        // })
+
     })
+
 };
 
 

@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Pizza Margherita,0.37927,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Margherita
+Pizza Margherita (300g),0.37927,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Margherita
 "Mozzarella cheese, from cow's milk, at plant",0.26927,kg CO2 eq,1,1,0,raw materials/ingredients,France,Mozzarella cheese
 "Soft cheese, from cow's milk, consumption mix",0.26927,kg CO2 eq,2,2,1,raw materials/ingredients,France,Soft cheese
 "Cheese production; from raw milk, soft cheese ; French production mix, at plant; 1 kg of soft cheese (PGi)",0.26779,kg CO2 eq,3,3,2,raw materials/ingredients,France,Cheese production; from raw milk

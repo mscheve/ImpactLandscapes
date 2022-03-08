@@ -1,9 +1,10 @@
 class LandscapeMap {
-    constructor(_parentElement, _hierarchy, _width, _height, _color, _absoluteMax, _maxHeight, _annotationNumber) {
+    constructor(_parentElement, _hierarchy, _data, _width, _height, _color, _absoluteMax, _maxHeight, _annotationNumber) {
         this.svgWidth = _width
         this.svgHeight = _height
         this.parentElement = _parentElement
         this.hierarchy = _hierarchy
+        this.data = _data
         this.color = _color
         this.absoluteMax = _absoluteMax
         this.maxHeight = _maxHeight
@@ -16,11 +17,11 @@ class LandscapeMap {
 
         // vis.halfWidth = vis.svgWidth / 2
         // vis.halfHeight = vis.svgHeight / 2
-        vis.menuHeight = 100
+        vis.menuHeight = 150
         vis.annotationHeight = 75
         vis.annotationWidth = 150
-        vis.treemapRadius = (Math.min((vis.svgWidth / 2), ((vis.svgHeight - vis.annotationHeight) / 2) - vis.menuHeight))
-        vis.treemapCenter = [vis.svgWidth / 2, ((vis.svgHeight + vis.menuHeight)/2) ]
+        vis.treemapRadius = (Math.min(((vis.svgWidth) / 2), ((vis.svgHeight) / 2) - vis.menuHeight))
+        vis.treemapCenter = [vis.svgWidth / 2, ((vis.svgHeight + vis.menuHeight) / 2)]
         vis.minColor = '#4e8200'
         vis.midColor = '#ffe600'
         vis.maxColor = '#4f3515'
@@ -39,7 +40,8 @@ class LandscapeMap {
 
         vis._voronoiTreemap = d3.voronoiTreemap()
             .convergenceRatio([0.01])
-            .maxIterationCount([250]);
+            .maxIterationCount([250])
+            .minWeightRatio([0.001]);
 
         vis.fontScale = d3.scaleLinear().range([vis.minLabelSize, vis.maxLabelSize]).clamp(true);
 
@@ -48,6 +50,7 @@ class LandscapeMap {
             .paddingInner(0.2)
 
         vis.currentHierarchy = vis.hierarchy
+        landscapeGlobalValues.push(vis.hierarchy.value)
 
         vis.menuBandWidth = vis.menuBands.domain([...Array(vis.maxHeight + 1).keys()]).bandwidth()
 
@@ -107,9 +110,49 @@ class LandscapeMap {
             .style('stroke', vis.outerColor);
     }
 
-    drawTreemap(hierarchy, levelI) {
+    drawTreemap(hierarchy, levelI, sync) {
 
         const vis = this
+        
+        vis.absoluteMax = d3.max(landscapeGlobalValues)
+
+        if (hierarchy.id.includes('*')) {
+            hierarchy.id = hierarchy.id.replace('*', '')
+        }
+
+        if ((hierarchy.id != vis.currentHierarchy.id) || vis.initialRun || sync) {
+            vis.data = vis.data.filter(d => { return !(d.id.includes('-') || d.id.includes('*'))})
+            const improvementEntry = {
+                Process: "Difference relative to the landscape with the highest impact",
+                Amount: 0,
+                Unit: "kg CO2 eq",
+                id: '-',
+                hierarchy_level: 1,
+                parent_id: hierarchy.id,
+                Phase: "Relative Difference",
+                Location: "-",
+                Process_shorthand: 'Difference',
+                value: vis.absoluteMax ? vis.absoluteMax - hierarchy.value : 0
+            }
+
+            improvementEntry.value > 0.0001 ? vis.data.push(improvementEntry) : null
+            
+            if (!hierarchy.children) {
+                const dummyH = jQuery.extend({}, hierarchy.data)
+                dummyH.parent_id = hierarchy.id
+                dummyH.id = `${hierarchy.id}*`
+                vis.data.push(dummyH)
+            }
+
+            const freshHierarchy = d3.stratify()
+                .id(d => d.id)
+                .parentId(d => d.parent_id)(vis.data)
+                .each(d => d.value = d.data.value)
+
+            hierarchy = freshHierarchy.descendants().filter(d => d.id === hierarchy.id)[0]
+
+        }
+        // vis.hierarchy = hierarchy
 
         if (vis.currentDepth <= hierarchy.depth) {
             vis.currentDepth = hierarchy.children ? hierarchy.depth + 1 : hierarchy.depth
@@ -122,39 +165,50 @@ class LandscapeMap {
 
         vis.fontScale.domain([leaveValues(hierarchy)[0], leaveValues(hierarchy)[1]])
 
-        const t = d3.transition().duration(vis.initialRun ? 0 : 750)
+        const t = d3.transition().duration(vis.initialRun ? 0 : 500)
 
-        if ((hierarchy.id != vis.currentHierarchy.id) || vis.initialRun) {
+        if ((hierarchy.id != vis.currentHierarchy.id) || vis.initialRun || sync) {
             vis._voronoiTreemap.clip(vis.circlingPolygon)(hierarchy);
         }
+
+        hierarchy.sort((a,b) => b.depth - a.depth)
 
         const flattenedHierarchy = flattenHierarchy(hierarchy)
 
         //drawing voronoi cells
         const cellContainer = vis.treemapContainer.select('.cell-container')
+        
         const cells = cellContainer.selectAll(".cell")
             .data(flattenedHierarchy, d => d.id)
 
         cells.exit().remove()
 
+        cells.raise() //important to fix the html element order when redrawing landscapes
+
         cells.enter().append("path")
             .classed("cell", true)
             .attr('id', d => `cell-${d.id}`)
             .style("fill-opacity", function (d) { return (d.depth === levelI) || (!(d.children) && (d.depth <= levelI)) ? 1 : 0; })
-            .style("fill", d => d.depth === 0 ? vis.outerColor : 
-                d.id === '-' ? 
+            .style("fill", d => d.depth === 0 ? vis.outerColor :
+                d.id === '-' ?
                     waveGenerator(vis.textureContainer, vis.waveColor, d3.color(vis.waveColor).darker(-0.4), 15) : 
+                    // lineGenerator(vis.textureContainer, vis.waveColor, vis.outerColor, 30, true) : 
                     lineGenerator(vis.textureContainer, vis.color(d.data.Amount), d3.color(vis.color(d.data.Amount)).darker(0.4)))//function(d,i){return color(d.data.Amount)})
-            .style('stroke', _d => d3.color(vis.outerColor))
+            .style('stroke', d => d.id === '-' || d.depth === hierarchy.depth ? d3.color(vis.outerColor) : d3.color(vis.outerColor))
             .style('stroke-linejoin', 'round')
             .merge(cells)
             .transition(t)
             .style("fill-opacity", function (d) { return (d.depth === levelI) || (!(d.children) && (d.depth <= levelI)) ? 1 : 0; })
             .attr("d", function (d) { return "M" + d.polygon.join(",") + "z"; })
             .style('stroke-width', function (d) {
+                // if (d.depth > vis.currentDepth) {
+                //     return '0px'
+                // }
                 const substract = d.depth === hierarchy.depth + 1 ? 1 : 0
                 return Math.max(vis.maxBorderWidth - vis.stroke_delta * (d.depth - hierarchy.depth - substract), vis.minBorderWidth) + "px";
-            });
+            })
+
+        // d3.select('#cell--').lower()
 
         //drawing annotations around voronoi treemap
         const annotationContainer = vis.treemapContainer.select('.annotation-container')
@@ -201,11 +255,24 @@ class LandscapeMap {
                 vis.drawAnnotations(annotationContainer, hierarchy, d)
             })
             .on('click', (_event, d) => {
-                vis.drawTreemap(d, vis.currentDepth)
-                vis.currentHierarchy = d
+                if (!(d.id.includes('-'))) {
+                landscapeValueSync(vis, d)
+
+                landscapes.forEach(landscape => {
+                    if (vis === landscape) {
+                        const vis = landscape
+                        vis.drawTreemap(d, vis.currentDepth, true)
+                        vis.currentHierarchy = d
+                    }
+                    else {
+                        landscape.drawTreemap(landscape.currentHierarchy, landscape.currentDepth, true)
+                    }
+                })
+                vis.tooltip.hide()
+            }
             })
             .on('mouseout', (_event, _d) => vis.tooltip.hide())
-            .on('mouseover', (_event, d) => {
+            .on('mousemove', (_event, d) => {
                 vis.tooltip
                     .x(d3.polygonCentroid(d.polygon)[0])
                     .y(d3.polygonCentroid(d.polygon)[1])
@@ -221,19 +288,26 @@ class LandscapeMap {
             .data([hierarchy.depth], d => d)
 
         menuTitleContent.exit().remove()
+        
+        let titleUpper = ''
+        const titlePreScripts = ['<span style="vertical-align: 1px">\u29BF</span>', ..._.range(1, 50)]
+
+        hierarchy.ancestors().reverse().forEach((d, i) => i === hierarchy.ancestors().reverse().length - 1 ? '' : 
+        titleUpper += titlePreScripts[i] + (i != 0 ? '.' : '') + ' ' + d.data.Process_shorthand + ' \u203A ')
 
         menuTitleContent = menuTitleContent.enter().append('g')
             .attr('class', 'menu-title-container')
             .append('foreignObject')
-            .attr('width', vis.menuBands.range()[1])
+            .attr('width', vis.svgWidth * 1.35)//vis.menuBands.range()[1])
             .attr('height', vis.menuHeight)
-            .attr('transform', `translate(0, ${-vis.menuBandWidth - vis.menuHeight - 10})`)
+            .attr('transform', `translate(${-(vis.svgWidth * 1.35 - vis.menuBands.range()[1])/2}, ${-vis.menuBandWidth - vis.menuHeight - 10})`)
             .append('xhtml:div')
             .append('div')
             .classed('menu-title-parent', true)
             .append('div')
             .classed('menu-title', true)
-            .html(hierarchy.data.Process)
+            .html(`<div style="font-family: 'Open Sans', sans-serif; color: grey; font-size: 10px; line-height: normal; display: block;">${titleUpper}</div>` + 
+                `${hierarchy.data.Process}<br><span style="font-family: 'Open Sans', sans-serif; font-size: 13px">(${d3.format('.2f')(hierarchy.value)} ${hierarchy.data.Unit})</span>`)
             .merge(menuTitleContent)
 
         const menuRoadMap = menu.select('.menu-roadmap')
@@ -248,9 +322,9 @@ class LandscapeMap {
             .classed('menu-line', true)
             .merge(menuLines)
             .transition(t)
-            .attr('x1', d => vis.menuBands(d) + (vis.menuBands.bandwidth() - vis.menuBandWidth)/2)
+            .attr('x1', d => vis.menuBands(d) + (vis.menuBands.bandwidth() - vis.menuBandWidth) / 2)
             .attr('y1', - vis.menuBandWidth / 2)
-            .attr('x2', (d, _i, _list) => (d === 0 ? vis.menuBands(d)  : vis.menuBands(d - 1) + vis.menuBandWidth) + (vis.menuBands.bandwidth() - vis.menuBandWidth)/2)
+            .attr('x2', (d, _i, _list) => (d === 0 ? vis.menuBands(d) : vis.menuBands(d - 1) + vis.menuBandWidth) + (vis.menuBands.bandwidth() - vis.menuBandWidth) / 2)
             .attr('y2', - vis.menuBandWidth / 2)
             .attr('stroke', d => d === hierarchy.depth ? vis.minColor : 'lightgrey')
             .attr('stroke-width', vis.menuBandWidth / 10)
@@ -267,13 +341,13 @@ class LandscapeMap {
             .classed('menu-circle', true)
             .merge(menuItems)
             .transition(t)
-            .attr('cx', d => vis.menuBands(d) + vis.menuBandWidth / 2 + (vis.menuBands.bandwidth() - vis.menuBandWidth)/2)
+            .attr('cx', d => vis.menuBands(d) + vis.menuBandWidth / 2 + (vis.menuBands.bandwidth() - vis.menuBandWidth) / 2)
             .attr('cy', - vis.menuBandWidth / 2)
             .attr('r', vis.menuBandWidth / 2)
             .attr('fill', d => d === hierarchy.depth ? vis.minColor : 'white')
             .attr('stroke', d => d === vis.currentDepth ? 'black' : d === hierarchy.depth ? vis.minColor : 'lightgrey')
             .attr('stroke-width', d => d === vis.currentDepth ? 2 : 1)
-        
+
 
         const manuXAxis = d3.axisBottom(vis.menuBands);
         menuRoadMap.select('.manuXAxis').remove()
@@ -284,8 +358,8 @@ class LandscapeMap {
         menuRoadMap.selectAll('.manuXAxis .tick text')
             .attr('dy', (_d, i, element) => - element[i].getBBox().y)
             .attr('color', d => (d === hierarchy.depth) ? 'white' : d <= hierarchy.ancestors().reverse()[0].height ? 'black' : 'white')
-            .attr('font-size', Math.max(vis.menuBandWidth * 0.3, 10))
-            .attr('transform', `translate(0, ${vis.menuBandWidth/2})`)
+            .attr('font-size', Math.min(Math.max(vis.menuBandWidth * 0.5, 10), 13))
+            .attr('transform', `translate(0, ${vis.menuBandWidth / 2})`)
             .text(d => d === 0 ? '\u29BF' : d)
 
         menuRoadMap.attr('transform', `translate(${(vis.maxHeight - hierarchy.ancestors().reverse()[0].height) * ((vis.menuBands(1) - vis.menuBands(0)) / 2)},0)`)
@@ -299,18 +373,30 @@ class LandscapeMap {
             .classed('menu-button', true)
             .raise()
             .merge(menuButtons)
-            .attr('cx', d => vis.menuBands(d) + vis.menuBandWidth / 2 + (vis.menuBands.bandwidth() - vis.menuBandWidth)/2)
+            .attr('cx', d => vis.menuBands(d) + vis.menuBandWidth / 2 + (vis.menuBands.bandwidth() - vis.menuBandWidth) / 2)
             .attr('cy', - vis.menuBandWidth / 2)
             .attr('r', vis.menuBandWidth / 2)
             .attr('fill', 'transparent')
             .style('cursor', 'pointer')
             .on('click', (_event, d) => {
-                vis.drawTreemap(hierarchy.ancestors().reverse()[d], vis.currentDepth)
-                vis.currentHierarchy = hierarchy.ancestors().reverse()[d]
+
+                landscapeValueSync(vis, hierarchy.ancestors().reverse()[d])
+
+                landscapes.forEach(landscape => {
+                    if (vis === landscape) {
+                        const vis = landscape
+                        vis.drawTreemap(hierarchy.ancestors().reverse()[d], vis.currentDepth, true)
+                        vis.currentHierarchy = hierarchy.ancestors().reverse()[d]
+                    }
+                    else {
+                        landscape.drawTreemap(landscape.currentHierarchy, landscape.currentDepth, true)
+                    }
+                })
+
             })
 
         const menuSelectors = menuRoadMap.selectAll('.menu-selector')
-            .data(_.range(hierarchy.depth+1, hierarchy.depth + hierarchy.height + 1), d => d).raise()
+            .data(_.range(hierarchy.depth + 1, hierarchy.depth + hierarchy.height + 1), d => d).raise()
 
         menuSelectors.exit().remove()
 
@@ -318,7 +404,7 @@ class LandscapeMap {
             .classed('menu-selector', true)
             .raise()
             .merge(menuSelectors)
-            .attr('cx', d => vis.menuBands(d) + vis.menuBandWidth / 2 + (vis.menuBands.bandwidth() - vis.menuBandWidth)/2)
+            .attr('cx', d => vis.menuBands(d) + vis.menuBandWidth / 2 + (vis.menuBands.bandwidth() - vis.menuBandWidth) / 2)
             .attr('cy', - vis.menuBandWidth / 2)
             .attr('r', vis.menuBandWidth / 2)
             .attr('fill', 'transparent')
@@ -331,22 +417,23 @@ class LandscapeMap {
 
         //after first draw, set inital run to false to activate transition animations
         vis.initialRun = false
-        
+
     }
 
     drawAnnotations(annotationContainer, hierarchy, marking) {
-        
+
         const vis = this
-        
+
         if (marking) {
-            vis.markedIds.includes(marking.id) ? vis.markedIds = vis.markedIds.filter(d => {return !(d === marking.id)}) : vis.markedIds.push(marking.id) 
+            vis.markedIds.includes(marking.id) ? vis.markedIds = vis.markedIds.filter(d => { return !(d === marking.id) }) : vis.markedIds.push(marking.id)
         }
 
         vis.markedCells = hierarchy.descendants().filter(d => {
             return (d.depth === vis.currentDepth) || (!(d.children) && (d.depth <= vis.currentDepth))
             // return (d.depth === 1)
-        }).sort((a, b) => { return b.value - a.value }).slice(0, vis.annotationNumber)
-
+        }).sort((a, b) => { return b.value - a.value })
+        const markedMax = d3.max(vis.markedCells.map(d => d.data.Amount))
+        vis.markedCells = vis.markedCells.filter(d => d.value > markedMax * 0.15).slice(0, vis.annotationNumber)
         let markAdditions = vis.markedIds.filter(x => !vis.markedCells.map(d => d.id).includes(x))
         let markDeletions = vis.markedIds.filter(x => vis.markedCells.map(d => d.id).includes(x))
 
@@ -355,7 +442,7 @@ class LandscapeMap {
             // return (d.depth === 1)
         }).forEach(d => vis.markedCells.push(d))
 
-        vis.markedCells = vis.markedCells.filter(d => {return !(markDeletions.includes(d.id))})
+        vis.markedCells = vis.markedCells.filter(d => { return !(markDeletions.includes(d.id)) })
 
 
         let groupAnnotations = groupAnnotationCreator(vis.markedCells)
@@ -406,11 +493,11 @@ class LandscapeMap {
         const divDimensions = {}
 
         annotationDiv._groups[0].forEach(d => divDimensions[d.__data__.id] = { height: d.getBoundingClientRect().height, width: d.getBoundingClientRect().width })
-        
+
         const annotationPadding = 5
         const mapCentroid = d3.polygonCentroid(vis.circlingPolygon)
         const simulation = d3.forceSimulation(groupAnnotations)
-            .force("charge", d3.forceCollide().radius(50))
+            .force("charge", d3.forceCollide().radius(55))
             .force("r", d3.forceRadial(vis.treemapRadius + annotationPadding, mapCentroid[0], mapCentroid[1]))
             .force('x', d => d3.forceCenter(d.x, d.y))
             .alphaMin(0.001)
@@ -425,7 +512,7 @@ class LandscapeMap {
                 const originalOY = d.oy
                 d.ox = closestPoint(vis.dummyPaths.append('path').datum(d.polygon).lower().attr('fill', 'transparent').attr('d', d3.line().curve(d3.curveLinear)).node(), [d.x, d.y])[0]
                 d.oy = closestPoint(vis.dummyPaths.append('path').datum(d.polygon).lower().attr('fill', 'transparent').attr('d', d3.line().curve(d3.curveLinear)).node(), [d.x, d.y])[1]
-                if (((d.ox - d.x)**2 + (d.oy - d.y)**2)**0.5 > annotationPadding + 5) {
+                if (((d.ox - d.x) ** 2 + (d.oy - d.y) ** 2) ** 0.5 > annotationPadding + 5) {
                     d.ox = originalOX
                     d.oy = originalOY
                 }
@@ -438,7 +525,7 @@ class LandscapeMap {
             annotationDiv.each(d => {
                 d.centerAngle = geometric.lineAngle([mapCentroid, [d.x, d.y]])
             })
-            
+
             annotationDiv.e
 
             annotation3.each(d => {

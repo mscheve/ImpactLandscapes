@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Pizza Salami,0.52802,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Salami
+Pizza Salami (300g),0.52802,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Salami
 "Dry sausages, case ready, at plant",0.26084,kg CO2 eq,1,1,0,raw materials/ingredients,France,Dry sausages
 "Dry sausages; pork meat, Dry sausages, industrial production; French production, at plant; 1 kg of dry sausages product  (PDi)",0.26084,kg CO2 eq,2,2,1,raw materials/ingredients,France,Dry sausages; pork meat
 "Lean pork, raw, at plant",0.22902,kg CO2 eq,3,3,2,raw materials/ingredients,France,Lean pork

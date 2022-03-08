@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-"Milk chocolate, average consumption mix",2.9660735345,kg CO2 eq,0,0,,-,Global,Milk chocolate
+"Milk chocolate (180g), average consumption mix",2.9660735345,kg CO2 eq,0,0,,-,Global,Milk chocolate
 "Cocoa liquor, at plant (WFLDB 3.1)",1.3074032011,kg CO2 eq,1,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, at farm",1.2804516048,kg CO2 eq,2,2,1,-,Global,Cocoa beans
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.7448526828,kg CO2 eq,3,3,2,-,Indonesia,Cocoa beans

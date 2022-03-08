@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-"Milk Chocolate, sourced from Indonesia",4.89631559,kg CO2 eq,0,0,,-,Global,Milk Chocolate
+"Milk Chocolate (180g), sourced from Indonesia",4.89631559,kg CO2 eq,0,0,,-,Global,Milk Chocolate
 "Cocoa liquor, sourced from Indonesia",2.6188253622,kg CO2 eq,1,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",2.5918737659,kg CO2 eq,2,2,1,-,Indonesia,Cocoa beans
 "Land use change, perennial crop (WFLDB 3.1)",2.4441527756,kg CO2 eq,3,3,2,-,Indonesia,Land use change

@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Table Apple,0.2842123556,kg CO2 eq,0,0,,root,-,Table Apple
+Table Apple (1kg),0.2842123556,kg CO2 eq,0,0,,root,-,Table Apple
 Farm,0.1298022586,kg CO2 eq,1,1,0,farm,France,Farm
 "Apple, conventional, national average, at orchard/kg",0.0983917831,kg CO2 eq,2,2,1,farm,France,Apple
 "Apple, conventional, control, at orchard/kg",0.0893546207,kg CO2 eq,3,3,2,farm,France,Apple

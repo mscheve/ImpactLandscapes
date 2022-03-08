@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-"Milk Chocolate, sourced from Cote d'Ivoire",1.9997465369,kg CO2 eq,0,0,,-,Global,Milk Chocolate
+"Milk Chocolate (180g), sourced from Cote d'Ivoire",1.9997465369,kg CO2 eq,0,0,,-,Global,Milk Chocolate
 "Milk powder, skimmed, spray dried, at dairy (WFLDB 3.1)",0.7876136277,kg CO2 eq,1,1,0,-,Global,Milk powder
 "Liquid milk, whole milk, pasteurised, at dairy (WFLDB 3.1)",0.762613328,kg CO2 eq,2,2,1,-,Global,Liquid milk
 "Raw milk, production mix, at farm",0.7189433106,kg CO2 eq,3,3,2,-,Global,Raw milk

@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Pizza Bolognese,2.36583,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Bolognese
+Pizza Bolognese (300g),2.36583,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Bolognese
 "Ground beef, fresh, for processing",2.09865,kg CO2 eq,1,1,0,raw materials/ingredients,France,Ground beef
 "Fresh ground beef production; industrial production; French production mix, at plant | Fresh ground beef production; industrial production; French production mix, at plant; 1 kg of fresh ground beef, for processing (PDi)",2.09865,kg CO2 eq,2,2,1,raw materials/ingredients,France,Fresh ground beef production; industrial production; French production mix
 "Slaughtering and chilling; of beef, industrial production; French production mix; 1 kg of beef quarter, for processing",2.09106,kg CO2 eq,3,3,2,raw materials/ingredients,France,Slaughtering and chilling; of beef

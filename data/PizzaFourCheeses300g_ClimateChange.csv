@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-Pizza Four Cheeses,0.88687,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Four Cheeses
+Pizza Four Cheeses (300g),0.88687,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Four Cheeses
 "Cheese, buche, from goat's milk, at plant",0.3434,kg CO2 eq,1,1,0,raw materials/ingredients,France,Cheese
 "Soft cheese, from goat's milk, consumption mix",0.3434,kg CO2 eq,2,2,1,raw materials/ingredients,France,Soft cheese
 "Goat Cheese production; from raw milk, soft cheese ; French production mix, at plant; 1 kg of soft cheese",0.34188,kg CO2 eq,3,3,2,raw materials/ingredients,France,Goat Cheese production; from raw milk

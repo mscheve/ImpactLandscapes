@@ -1,5 +1,5 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-"Milk Chocolate, sourced from Ghana",2.7154653134,kg CO2 eq,0,0,,-,Global,Milk Chocolate
+"Milk Chocolate (180g), sourced from Ghana",2.7154653134,kg CO2 eq,0,0,,-,Global,Milk Chocolate
 "Cocoa liquor, sourced from Ghana",1.1371379363,kg CO2 eq,1,1,0,-,Europe,Cocoa liquor
 "Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",1.11018634,kg CO2 eq,2,2,1,-,Ghana,Cocoa beans
 "Land use change, perennial crop (WFLDB 3.1)",1.0125497399,kg CO2 eq,3,3,2,-,Ghana,Land use change
