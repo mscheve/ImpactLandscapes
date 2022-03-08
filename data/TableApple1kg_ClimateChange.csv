@@ -1,9 +1,9 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
 Table Apple (1kg),0.2842123556,kg CO2 eq,0,0,,root,-,Table Apple
 Farm,0.1298022586,kg CO2 eq,1,1,0,farm,France,Farm
-"Apple, conventional, national average, at orchard/kg",0.0983917831,kg CO2 eq,2,2,1,farm,France,Apple
-"Apple, conventional, control, at orchard/kg",0.0893546207,kg CO2 eq,3,3,2,farm,France,Apple
-"Apple, conventional, full production years (phase), at orchard/kg",0.0666528677,kg CO2 eq,4,4,3,farm,France,Apple
+"Apple, conventional, national average, at orchard/kg",0.0983917831,kg CO2 eq,2,2,1,farm,France,Orchard
+"Apple, conventional, control, at orchard/kg",0.0893546207,kg CO2 eq,3,3,2,farm,France,Orchard
+"Apple, conventional, full production years (phase), at orchard/kg",0.0666528677,kg CO2 eq,4,4,3,farm,France,Apple (full phase)
 "Maintenance, with platform self-propelled (special crops)/hr",0.0293088421,kg CO2 eq,5,5,4,farm,France,Maintenance
 "Diesel combustion, in tractor/kg",0.0186332967,kg CO2 eq,6,6,5,farm,France,Diesel combustion
 "Harvester/Machine with engine, LT >10'000h, production/kg",0.0072329489,kg CO2 eq,7,6,5,farm,France,Harvester/Machine with engine
@@ -54,7 +54,7 @@ cyclic N-compound,0.0003663574,kg CO2 eq,51,5,4,farm,Global,cyclic N-compound
 copper oxide production,0.0003098559,kg CO2 eq,52,5,4,farm,Europe,copper oxide production
 "Fertilizing, with spreader/broadcaster, 500 l (orchard)/hr",0.0002998707,kg CO2 eq,53,5,4,farm,France,Fertilizing
 nitrile-compound,0.0002867626,kg CO2 eq,54,5,4,farm,Global,nitrile-compound
-"Apple, conventional, plantation and destruction (phase), at orchard/p",0.0152013159,kg CO2 eq,55,4,3,farm,France,Apple
+"Apple, conventional, plantation and destruction (phase), at orchard/p",0.0152013159,kg CO2 eq,55,4,3,farm,France,Apple (first/last phase)
 "polyethylene production, high density, granulate",0.0028282728,kg CO2 eq,56,5,55,farm,Europe,polyethylene production
 "Maintenance, with platform self-propelled (special crops)/hr",0.0019442817,kg CO2 eq,57,5,55,farm,France,Maintenance
 "Diesel combustion, in tractor/kg",0.0012360904,kg CO2 eq,58,6,57,farm,France,Diesel combustion
@@ -73,7 +73,7 @@ nitrile-compound,0.0002867626,kg CO2 eq,54,5,4,farm,Global,nitrile-compound
 "chemical production, organic",0.0003203012,kg CO2 eq,71,5,55,farm,Global,chemical production
 "Ploughing, with 1 soc plough/hr",0.0002944915,kg CO2 eq,72,5,55,farm,France,Ploughing
 "Diesel combustion, in tractor/kg",0.000290218,kg CO2 eq,73,5,55,farm,France,Diesel combustion
-"Apple, conventional, first production years (phase), at orchard/kg",0.007500437,kg CO2 eq,74,4,3,farm,France,Apple
+"Apple, conventional, first production years (phase), at orchard/kg",0.007500437,kg CO2 eq,74,4,3,farm,France,Apple (early phase)
 "Plant protection, spraying, with atomiser/sprayer, 2000 l/hr",0.0024999059,kg CO2 eq,75,5,74,farm,France,Plant protection
 "Diesel combustion, in tractor/kg",0.0019293383,kg CO2 eq,76,6,75,farm,France,Diesel combustion
 diesel,0.0003251885,kg CO2 eq,77,6,75,farm,Europe without Switzerland,diesel
@@ -81,17 +81,17 @@ diesel,0.0003251885,kg CO2 eq,77,6,75,farm,Europe without Switzerland,diesel
 "Diesel combustion, in tractor/kg",0.0013484623,kg CO2 eq,79,6,78,farm,France,Diesel combustion
 "Harvester/Machine with engine, LT >10'000h, production/kg",0.0005234371,kg CO2 eq,80,6,78,farm,France,Harvester/Machine with engine
 "Plant protection, chemical weeding, with atomiser 400 l | Plant protection, chemical weeding, with atomiser 400 l",0.0003173193,kg CO2 eq,81,5,74,farm,France,Plant protection
-"Apple, conventional, scab resistant, at orchard/kg",0.0090371624,kg CO2 eq,82,3,2,farm,France,Apple
-"Apple, conv., scab resistant, full production years (phase), at orchard/kg",0.00668904,kg CO2 eq,83,4,82,farm,France,Apple
+"Apple, conventional, scab resistant, at orchard/kg",0.0090371624,kg CO2 eq,82,3,2,farm,France,Orchard
+"Apple, conv., scab resistant, full production years (phase), at orchard/kg",0.00668904,kg CO2 eq,83,4,82,farm,France,Apple (full phase)
 "Maintenance, with platform self-propelled (special crops)/hr",0.003256538,kg CO2 eq,84,5,83,farm,France,Maintenance
 "Diesel combustion, in tractor/kg",0.0020703663,kg CO2 eq,85,6,84,farm,France,Diesel combustion
 "Harvester/Machine with engine, LT >10'000h, production/kg",0.000803661,kg CO2 eq,86,6,84,farm,France,Harvester/Machine with engine
 diesel,0.0003489587,kg CO2 eq,87,6,84,farm,Europe without Switzerland,diesel
 "Plant protection, spraying, with atomiser/sprayer, 2000 l/hr",0.0007646068,kg CO2 eq,88,5,83,farm,France,Plant protection
 "Diesel combustion, in tractor/kg",0.0005900963,kg CO2 eq,89,6,88,farm,France,Diesel combustion
-"Apple, conv.,scab resistant, plantation and destruction (phase), at orchard/p",0.0016248989,kg CO2 eq,90,4,82,farm,France,Apple
+"Apple, conv.,scab resistant, plantation and destruction (phase), at orchard/p",0.0016248989,kg CO2 eq,90,4,82,farm,France,Apple (first/last phase)
 "polyethylene production, high density, granulate",0.0003142525,kg CO2 eq,91,5,90,farm,Europe,polyethylene production
-"Apple, conv., scab resistant, first production years (phase), at orchard/kg",0.0007232236,kg CO2 eq,92,4,82,farm,France,Apple
+"Apple, conv., scab resistant, first production years (phase), at orchard/kg",0.0007232236,kg CO2 eq,92,4,82,farm,France,Apple (early phase)
 "transport, freight, lorry 16-32 metric ton, EURO6",0.0299395619,kg CO2 eq,93,2,1,farm,Europe,transport
 "transport, freight train",0.001224849,kg CO2 eq,94,2,1,farm,Europe,transport
 Distribution,0.095522504,kg CO2 eq,95,1,0,distribution,France,Distribution
@@ -107,8 +107,8 @@ tap water,0.0004644071,kg CO2 eq,104,2,99,retail,Europe without Switzerland,tap 
 Consumption,0.0123172966,kg CO2 eq,105,1,0,consumption,France,Consumption
 "treatment of municipal solid waste, unsanitary landfill, wet infiltration class",0.0114039286,kg CO2 eq,106,2,105,consumption,Global,treatment of municipal solid waste
 "treatment of biowaste, municipal incineration | Biowaste",0.000913368,kg CO2 eq,107,2,105,consumption,Global,treatment of biowaste
-"Apple, conventional, full production years (phase), at orchard/kg",0.009246228599999996,kg CO2 eq,108,5,4,farm,France,Apple
+"Apple, conventional, full production years (phase), at orchard/kg",0.009246228599999996,kg CO2 eq,108,5,4,farm,France,Apple (full phase)
 "Ammonia, steam reforming, at plant (WFLDB 3.5)",0.000573723,kg CO2 eq,109,9,22,farm,Europe,Ammonia
-"Apple, conventional, plantation and destruction (phase), at orchard/p",0.001916333600000002,kg CO2 eq,110,5,55,farm,France,Apple
-"Apple, conventional, first production years (phase), at orchard/kg",0.0009617758999999997,kg CO2 eq,111,5,74,farm,France,Apple
-"Apple, conv., scab resistant, full production years (phase), at orchard/kg",0.0010273588000000002,kg CO2 eq,112,5,83,farm,France,Apple
+"Apple, conventional, plantation and destruction (phase), at orchard/p",0.001916333600000002,kg CO2 eq,110,5,55,farm,France,Apple (first/last phase)
+"Apple, conventional, first production years (phase), at orchard/kg",0.0009617758999999997,kg CO2 eq,111,5,74,farm,France,Apple (early phase)
+"Apple, conv., scab resistant, full production years (phase), at orchard/kg",0.0010273588000000002,kg CO2 eq,112,5,83,farm,France,Apple (full phase)
