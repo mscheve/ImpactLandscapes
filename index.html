@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang='en'>
 
+
 <head>
+  <!-- html setup and metadata definition -->
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Impact Landscapes</title>
-  <meta name="description" content="d3-voronoi-treemap plugin to remake 'The Costs of Being Fat, in Actual Dollars'">
+  <meta name="description"
+    content="Interactive Voronoi treemaps supporting the interpretability and communication of Life Cycle Assessments.">
+
+  <!-- importing the favicon image -->
+  <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon-16x16.png">
+
+  <!-- importing core d3.js package -->
   <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
-  <script src="https://rawcdn.githack.com/Kcnarf/d3-weighted-voronoi/v1.1.0/build/d3-weighted-voronoi.js"></script>
-  <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-map/v2.1.0/build/d3-voronoi-map.js"></script>
+
+  <!-- importing voronoi related packages -->
+  <script src="https://rawcdn.githack.com/Kcnarf/d3-weighted-voronoi/v1.1.0/build/d3-weighted-voronoi.js"></script> <!-- dependency of d3-voronoi-treemap -->
+  <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-map/v2.1.0/build/d3-voronoi-map.js"></script> <!-- dependency of d3-voronoi-treemap -->
   <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-treemap/v1.1.1/build/d3-voronoi-treemap.js"></script>
-  <script src="https://unpkg.com/textures@1.2.0/dist/textures.js"></script>
-  <script src="https://unpkg.com/geometric@1.0.0/build/geometric.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- importing legend related package -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"
     integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- importing additional supporting packages -->
+  <script src="https://unpkg.com/textures@1.2.0/dist/textures.js"></script>
+  <script src="https://unpkg.com/geometric@1.0.0/build/geometric.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+  <!-- importing jqeury related packages and stylesheet -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
     integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-  
+
+  <!-- importing bootstrap related package and stylesheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
+  <!-- importing custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- connecting to google fonts API and loading Work Sans and Open Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -37,19 +58,24 @@
     rel="stylesheet">
 </head>
 
+
 <body>
   <div class="web-layout">
+
+    <!-- start of legend html implementation -->
     <div class="info-layout" id="info-area">
+
+      <!-- start of legend header html implementation -->
       <div class="info-item" id="info-header">
         <div id="info-title">Impact Landscapes</div>
+
+        <!-- start of settings html implementation -->
         <div id="info-settings">
-          <!-- <a href="#" id="info-gear">⚙️</a> -->
-          <!-- Button trigger modal -->
-          <button type="button" id='info-gear' class="btn" style="background-color:transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" id='info-gear' class="btn" style="background-color:transparent" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
             ⚙️
           </button>
 
-          <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -64,57 +90,215 @@
                   <br>
                   <h6 id="exampleModalLabel">Dataset selection</h6>
                   <select id="data-select" class="form-control" multiple aria-label="multiple select example"></select>
-                  <br>
-                  <a href="https://forms.gle/rB2DicfzQFLMB6RL8"><h6>user-test form</h6></a>              
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" id="apply-settings" style="background-color: #4e8200; border-color: #4e8200;">Apply</button>
+                  <button type="button" class="btn btn-primary" id="apply-settings">Apply</button>
                 </div>
               </div>
             </div>
           </div>
           <span>settings</span>
         </div>
+        <!-- end of settings html implementation -->
+
       </div>
+      <!-- end of legend header html implementation -->
+
+      <!-- start of legend body implementation -->
+      <!-- first paragraph -->
       <div class="info-item">
-        This visualization tries to give both a high and low
-        level insight into the environmental impact of product
-        lifecycles by offering a "helicopter view" over the
-        involved processes and products (i.e. fields).</div>
+        are interactive
+        <a class="glossary" data-toggle="tooltip" data-bs-placement="right"
+          title="Treemap that uses weighted Voronoi tessellation to recursively partition convex polygons to visualize hierarchical data. The area of these polygons (fields of the landscape) is proportional to the weights of their corresponsing nodes (processes).">Voronoi
+          treemaps</a>
+        that aim to support the interpretation and communication of
+        <a class="glossary" data-toggle="tooltip" data-bs-placement="right"
+          title="ISO standardized framework for measuring the environmental impacts of products or services over their entire life cycle.">Life
+          Cycle Assessment</a>
+        (LCA) results.
+      </div>
+      <!-- second paragraph -->
       <div class="info-item">
-        The underlying data is of a hierarchical nature, meaning
-        that every process is the aggregate of its subprocesses.
-        As such, all fields can be subdivided into smaller fields,
-        where the size of a field indicates the impact of the corresponding
-        process/product relative to the whole landscape in view.
+        More specifically, the visualization on the right shows
+        <div style="display:inline-block" id="legendNIndicator"></div>
+        <a class="glossary" data-toggle="tooltip" data-bs-placement="right"
+          title="Hierarchical representation of LCA result data that provides the upstream total impact per tier/stage in the product system life cycle.">contribution
+          tree(s)</a> concerning
+        <a data-toggle="tooltip" id="legendEIndicatorTT" data-bs-placement="right">
+          <div class="glossary" style="display:inline-block" id="legendEIndicator"></div>
+        </a>,
+        which are hierarchical representations of LCA results. As such, every field marks a process within the
+        contribution tree of its parent
+        <a class="glossary" data-toggle="tooltip" data-bs-placement="right"
+          title="Within the context of LCA, a product or service analyzed from the life cycle perspective is denoted as a product system.">product
+          system</a>.
+        Furthermore, every process can have subprocesses and, therefore, the landscape has several (hidden) layers. For
+        more information on how to navigate the landscape click
+        <a class="glossary" data-bs-toggle="modal" data-bs-target="#tutorialModal">here</a>.
       </div>
-      <div class="info-item" id="info-roadmap">
-        The menu, or "roadmap", above every landscape indicates the subject of
-        the landscape that is in view (circle 1). Circle 2 indicates how many
-        layers lay on top of the current landscape, while circle 3 indicates
-        how many underlying layers are displayed in the current landscape.
-        This menu can be used to navigate through the landscape by clicking on
-        the circles.
-        <br><br>
-      </div>
+      <!-- third paragraph (color specification) -->
       <div class="info-item" id="info-color">
-        The color of a field indicates its impact normalized over all fields
-        of all landscapes. In other words, a nice green landscape is preferred
-        over an arid brown landscape. Water (i.e. blue fields), are not part of
-        the landscape and indicate the improvement in relation to the worst landscape.
+        The color of a field indicates its impact normalized over all data. In other words, a fertile green landscape is
+        preferred over an arid brown landscape.
         <br><br>
       </div>
-      <div class="info-item"><a href="https://www.linkedin.com/in/martijnscheve/">contact</a> | disclaimer</div>
+      <!-- fourth paragraph (size specification) -->
+      <div class="info-item" id="info-size">
+        In addition to the color, the size of a field indicates its impact normalized over all visible data. In other
+        words, small fields are better than large fields.
+        <br><br>
+      </div>
+      <!-- end of legend body html implementation -->
     </div>
+    <!-- end of legend html implementation -->
+
     <div id="plotting-area">
       <svg></svg>
     </div>
   </div>
 
+  <!-- start of tutorial html implementation -->
+  <div class="modal fade" id="tutorialModal" tabindex="-1" aria-labelledby="tutorialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" , style="width: auto; max-width: 1000px; display: table;">
+      <div class="modal-content">
+
+        <!-- tutorial header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">How to use?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- tutorial body -->
+        <div class="modal-body">
+
+          <!-- start of tutorial step 1 implementation -->
+          <div class="modal-split">
+            <div class="tut-div">
+              <img src="pics/exampleLandscape_tutorial_step1.png" , style="width: 100%; image-rendering: auto;">
+            </div>
+            <div class="tut-div" style="padding: 10px; width: 175%; align-items: center; display: flex;">
+              <div>
+                <h6>Welcome!</h6>
+                <br>
+                <p>In a moment you’ll be able to explore some impact landscapes. Before you dive in, it is advised to
+                  quickly go through this short tutorial on how to use them.</p>
+                <p>Impact landscapes are interactive
+                  <a class="glossary" data-toggle="tooltip" data-bs-placement="bottom"
+                    title="Treemap that uses weighted Voronoi tessellation to recursively partition convex polygons to visualize hierarchical data. The area of these polygons (fields of the landscape) is proportional to the weights of their corresponsing nodes (processes).">Voronoi
+                    treemaps</a> that aim to support the interpretation and
+                  communication of
+                  <a class="glossary" data-toggle="tooltip" data-bs-placement="bottom"
+                    title="ISO standardized framework for measuring the environmental impacts of products or services over their entire life cycle.">Life
+                    Cycle Assessment</a> (LCA) results.
+                </p>
+                <p>Every landscape represents the impact
+                  <a class="glossary" data-toggle="tooltip" data-bs-placement="bottom"
+                    title="Hierarchical representation of LCA result data that provides the upstream total impact per tier/stage in the product system life cycle.">contribution
+                    tree</a> of a single
+                  <a class="glossary" data-toggle="tooltip" data-bs-placement="bottom"
+                    title="Within the context of LCA, a product or service analyzed from the life cycle perspective is denoted as a product system.">product
+                    system</a>
+                  or one of its (sub)processes. As such, every field of the landscape marks a process within the
+                  contribution tree of its parent product system. Furthermore, every process can have subprocesses and,
+                  therefore, the landscape has several (hidden) layers. How you can navigate the landscape(s) and their
+                  layers will be presented in the subsequent tutorial steps.
+                </p>
+                <p>The amount of impact that is associated with every field is indicated both by its color and its
+                  surface area size. Like the type of impact (e.g. climate change), the color and size specification are
+                  data-dependent. Therefore, more detailed information on these 3 aspects can be found in the legend to
+                  the left of the landscapes.
+                </p>
+                <p>When comparing multiple impacts landscapes to each other, a dashed ring will indicate the impact
+                  improvement of a landscape compared to the biggest/worst landscape. To help you identify impact
+                  “hotspots”, fields with a large impact have been annotated with their corresponding process name. When
+                  necessary, you can add and delete annotations yourself by right-clicking on the fields.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of tutorial step 1 implementation -->
+
+          <!-- start of tutorial step 2 implementation -->
+          <div class="modal-split">
+            <div style="flex-direction:column; width: 666px">
+              <div class="tut-div">
+                <img src="pics/annotatedRoadmap_tutorial_step2.png" , style="width: 100%; image-rendering: auto;">
+              </div>
+              <div class="tut-div" style="padding: 10px;">
+                <br>
+                <p>Above every landscape, there is an area that contains two key elements, namely, the information
+                  regarding the focal process and the navigation of the landscape.
+                </p>
+                <h6>The Roadmap</h6>
+                <p>Every impact landscape has an interactable navigation menu called the “roadmap” (5). This roadmap
+                  visualizes wherein the hierarchy of the contribution tree you are located by representing the
+                  <a class="glossary" data-toggle="tooltip" data-bs-placement="bottom"
+                    title="The process that is represented by the entire landscape. In other words, all fields of the landscape represent subprocesses of the focal process.">focal
+                    process</a>
+                  with a green-filled dot (7). The green-bordered dots to the left of the focal dot represent the
+                  hierarchy levels that have already been traversed and the processes corresponding to these dots are
+                  displayed above the title (1). The leftmost dot with the black circle inside (6) always represents the
+                  <a class="glossary" data-toggle="tooltip" data-bs-placement="bottom"
+                    title="The very first or parent node of a tree structure, in this case the product system.">root</a>
+                  of the contribution tree. The grey-bordered dots to the right of the focal dot represent what levels
+                  can still be traversed from the perspective of the focal process.
+                </p>
+                <p>To illustrate the logic behind the roadmap, the same colored dots have been laid out in a normal tree
+                  structure in the figure on the right.
+                </p>
+              </div>
+            </div>
+            <img src="pics/roadmapLogic_tutorial_step2.png" ,
+              style="width: 300px; height: auto; image-rendering: auto; object-fit: contain;">
+          </div>
+          <!-- end of tutorial step 2 implementation -->
+
+          <!-- start of tutorial step 3 implementation -->
+          <div class="modal-split">
+            <div class="tut-div" style="width: 350px">
+              <img src="pics/offLandscapeInteraction_tutorial_step3.gif" , style="width: 100%; image-rendering: auto;">
+            </div>
+            <div class="tut-div"
+              style="padding: 10px; width: 400px; align-items: left; display: flex; flex-direction: column;">
+              <p>There are two ways with which you can navigate the landscape(s) and explore the hidden layers.</p>
+              <h6>Off-landscape / roadmap interaction (left figure)</h6>
+              <p>On the one hand, you can use the roadmap to guide your exploration. By clicking on the right of the
+                green filled focal dot, you can control the maximum level of detail that is revealed on the impact
+                landscape (i.e. how many hierarchy levels down are shown). This is indicated by the black-bordered dot.
+                By clicking on the left of the focal dot, you can return to one of the upper hierarchy levels, which
+                will move the focal dot to the left.
+              </p>
+              <h6>On-landscape / field interaction (right figure)</h6>
+              <p>On the other hand, you can use the fields to traverse the contribution tree and to get details on
+                demand. By clicking on the fields, you can move down the hierarchy, which will move the focal dot to the
+                right. In addition, you can hover over any field at which point a window will pop up containing
+                additional information on the associated process.
+              </p>
+              <p><em>You now know the most important aspects of the impact landscapes. Feel free to play around with
+                  them and adjust their settings to your preference. Enjoy!</em>
+              </p>
+            </div>
+            <div class="tut-div" style="width: 350px">
+              <img src="pics/onLandscapeInteraction_tutorial_step4.gif" , style="width: 100%; image-rendering: auto;">
+            </div>
+          </div>
+          <!-- end of tutorial step 3 implementation -->
+        </div>
+
+        <!-- empty footer of tutorial (buttons are added through javascript) -->
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of tutorial html implementation -->
+
+  <!-- importing custom javascript scripts -->
+  <script src="js/indicators.js"></script>
+  <script src="js/datasets.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/DrawingFunctions/tooltip.js"></script>
-  <script src="js/DrawingFunctions/landscapeMap.js"></script>
+  <script src="js/impact_landscape.js"></script>
   <script src="js/helpers.js"></script>
 </body>
 
-</html>
+
+</html

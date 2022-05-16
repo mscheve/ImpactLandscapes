@@ -1,7 +1,25 @@
+/* this css stylesheet contains additional styling specifications besides 
+the styling that is applied dynamically with javascript (which is the majority) */
+
+
+/* start of changing html defaults and specifying general layout styling */
 .web-layout {
     display: flex;
 }
 
+body {
+    margin: 0px;
+}
+
+h6 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+    margin-bottom: 0px;
+    text-align: left !important;
+}
+/* end of changing html defaults and specifying general layout styling */
+
+/* start of legend and settings styling */
 .info-layout {
     display: flex;
     flex-direction: column;
@@ -28,10 +46,13 @@
 }
 
 #info-area {
-    background-color: rgb(247, 247, 247);
+    background-color: #fff/*#f1f1f1*/;
     /* border-right: 1px solid black; */
     width: 300px;
-    height: 100vh
+    height: calc(100vh - 20px);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px #4e4e4e;
 }
 
 #info-header {
@@ -51,18 +72,43 @@
     margin: 0;
     padding: 0;
 }
+/* end of legend and settings styling */
+
+/* start of keyword tooltip styling */
+.glossary {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.glossary:hover {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+}
+/* end of keyword tooltip styling */
 
 
+/* start of toturial styling */
+.modal-split {
+    display: flex;
+}
+
+.tut-div {
+    width: 100%;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+}
+/* end of tutorial styling */
+
+/* start of field label styling */
 .label {
     text-anchor: middle;
     font-family: 'Work Sans', sans-serif;
     dominant-baseline: central;
 }
-
-body {
-    margin: 0px;
-}
+/* end of field label styling */
   
+/* start of hover information window styling */
 .hoverer {
     fill: transparent;
     stroke: white;
@@ -108,7 +154,9 @@ body {
 .hover-content-table > tr:last-child {
     border-bottom: hidden;
 }
+/* end of hover information window styling */
 
+/* start of annotation styling */
 .annotation-object{
     overflow: visible;
 }
@@ -128,14 +176,15 @@ body {
 
 .annotation-div {
     /* word-wrap: break-word; */
-    background-color: rgba(255, 255, 255, 0);
-    color:#383838;
+    background-color: rgb(255, 255, 255);
+    color:#000000;
     border-radius: 5px;
     max-width: 100%;
     max-height: 100%;
     border-width: 1.5px;
     overflow: hidden;
     float: right;
+    text-align: center;
 }
 
 .annotation.title {
@@ -151,28 +200,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px; 
 }
+/* end of annotation styling */
 
+/* start of title/navigation (roadmap) styling */
 .menu-container .domain {
     stroke-width: 0;
 }
 
 .menu-container .tick {
     stroke-width: 0;
-}
-
-#info-roadmap .domain {
-    stroke-width: 0;
-}
-
-#info-roadmap .tick {
-    stroke-width: 0;
-}
-
-#info-roadmap .tick text{
-    font-family: 'Work Sans', sans-serif;
-    padding: 0;
-    margin: 0;
-    dominant-baseline: central;
 }
 
 .menu-container .tick text{
@@ -195,3 +231,5 @@ body {
 .menu-title {
     font-size: 15px;
 }
+/* end of title/navigation (roadmap) styling */
+

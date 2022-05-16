@@ -1,0 +1,210 @@
+Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
+Pizza Bolognese,2.36583,kg CO2 eq,0,0,,raw materials/ingredients,France,Pizza Bolognese
+"Ground beef, fresh, for processing",2.09865,kg CO2 eq,1,1,0,raw materials/ingredients,France,Ground beef
+"Fresh ground beef production; industrial production; French production mix, at plant | Fresh ground beef production; industrial production; French production mix, at plant; 1 kg of fresh ground beef, for processing (PDi)",2.09865,kg CO2 eq,2,2,1,raw materials/ingredients,France,Fresh ground beef production; industrial production; French production mix
+"Slaughtering and chilling; of beef, industrial production; French production mix; 1 kg of beef quarter, for processing",2.09106,kg CO2 eq,3,3,2,raw materials/ingredients,France,Slaughtering and chilling; of beef
+"Slaughtering and chilling; of beef, industrial production; French production mix, at plant;1 kg of beef carcass, for processing",2.09106,kg CO2 eq,4,4,3,raw materials/ingredients,France,Slaughtering and chilling; of beef
+"Beef cattle, national average, at farm gate/kg",2.08624,kg CO2 eq,5,5,4,raw materials/ingredients,France,Beef cattle
+"Suckler cull cow, conventional, suckler cow system, less than 1.2 LU per ha, at",0.37243,kg CO2 eq,6,6,5,raw materials/ingredients,France,Suckler cull cow
+"Calf of 0 day, conventional, suckler cow system, less than 1.2 LU per ha (animal",0.13281,kg CO2 eq,7,7,6,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.01379,kg CO2 eq,8,8,7,raw materials/ingredients,France,Grazed grass
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.00719,kg CO2 eq,9,8,7,raw materials/ingredients,France,Baled hay
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.01621,kg CO2 eq,10,7,6,raw materials/ingredients,France,Grazed grass
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.01609,kg CO2 eq,11,7,6,raw materials/ingredients,France,Baled hay
+"Soft wheat grain, conventional, national average, animal feed, at farm gate, pro",0.00315,kg CO2 eq,12,7,6,raw materials/ingredients,France,Soft wheat grain
+Soft wheat grain stored and transported,0.00246,kg CO2 eq,13,7,6,raw materials/ingredients,France,Soft wheat grain stored and transported
+"Soft wheat grain, conventional, national average, animal feed, at farm gate, pro",0.00238,kg CO2 eq,14,8,13,raw materials/ingredients,France,Soft wheat grain
+"Young suckler bull, conventional, fattening system, less than 1.2 LU per ha, at",0.34436,kg CO2 eq,15,6,5,raw materials/ingredients,France,Young suckler bull
+"Conventional suckler cow system, less than 1.2 LU per ha, animal class 1, at far",0.26691,kg CO2 eq,16,7,15,raw materials/ingredients,France,Conventional suckler cow system
+"Calf of 0 day, conventional, suckler cow system, less than 1.2 LU per ha (animal",0.18063,kg CO2 eq,17,8,16,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.01876,kg CO2 eq,18,9,17,raw materials/ingredients,France,Grazed grass
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.00978,kg CO2 eq,19,9,17,raw materials/ingredients,France,Baled hay
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.00808,kg CO2 eq,20,8,16,raw materials/ingredients,France,Baled hay
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.00832,kg CO2 eq,21,7,15,raw materials/ingredients,France,Soybean meal BR
+"Soybean meal, crushing in Brazil, animal feed, at mill, average",0.00771,kg CO2 eq,22,8,21,raw materials/ingredients,Brazil,Soybean meal
+"Soybean oil and meal, Brazil, common process meal and oil, average",0.00729,kg CO2 eq,23,9,22,raw materials/ingredients,Brazil,Soybean oil and meal
+"Soybean, average, animal feed, at farm gate",0.00647,kg CO2 eq,24,10,23,raw materials/ingredients,Brazil,Soybean
+"Soybean, Center west average, animal feed, at farm gate",0.00599,kg CO2 eq,25,11,24,raw materials/ingredients,Brazil,Soybean
+"Soybean grain, no tillage, Centerwest",0.00478,kg CO2 eq,26,12,25,raw materials/ingredients,Brazil,Soybean grain
+"clear-cutting, primary forest to arable land BR_modified",0.00369,kg CO2 eq,27,13,26,raw materials/ingredients,Brazil,clear-cutting
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.00683,kg CO2 eq,28,7,15,raw materials/ingredients,France,Silage maize
+"Suckler cull cow, conventional, suckler cow system, more than 1.2 LU per ha, at",0.29077,kg CO2 eq,29,6,5,raw materials/ingredients,France,Suckler cull cow
+"Calf of 0 day, conventional, suckler cow system, more than 1.2 LU per ha (animal",0.13873,kg CO2 eq,30,7,29,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01633,kg CO2 eq,31,8,30,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.00488,kg CO2 eq,32,8,30,raw materials/ingredients,France,Grass silage
+"heat production, light fuel oil, at boiler 100kW condensing, non-modulating",0.00337,kg CO2 eq,33,8,30,raw materials/ingredients,Switzerland,heat production
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00251,kg CO2 eq,34,8,30,raw materials/ingredients,France,Baled hay
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.00971,kg CO2 eq,35,7,29,raw materials/ingredients,France,Grazed grass
+"heat production, light fuel oil, at boiler 100kW condensing, non-modulating",0.00502,kg CO2 eq,36,7,29,raw materials/ingredients,Switzerland,heat production
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00481,kg CO2 eq,37,7,29,raw materials/ingredients,France,Baled hay
+"Grazed grass, temporary meadow, with clover, Northwestern region, on field",0.00293,kg CO2 eq,38,7,29,raw materials/ingredients,France,Grazed grass
+"Bovine feed,BV40, at farm gate/kg",0.00281,kg CO2 eq,39,7,29,raw materials/ingredients,France,Bovine feed
+"Young suckler bull, conventional, fattening system, more than 1.2 LU per ha, at",0.28966,kg CO2 eq,40,6,5,raw materials/ingredients,France,Young suckler bull
+"Conventional suckler cow system, more than 1.2 LU per ha, animal class 1, at far",0.18969,kg CO2 eq,41,7,40,raw materials/ingredients,France,Conventional suckler cow system
+"Calf of 0 day, conventional, suckler cow system, more than 1.2 LU per ha (animal",0.17212,kg CO2 eq,42,8,41,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.02026,kg CO2 eq,43,9,42,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.00606,kg CO2 eq,44,9,42,raw materials/ingredients,France,Grass silage
+"heat production, light fuel oil, at boiler 100kW condensing, non-modulating",0.00418,kg CO2 eq,45,9,42,raw materials/ingredients,Switzerland,heat production
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00311,kg CO2 eq,46,9,42,raw materials/ingredients,France,Baled hay
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.01149,kg CO2 eq,47,7,40,raw materials/ingredients,France,Soybean meal BR
+"Soybean meal, crushing in Brazil, animal feed, at mill, average",0.01065,kg CO2 eq,48,8,47,raw materials/ingredients,Brazil,Soybean meal
+"Soybean oil and meal, Brazil, common process meal and oil, average",0.01008,kg CO2 eq,49,9,48,raw materials/ingredients,Brazil,Soybean oil and meal
+"Soybean, average, animal feed, at farm gate",0.00894,kg CO2 eq,50,10,49,raw materials/ingredients,Brazil,Soybean
+"Soybean, Center west average, animal feed, at farm gate",0.00828,kg CO2 eq,51,11,50,raw materials/ingredients,Brazil,Soybean
+"Soybean grain, no tillage, Centerwest",0.00661,kg CO2 eq,52,12,51,raw materials/ingredients,Brazil,Soybean grain
+"clear-cutting, primary forest to arable land BR_modified",0.0051,kg CO2 eq,53,13,52,raw materials/ingredients,Brazil,clear-cutting
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.0085,kg CO2 eq,54,7,40,raw materials/ingredients,France,Silage maize
+"heat production, light fuel oil, at boiler 100kW condensing, non-modulating",0.00249,kg CO2 eq,55,7,40,raw materials/ingredients,Switzerland,heat production
+"Suckler heifer, conventional, fattening system, more than 1.2 LU per ha, at farm",0.28655,kg CO2 eq,56,6,5,raw materials/ingredients,France,Suckler heifer
+"Conventional suckler cow system, more than 1.2 LU per ha, animal class 1, at far",0.15197,kg CO2 eq,57,7,56,raw materials/ingredients,France,Conventional suckler cow system
+"Calf of 0 day, conventional, suckler cow system, more than 1.2 LU per ha (animal",0.13789,kg CO2 eq,58,8,57,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01623,kg CO2 eq,59,9,58,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.00486,kg CO2 eq,60,9,58,raw materials/ingredients,France,Grass silage
+"heat production, light fuel oil, at boiler 100kW condensing, non-modulating",0.00335,kg CO2 eq,61,9,58,raw materials/ingredients,Switzerland,heat production
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00249,kg CO2 eq,62,9,58,raw materials/ingredients,France,Baled hay
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.00989,kg CO2 eq,63,7,56,raw materials/ingredients,France,Grazed grass
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00434,kg CO2 eq,64,7,56,raw materials/ingredients,France,Baled hay
+"Bovine feed,BV40, at farm gate/kg",0.00366,kg CO2 eq,65,7,56,raw materials/ingredients,France,Bovine feed
+"Soft wheat grain, conventional, national average, animal feed, at farm gate, pro",0.00265,kg CO2 eq,66,7,56,raw materials/ingredients,France,Soft wheat grain
+"Cull cow, conventional, lowland milk system, silage maize more than 30%, at farm",0.2084,kg CO2 eq,67,6,5,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, lowland milk system, silage maize more than 30% (an",0.02256,kg CO2 eq,68,7,67,raw materials/ingredients,France,Calf of 0 day
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.00281,kg CO2 eq,69,8,68,raw materials/ingredients,France,Soybean meal BR
+"Soybean meal, crushing in Brazil, animal feed, at mill, average",0.0026,kg CO2 eq,70,9,69,raw materials/ingredients,Brazil,Soybean meal
+"Soybean oil and meal, Brazil, common process meal and oil, average",0.00246,kg CO2 eq,71,10,70,raw materials/ingredients,Brazil,Soybean oil and meal
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01144,kg CO2 eq,72,7,67,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.00764,kg CO2 eq,73,7,67,raw materials/ingredients,France,Grass silage
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00588,kg CO2 eq,74,7,67,raw materials/ingredients,France,Baled hay
+"Bovine feed,MAT18, at farm gate | Bovine feed, MAT18, at farm gate",0.00284,kg CO2 eq,75,7,67,raw materials/ingredients,France,Bovine feed
+"heat production, light fuel oil, at boiler 100kW condensing, non-modulating",0.0028,kg CO2 eq,76,7,67,raw materials/ingredients,Switzerland,heat production
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.00242,kg CO2 eq,77,7,67,raw materials/ingredients,France,Soybean meal BR
+"Young dairy bull, conventional, fattening system, at farm gate",0.08347,kg CO2 eq,78,6,5,raw materials/ingredients,France,Young dairy bull
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.01165,kg CO2 eq,79,7,78,raw materials/ingredients,France,Soybean meal BR
+"Soybean meal, crushing in Brazil, animal feed, at mill, average",0.0108,kg CO2 eq,80,8,79,raw materials/ingredients,Brazil,Soybean meal
+"Soybean oil and meal, Brazil, common process meal and oil, average",0.01022,kg CO2 eq,81,9,80,raw materials/ingredients,Brazil,Soybean oil and meal
+"Soybean, average, animal feed, at farm gate",0.00907,kg CO2 eq,82,10,81,raw materials/ingredients,Brazil,Soybean
+"Soybean, Center west average, animal feed, at farm gate",0.0084,kg CO2 eq,83,11,82,raw materials/ingredients,Brazil,Soybean
+"Soybean grain, no tillage, Centerwest",0.00671,kg CO2 eq,84,12,83,raw materials/ingredients,Brazil,Soybean grain
+"clear-cutting, primary forest to arable land BR_modified",0.00518,kg CO2 eq,85,13,84,raw materials/ingredients,Brazil,clear-cutting
+"Conventional lowland milk system, silage maize more than 30%, 13 days old calf f",0.01144,kg CO2 eq,86,7,78,raw materials/ingredients,France,Conventional lowland milk system
+"Calf of 0 day, conventional, lowland milk system, silage maize more than 30% (an",0.01129,kg CO2 eq,87,8,86,raw materials/ingredients,France,Calf of 0 day
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.0035,kg CO2 eq,88,7,78,raw materials/ingredients,France,Silage maize
+"Bovine feed,suckler feed, at farm gate/kg",0.00336,kg CO2 eq,89,7,78,raw materials/ingredients,France,Bovine feed
+"Cull cow, conventional, lowland milk system, silage maize 10 to 30%, at farm gat",0.08084,kg CO2 eq,90,6,5,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, lowland milk system, silage maize 10 to 30% (animal",0.00703,kg CO2 eq,91,7,90,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.00482,kg CO2 eq,92,7,90,raw materials/ingredients,France,Grazed grass
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.00285,kg CO2 eq,93,7,90,raw materials/ingredients,France,Baled hay
+"Cull cow, conventional, highland milk system, grass fed, at farm gate",0.07878,kg CO2 eq,94,6,5,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, highland milk system, grass fed (animal class), at",0.00612,kg CO2 eq,95,7,94,raw materials/ingredients,France,Calf of 0 day
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.00471,kg CO2 eq,96,7,94,raw materials/ingredients,France,Baled hay
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.00448,kg CO2 eq,97,7,94,raw materials/ingredients,France,Grazed grass
+"Cull cow, conventional, lowland milk system, silage maize 5 to 10%, at farm gate",0.02908,kg CO2 eq,98,6,5,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, lowland milk system, silage maize 5 to 10% (animal",0.00251,kg CO2 eq,99,7,98,raw materials/ingredients,France,Calf of 0 day
+"Cull cow, organic, lowland milk system, silage maize 5 to 10%, at farm gate",0.02189,kg CO2 eq,100,6,5,raw materials/ingredients,France,Cull cow
+"heat production, natural gas, at industrial furnace low-NOx >100kW",0.00264,kg CO2 eq,101,5,4,raw materials/ingredients,Europe without Switzerland,heat production
+"Gruyere cheese, from cow's milk, at plant",0.17614,kg CO2 eq,102,1,0,raw materials/ingredients,France,Gruyere cheese
+"Hard cheese, from cow's milk, consumption mix",0.17614,kg CO2 eq,103,2,102,raw materials/ingredients,France,Hard cheese
+"Cheese production; from raw milk, hard cheese ; French production mix, at plant; 1 kg of hard cheese (PGi)",0.1753,kg CO2 eq,104,3,103,raw materials/ingredients,France,Cheese production; from raw milk
+"Cow milk, national average, at farm gate/kg",0.16228,kg CO2 eq,105,4,104,raw materials/ingredients,France,Cow milk
+"Cow milk, conventional, lowland milk system, silage maize more than 30%, at farm",0.08852,kg CO2 eq,106,5,105,raw materials/ingredients,France,Cow milk
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.01102,kg CO2 eq,107,6,106,raw materials/ingredients,France,Soybean meal BR
+"Soybean meal, crushing in Brazil, animal feed, at mill, average",0.01022,kg CO2 eq,108,7,107,raw materials/ingredients,Brazil,Soybean meal
+"Soybean oil and meal, Brazil, common process meal and oil, average",0.00967,kg CO2 eq,109,8,108,raw materials/ingredients,Brazil,Soybean oil and meal
+"Soybean, average, animal feed, at farm gate",0.00858,kg CO2 eq,110,9,109,raw materials/ingredients,Brazil,Soybean
+"Soybean, Center west average, animal feed, at farm gate",0.00794,kg CO2 eq,111,10,110,raw materials/ingredients,Brazil,Soybean
+"Soybean grain, no tillage, Centerwest",0.00634,kg CO2 eq,112,11,111,raw materials/ingredients,Brazil,Soybean grain
+"clear-cutting, primary forest to arable land BR_modified",0.0049,kg CO2 eq,113,12,112,raw materials/ingredients,Brazil,clear-cutting
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.0064,kg CO2 eq,114,6,106,raw materials/ingredients,France,Silage maize
+"Grazed grass, temporary meadow, with clover, Northwestern region, on field",0.00239,kg CO2 eq,115,6,106,raw materials/ingredients,France,Grazed grass
+"Cow milk, conventional, lowland milk system, silage maize 10 to 30%, at farm gat",0.02804,kg CO2 eq,116,5,105,raw materials/ingredients,France,Cow milk
+"Soybean meal BR, crushing in Brazil, animal feed, at french port, average",0.00312,kg CO2 eq,117,6,116,raw materials/ingredients,France,Soybean meal BR
+"Soybean meal, crushing in Brazil, animal feed, at mill, average",0.0029,kg CO2 eq,118,7,117,raw materials/ingredients,Brazil,Soybean meal
+"Soybean oil and meal, Brazil, common process meal and oil, average",0.00274,kg CO2 eq,119,8,118,raw materials/ingredients,Brazil,Soybean oil and meal
+"Soybean, average, animal feed, at farm gate",0.00243,kg CO2 eq,120,9,119,raw materials/ingredients,Brazil,Soybean
+"Cow milk, conventional, highland milk system, grass fed, at farm gate",0.02662,kg CO2 eq,121,5,105,raw materials/ingredients,France,Cow milk
+"Cow milk, conventional, lowland milk system, silage maize 5 to 10%, at farm gate",0.00964,kg CO2 eq,122,5,105,raw materials/ingredients,France,Cow milk
+"Cow milk, organic, lowland milk system, silage maize 5 to 10%, at farm gate",0.00946,kg CO2 eq,123,5,105,raw materials/ingredients,France,Cow milk
+"heat production, natural gas, at industrial furnace low-NOx >100kW",0.00436,kg CO2 eq,124,4,104,raw materials/ingredients,Europe without Switzerland,heat production
+"heat production, heavy fuel oil, at industrial furnace 1MW",0.00282,kg CO2 eq,125,4,104,raw materials/ingredients,Switzerland,heat production
+"Cooking, industrial, 1kg of cooked product (AGB 3.0)/",0.03872,kg CO2 eq,126,1,0,raw materials/ingredients,France,Cooking
+"Boiling, industrial, 1kg of boiled product, for cooking",0.01809,kg CO2 eq,127,2,126,raw materials/ingredients,France,Boiling
+"Gas boiling, industrial, 1kg of boiled product, for boiling",0.01702,kg CO2 eq,128,3,127,raw materials/ingredients,France,Gas boiling
+"heat production, natural gas, MODIFIED <100kW",0.01686,kg CO2 eq,129,4,128,raw materials/ingredients,Europe without Switzerland,heat production
+"natural gas, low pressure",0.00379,kg CO2 eq,130,5,129,raw materials/ingredients,Rest-of-World,natural gas
+"Deep-frying, industrial, 1kg of deep-fried product, for cooking",0.01299,kg CO2 eq,131,2,126,raw materials/ingredients,France,Deep-frying
+"rape oil, crude",0.00895,kg CO2 eq,132,3,131,raw materials/ingredients,Switzerland,rape oil
+"electricity, medium voltage",0.00356,kg CO2 eq,133,3,131,raw materials/ingredients,France,electricity
+"Oven baking, industrial, 1kg of oven-baked product, for cooking",0.00764,kg CO2 eq,134,2,126,raw materials/ingredients,France,Oven baking
+"electricity, medium voltage",0.00764,kg CO2 eq,135,3,134,raw materials/ingredients,France,electricity
+"Tomato, for processing, peeled, at plant",0.02736,kg CO2 eq,136,1,0,raw materials/ingredients,France,Tomato
+"Processed tomatoes, consumption mix",0.02709,kg CO2 eq,137,2,136,raw materials/ingredients,France,Processed tomatoes
+"Tomato, conventional, soil based, non-heated greenhouse, at greenhouse",0.01988,kg CO2 eq,138,3,137,raw materials/ingredients,France,Tomato
+"Tomato, seedling (phase), conventional, soil based prod., national average, at p",0.00926,kg CO2 eq,139,4,138,raw materials/ingredients,France,Tomato
+"natural gas, burned in furnace >100kW of greenhouse/MJ",0.0085,kg CO2 eq,140,5,139,raw materials/ingredients,Europe,natural gas
+Plastic tunnel/m2,0.00275,kg CO2 eq,141,4,138,raw materials/ingredients,France,Plastic tunnel/m2
+"transport, freight, lorry 16-32 metric ton, EURO6",0.00547,kg CO2 eq,142,3,137,raw materials/ingredients,Europe,transport
+"Wheat flour, at industrial mill",0.02495,kg CO2 eq,143,1,0,raw materials/ingredients,France,Wheat flour
+"Global milling process; soft wheat, steel-roller-milled, industrial production; French production mix, at plant; 1 kg bulk flour at the exit gate  (PDi)",0.02495,kg CO2 eq,144,2,143,raw materials/ingredients,France,Global milling process; soft wheat
+"Soft wheat grain, conventional, breadmaking quality, 15% moisture, at farm gate|",0.02282,kg CO2 eq,145,3,144,raw materials/ingredients,France,Soft wheat grain
+"Average mineral fertilizer, as N, at regional storehouse/kg",0.00276,kg CO2 eq,146,4,145,raw materials/ingredients,France,Average mineral fertilizer
+"Suckler cull cow, conventional, suckler cow system, less than 1.2 LU per ha, at",0.19302000649999984,kg CO2 eq,147,7,6,raw materials/ingredients,France,Suckler cull cow
+"Calf of 0 day, conventional, suckler cow system, less than 1.2 LU per ha (animal",0.10805337330000002,kg CO2 eq,148,8,7,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.01353,kg CO2 eq,149,9,8,raw materials/ingredients,France,Grazed grass
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.00503834284,kg CO2 eq,150,9,9,raw materials/ingredients,France,Baled hay
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.015909999999999997,kg CO2 eq,151,8,10,raw materials/ingredients,France,Grazed grass
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.011268741700000001,kg CO2 eq,152,8,11,raw materials/ingredients,France,Baled hay
+"Young suckler bull, conventional, fattening system, less than 1.2 LU per ha, at",0.05691697610000007,kg CO2 eq,153,7,15,raw materials/ingredients,France,Young suckler bull
+"Conventional suckler cow system, less than 1.2 LU per ha, animal class 1, at far",0.07151682849999985,kg CO2 eq,154,8,16,raw materials/ingredients,France,Conventional suckler cow system
+"Calf of 0 day, conventional, suckler cow system, less than 1.2 LU per ha (animal",0.14694938410000002,kg CO2 eq,155,9,17,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.01841,kg CO2 eq,156,10,18,raw materials/ingredients,France,Grazed grass
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.0068445399,kg CO2 eq,157,10,19,raw materials/ingredients,France,Baled hay
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.00567331013,kg CO2 eq,158,9,20,raw materials/ingredients,France,Baled hay
+"clear-cutting, primary forest to arable land BR_modified",0.00366909535,kg CO2 eq,159,14,27,raw materials/ingredients,Brazil,clear-cutting
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.0041505296778,kg CO2 eq,160,8,28,raw materials/ingredients,France,Silage maize
+"Suckler cull cow, conventional, suckler cow system, more than 1.2 LU per ha, at",0.11798905779999991,kg CO2 eq,161,7,29,raw materials/ingredients,France,Suckler cull cow
+"Calf of 0 day, conventional, suckler cow system, more than 1.2 LU per ha (animal",0.1068292109,kg CO2 eq,162,8,30,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01562434543,kg CO2 eq,163,9,31,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.0031664292847999997,kg CO2 eq,164,9,32,raw materials/ingredients,France,Grass silage
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.009284351433,kg CO2 eq,165,8,35,raw materials/ingredients,France,Grazed grass
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.0036309658652,kg CO2 eq,166,8,37,raw materials/ingredients,France,Baled hay
+"Grazed grass, temporary meadow, with clover, Northwestern region, on field",0.0026162779081,kg CO2 eq,167,8,38,raw materials/ingredients,France,Grazed grass
+"Young suckler bull, conventional, fattening system, more than 1.2 LU per ha, at",0.07263172337999996,kg CO2 eq,168,7,40,raw materials/ingredients,France,Young suckler bull
+"Conventional suckler cow system, more than 1.2 LU per ha, animal class 1, at far",0.013782040499999926,kg CO2 eq,169,8,41,raw materials/ingredients,France,Conventional suckler cow system
+"Calf of 0 day, conventional, suckler cow system, more than 1.2 LU per ha (animal",0.1325558583,kg CO2 eq,170,9,42,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01938409491,kg CO2 eq,171,10,43,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.0039309389795,kg CO2 eq,172,10,44,raw materials/ingredients,France,Grass silage
+"clear-cutting, primary forest to arable land BR_modified",0.00507111523,kg CO2 eq,173,14,53,raw materials/ingredients,Brazil,clear-cutting
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.005166022951260001,kg CO2 eq,174,8,54,raw materials/ingredients,France,Silage maize
+"Suckler heifer, conventional, fattening system, more than 1.2 LU per ha, at farm",0.1055165529,kg CO2 eq,175,7,56,raw materials/ingredients,France,Suckler heifer
+"Conventional suckler cow system, more than 1.2 LU per ha, animal class 1, at far",0.011035554799999903,kg CO2 eq,176,8,57,raw materials/ingredients,France,Conventional suckler cow system
+"Calf of 0 day, conventional, suckler cow system, more than 1.2 LU per ha (animal",0.10619017400000001,kg CO2 eq,177,9,58,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01552509806,kg CO2 eq,178,10,59,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.0031483075706,kg CO2 eq,179,10,60,raw materials/ingredients,France,Grass silage
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.009461724082,kg CO2 eq,180,8,63,raw materials/ingredients,France,Grazed grass
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.0032762258455,kg CO2 eq,181,8,64,raw materials/ingredients,France,Baled hay
+"Cull cow, conventional, lowland milk system, silage maize more than 30%, at farm",0.14127857339999994,kg CO2 eq,182,7,67,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, lowland milk system, silage maize more than 30% (an",0.015941555030000002,kg CO2 eq,183,8,68,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.01094838943,kg CO2 eq,184,8,72,raw materials/ingredients,France,Grazed grass
+"Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region | Grass silage, horizontal silo, temporary meadow, with clover, Northwestern region, at farm",0.0049427549299999995,kg CO2 eq,185,8,73,raw materials/ingredients,France,Grass silage
+"Baled hay, temporary meadow, with clover, Northwestern region, at farm",0.0044407900546,kg CO2 eq,186,8,74,raw materials/ingredients,France,Baled hay
+"Young dairy bull, conventional, fattening system, at farm gate",0.047213584700000005,kg CO2 eq,187,7,78,raw materials/ingredients,France,Young dairy bull
+"clear-cutting, primary forest to arable land BR_modified",0.00515069968,kg CO2 eq,188,14,85,raw materials/ingredients,Brazil,clear-cutting
+"Calf of 0 day, conventional, lowland milk system, silage maize more than 30% (an",0.00796775359,kg CO2 eq,189,9,87,raw materials/ingredients,France,Calf of 0 day
+"Cull cow, conventional, lowland milk system, silage maize 10 to 30%, at farm gat",0.057148665799999984,kg CO2 eq,190,7,90,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, lowland milk system, silage maize 10 to 30% (animal",0.005014657918,kg CO2 eq,191,8,91,raw materials/ingredients,France,Calf of 0 day
+"Grazed grass, permanent meadow, without clover, Northwestern region, on field",0.0046111725899999996,kg CO2 eq,192,8,92,raw materials/ingredients,France,Grazed grass
+"Cull cow, conventional, highland milk system, grass fed, at farm gate",0.05920082709999999,kg CO2 eq,193,7,94,raw materials/ingredients,France,Cull cow
+"Calf of 0 day, conventional, highland milk system, grass fed (animal class), at",0.00486646649,kg CO2 eq,194,8,95,raw materials/ingredients,France,Calf of 0 day
+"Baled hay, permanent meadow, without clover, Auvergne, at farm",0.003309330869999999,kg CO2 eq,195,8,96,raw materials/ingredients,France,Baled hay
+"Grazed grass, permanent meadow, without clover, Auvergne, on field",0.0043970832,kg CO2 eq,196,8,97,raw materials/ingredients,France,Grazed grass
+"Cull cow, conventional, lowland milk system, silage maize 5 to 10%, at farm gate",0.020583582899999998,kg CO2 eq,197,7,98,raw materials/ingredients,France,Cull cow
+"Cull cow, organic, lowland milk system, silage maize 5 to 10%, at farm gate",0.015265854359999997,kg CO2 eq,198,7,100,raw materials/ingredients,France,Cull cow
+"Cow milk, conventional, lowland milk system, silage maize more than 30%, at farm",0.06259386121,kg CO2 eq,199,6,106,raw materials/ingredients,France,Cow milk
+"clear-cutting, primary forest to arable land BR_modified",0.00487228597,kg CO2 eq,200,13,113,raw materials/ingredients,Brazil,clear-cutting
+"Silage maize, conventional, national average, animal feed, at farm gate, product",0.0038773654206499994,kg CO2 eq,201,7,114,raw materials/ingredients,France,Silage maize
+"Cow milk, conventional, lowland milk system, silage maize 10 to 30%, at farm gat",0.019996413969999998,kg CO2 eq,202,6,116,raw materials/ingredients,France,Cow milk
+"Cow milk, conventional, highland milk system, grass fed, at farm gate",0.021208392229999998,kg CO2 eq,203,6,121,raw materials/ingredients,France,Cow milk
+"Cow milk, conventional, lowland milk system, silage maize 5 to 10%, at farm gate",0.007095016839999999,kg CO2 eq,204,6,122,raw materials/ingredients,France,Cow milk
+"Cow milk, organic, lowland milk system, silage maize 5 to 10%, at farm gate",0.00722070519,kg CO2 eq,205,6,123,raw materials/ingredients,France,Cow milk
+"heat production, natural gas, MODIFIED <100kW",0.0126970665,kg CO2 eq,206,5,129,raw materials/ingredients,Europe without Switzerland,heat production
+"natural gas, burned in furnace >100kW of greenhouse/MJ",0.0071200000000000005,kg CO2 eq,207,6,140,raw materials/ingredients,Europe,natural gas
+"Soft wheat grain, conventional, breadmaking quality, 15% moisture, at farm gate|",0.015021682541,kg CO2 eq,208,4,145,raw materials/ingredients,France,Soft wheat grain

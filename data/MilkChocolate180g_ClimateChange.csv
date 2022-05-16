@@ -1,250 +1,250 @@
 Process,Amount,Unit,id,hierarchy_level,parent_id,Phase,Location,Process_shorthand
-"Milk chocolate (180g), average consumption mix",2.9660735345,kg CO2 eq,0,0,,-,Global,Milk chocolate
-"Cocoa liquor, at plant (WFLDB 3.1)",1.3074032011,kg CO2 eq,1,1,0,-,Europe,Cocoa liquor
-"Cocoa beans, at farm",1.2804516048,kg CO2 eq,2,2,1,-,Global,Cocoa beans
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.7448526828,kg CO2 eq,3,3,2,-,Indonesia,Cocoa beans (ID)
-"Land use change, perennial crop (WFLDB 3.1)",0.7024006247,kg CO2 eq,4,4,3,-,Indonesia,Land use change
-"clear-cutting, primary forest to arable land",0.3726406148,kg CO2 eq,5,5,4,-,Indonesia,clear-cutting
-"clear-cutting, secondary forest to arable land",0.2549616991,kg CO2 eq,6,5,4,-,Indonesia,clear-cutting
-urea ammonium nitrate production,0.0043577746,kg CO2 eq,7,4,3,-,Europe,urea ammonium nitrate production
-Rooting up trees (WFLDB 3.1),0.0039563648,kg CO2 eq,8,4,3,-,Global,Rooting up trees (WFLDB 3.1)
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.3278830578,kg CO2 eq,9,3,2,-,Cote d'Ivoire,Cocoa beans (CI)
-"Land use change, perennial crop (WFLDB 3.1)",0.2834004831,kg CO2 eq,10,4,9,-,Cote d'Ivoire,Land use change
-"clear-cutting, secondary forest to arable land",0.2480896387,kg CO2 eq,11,5,10,-,Cote d'Ivoire,clear-cutting
-"clear-cutting, primary forest to arable land",0.0248684347,kg CO2 eq,12,5,10,-,Cote d'Ivoire,clear-cutting
-"land already in use, perennial cropland",0.0104589215,kg CO2 eq,13,5,10,-,Cote d'Ivoire,land already in use
-"Irrigating, surface, diesel powered",0.0108118779,kg CO2 eq,14,4,9,-,Global,Irrigating
-"diesel, burned water pump/MJ",0.0067410908,kg CO2 eq,15,5,14,-,Global,diesel
-Rooting up trees (WFLDB 3.1),0.0058203015,kg CO2 eq,16,4,9,-,Global,Rooting up trees (WFLDB 3.1)
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.2077158642,kg CO2 eq,17,3,2,-,Ghana,Cocoa beans (GH)
-"Land use change, perennial crop (WFLDB 3.1)",0.1894480563,kg CO2 eq,18,4,17,-,Ghana,Land use change
-"clear-cutting, secondary forest to arable land",0.1566661654,kg CO2 eq,19,5,18,-,Ghana,clear-cutting
-"clear-cutting, primary forest to arable land",0.0195021152,kg CO2 eq,20,5,18,-,Ghana,clear-cutting
-"clear-cutting, grassland to arable land",0.0130620747,kg CO2 eq,21,5,18,-,Ghana,clear-cutting
-"Irrigating, surface, diesel powered",0.0071469784,kg CO2 eq,22,4,17,-,Global,Irrigating
-"diesel, burned water pump/MJ",0.0044560649,kg CO2 eq,23,5,22,-,Global,diesel
-"Cocoa beans processing, at plant (WFLDB 3.1)",0.0269515963,kg CO2 eq,24,2,1,-,Europe,Cocoa beans processing
-"diesel, burned in building machine",0.0119430353,kg CO2 eq,25,3,24,-,Global,diesel
-"transport, freight, lorry 7.5-16 metric ton, EURO3",0.0052070069,kg CO2 eq,26,3,24,-,Europe,transport
-"transport, freight, lorry 16-32 metric ton, EURO4",0.0039900256,kg CO2 eq,27,3,24,-,Europe,transport
-"transport, freight, sea, transoceanic ship",0.0038639659,kg CO2 eq,28,3,24,-,Global,transport
-"Milk powder, skimmed, spray dried, at dairy (WFLDB 3.1)",0.7876136277,kg CO2 eq,29,1,0,-,Global,Milk powder
-"Liquid milk, whole milk, pasteurised, at dairy (WFLDB 3.1)",0.762613328,kg CO2 eq,30,2,29,-,Global,Liquid milk
-"Raw milk, production mix, at farm",0.7189433106,kg CO2 eq,31,3,30,-,Global,Raw milk
-"raw milk, production mix, at farm/kg/U",0.2679959004,kg CO2 eq,32,4,31,-,United States,raw milk
-"Raw milk, large scale production, non-grazing, mechanized, at farm",0.0915006069,kg CO2 eq,33,5,32,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0490441389,kg CO2 eq,34,6,33,-,Global,Concentrate feed
-"Soybean, at farm",0.0358971052,kg CO2 eq,35,7,34,-,Global,Soybean
-"soybeans, at farm | Soybean, at farm (WFLDB 3.1)",0.0153873303,kg CO2 eq,36,8,35,-,Brazil,soybeans
-"Land use change, annual crop (WFLDB 3.1)",0.0126801418,kg CO2 eq,37,9,36,-,Brazil,Land use change
-"clear-cutting, primary forest to arable land",0.0117525718,kg CO2 eq,38,10,37,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0112700996,kg CO2 eq,39,8,35,-,United States,soybeans
-"Soybean, at farm (WFLDB 3.1)",0.0092396754,kg CO2 eq,40,8,35,-,Argentina,Soybean
-"Land use change, annual crop (WFLDB 3.1)",0.0088366567,kg CO2 eq,41,9,40,-,Argentina,Land use change
-"clear-cutting, secondary forest to arable land",0.0081076789,kg CO2 eq,42,10,41,-,Argentina,clear-cutting
-"Rapeseed, at farm (WFLDB 3.1)",0.0044587997,kg CO2 eq,43,7,34,-,Global,Rapeseed
-"Rapeseed, at farm (WFLDB 3.1)",0.0031093488,kg CO2 eq,44,8,43,-,Canada,Rapeseed
-maize starch production,0.0041137811,kg CO2 eq,45,7,34,-,Germany,maize starch production
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0269471526,kg CO2 eq,46,6,33,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0098240407,kg CO2 eq,47,6,33,-,Global,Raw milk
-"Hay, mechanized, irrigated, cold-air dried, at farm",0.0033251401,kg CO2 eq,48,6,33,-,Global,Hay
-"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0679949009,kg CO2 eq,49,5,32,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0293891391,kg CO2 eq,50,6,49,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0204547118,kg CO2 eq,51,6,49,-,Global,Concentrate feed
-"Soybean, at farm",0.0149715126,kg CO2 eq,52,7,51,-,Global,Soybean
-"soybeans, at farm | Soybean, at farm (WFLDB 3.1)",0.0064175539,kg CO2 eq,53,8,52,-,Brazil,soybeans
-"Land use change, annual crop (WFLDB 3.1)",0.0052884739,kg CO2 eq,54,9,53,-,Brazil,Land use change
-"clear-cutting, primary forest to arable land",0.0049016146,kg CO2 eq,55,10,54,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0047003912,kg CO2 eq,56,8,52,-,United States,soybeans
-"Soybean, at farm (WFLDB 3.1)",0.0038535674,kg CO2 eq,57,8,52,-,Argentina,Soybean
-"Land use change, annual crop (WFLDB 3.1)",0.0036854815,kg CO2 eq,58,9,57,-,Argentina,Land use change
-"clear-cutting, secondary forest to arable land",0.0033814486,kg CO2 eq,59,10,58,-,Argentina,clear-cutting
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0115205425,kg CO2 eq,60,6,49,-,Global,Raw milk
-"Hay, mechanized, irrigated, cold-air dried, at farm",0.0040037583,kg CO2 eq,61,6,49,-,Global,Hay
-"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm (WFLDB 3.1)",0.0387878114,kg CO2 eq,62,5,32,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0172278382,kg CO2 eq,63,6,62,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0109513874,kg CO2 eq,64,6,62,-,Global,Concentrate feed
-"Soybean, at farm",0.0080157,kg CO2 eq,65,7,64,-,Global,Soybean
-"soybeans, at farm | Soybean, at farm (WFLDB 3.1)",0.0034359379,kg CO2 eq,66,8,65,-,Brazil,soybeans
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.006213636,kg CO2 eq,67,6,62,-,Global,Raw milk
-"Manure management at farm, liquid-slurry, temperate, per kg VS (WFLDB 3.1)",0.0238237194,kg CO2 eq,68,5,32,-,Global,Manure management at farm
-"Manure management at farm, lagooning, temperate, per kg VS (WFLDB 3.1)",0.0228578819,kg CO2 eq,69,5,32,-,Global,Manure management at farm
-"Raw milk, at farm/RER (Q 1.0)",0.018699573,kg CO2 eq,70,5,32,-,United States,Raw milk
-"diesel, burned in building machine",0.0092360512,kg CO2 eq,71,6,70,-,Global,diesel
-Milking (WFLDB 3.1),0.0073084358,kg CO2 eq,72,6,70,-,United States,Milking (WFLDB 3.1)
-"electricity, low voltage",0.0057200322,kg CO2 eq,73,7,72,-,United States,electricity
-"Manure management at farm, solid storage, temperate, per kg VS (WFLDB 3.1)",0.003881834,kg CO2 eq,74,5,32,-,Global,Manure management at farm
-"raw milk, production mix, at farm/kg/U",0.1853251609,kg CO2 eq,75,4,31,-,Pakistan,raw milk
-"Raw milk, micro scale production, non-grazing, non-mechanized, at farm",0.143650778,kg CO2 eq,76,5,75,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0443925938,kg CO2 eq,77,6,76,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0400029351,kg CO2 eq,78,6,76,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0323233306,kg CO2 eq,79,6,76,-,Global,Concentrate feed
-"Soybean, at farm",0.023658566,kg CO2 eq,80,7,79,-,Global,Soybean
-"soybeans, at farm | Soybean, at farm (WFLDB 3.1)",0.0101412681,kg CO2 eq,81,8,80,-,Brazil,soybeans
-"Land use change, annual crop (WFLDB 3.1)",0.0083570519,kg CO2 eq,82,9,81,-,Brazil,Land use change
-"clear-cutting, primary forest to arable land",0.007745722,kg CO2 eq,83,10,82,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0074277408,kg CO2 eq,84,8,80,-,United States,soybeans
-"Soybean, at farm (WFLDB 3.1)",0.006089557,kg CO2 eq,85,8,80,-,Argentina,Soybean
-"Land use change, annual crop (WFLDB 3.1)",0.0058239411,kg CO2 eq,86,9,85,-,Argentina,Land use change
-"clear-cutting, secondary forest to arable land",0.0053434965,kg CO2 eq,87,10,86,-,Argentina,clear-cutting
-"concentrate feed IP, cereal based, for dairy cows, at consumer/kg",0.0148080029,kg CO2 eq,88,6,76,-,Switzerland,concentrate feed IP
-"Maize grain, at farm (WFLDB 3.1)",0.0046025517,kg CO2 eq,89,7,88,-,Global,Maize grain
-"Wheat grains, at farm (WFLDB 3.1)",0.0044400945,kg CO2 eq,90,7,88,-,Global,Wheat grains
-barley production,0.0034664224,kg CO2 eq,91,7,88,-,Germany,barley production
-"Agricultural residues, non-mechanized, sun dried, at farm, 1 kg dry matter (WFLDB 3.1)",0.0121239156,kg CO2 eq,92,6,76,-,Global,Agricultural residues
-"Rice, at farm (WFLDB 3.1)/kg",0.0090067945,kg CO2 eq,93,7,92,-,India,Rice
-"Winter wheat grain, at farm (WFLDB 3.1)",0.0031171211,kg CO2 eq,94,7,92,-,Australia,Winter wheat grain
-"Manure management at farm, dry lot, warm, per kg VS (WFLDB 3.1)",0.0197188672,kg CO2 eq,95,5,75,-,Global,Manure management at farm
-"Raw milk, small scale production, grazing, non-mechanized, at farm",0.0093426935,kg CO2 eq,96,5,75,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0033909417,kg CO2 eq,97,6,96,-,Global,Raw milk
-"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0074207633,kg CO2 eq,98,5,75,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0032074441,kg CO2 eq,99,6,98,-,Global,Raw milk
-"raw milk, production mix, at farm/kg/U",0.1349125012,kg CO2 eq,100,4,31,-,Russia,raw milk
-"Raw milk, large scale production, non-grazing, mechanized, at farm",0.0766375642,kg CO2 eq,101,5,100,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0410775783,kg CO2 eq,102,6,101,-,Global,Concentrate feed
-"Soybean, at farm",0.0300661033,kg CO2 eq,103,7,102,-,Global,Soybean
-"soybeans, at farm | Soybean, at farm (WFLDB 3.1)",0.0128878655,kg CO2 eq,104,8,103,-,Brazil,soybeans
-"Land use change, annual crop (WFLDB 3.1)",0.0106204233,kg CO2 eq,105,9,104,-,Brazil,Land use change
-"clear-cutting, primary forest to arable land",0.0098435246,kg CO2 eq,106,10,105,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0094394235,kg CO2 eq,107,8,103,-,United States,soybeans
-"Soybean, at farm (WFLDB 3.1)",0.0077388144,kg CO2 eq,108,8,103,-,Argentina,Soybean
-"Land use change, annual crop (WFLDB 3.1)",0.0074012607,kg CO2 eq,109,9,108,-,Argentina,Land use change
-"clear-cutting, secondary forest to arable land",0.0067906955,kg CO2 eq,110,10,109,-,Argentina,clear-cutting
-"Rapeseed, at farm (WFLDB 3.1)",0.0037345277,kg CO2 eq,111,7,102,-,Global,Rapeseed
-maize starch production,0.0034455527,kg CO2 eq,112,7,102,-,Germany,maize starch production
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0225699501,kg CO2 eq,113,6,101,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0082282574,kg CO2 eq,114,6,101,-,Global,Raw milk
-"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.018983348,kg CO2 eq,115,5,100,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0082050896,kg CO2 eq,116,6,115,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0057107063,kg CO2 eq,117,6,115,-,Global,Concentrate feed
-"Soybean, at farm",0.0041798639,kg CO2 eq,118,7,117,-,Global,Soybean
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0032163951,kg CO2 eq,119,6,115,-,Global,Raw milk
-"Raw milk, small scale production, grazing, non-mechanized, at farm",0.0119499569,kg CO2 eq,120,5,100,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.004337251,kg CO2 eq,121,6,120,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0037112138,kg CO2 eq,122,6,120,-,Global,Raw milk
-"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm (WFLDB 3.1)",0.0108290844,kg CO2 eq,123,5,100,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0048098025,kg CO2 eq,124,6,123,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.003057494,kg CO2 eq,125,6,123,-,Global,Concentrate feed
-"Raw milk, at farm/RER (Q 1.0) | Dairy farm exploitation, mechanized, allocated to 1 kg milk (WFLDB 3.1)",0.0080293775,kg CO2 eq,126,5,100,-,Russia,Raw milk
-"diesel, burned in building machine",0.0046414674,kg CO2 eq,127,6,126,-,Global,diesel
-"Manure management at farm, liquid-slurry, cool, per kg VS (WFLDB 3.1)",0.0045402915,kg CO2 eq,128,5,100,-,Global,Manure management at farm
-"Manure management at farm, solid storage, cool, per kg VS (WFLDB 3.1)",0.0036809638,kg CO2 eq,129,5,100,-,Global,Manure management at farm
-"raw milk, production mix, at farm/kg/U",0.0591311808,kg CO2 eq,130,4,31,-,Germany,raw milk
-"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0253686559,kg CO2 eq,131,5,130,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0109649834,kg CO2 eq,132,6,131,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0076315803,kg CO2 eq,133,6,131,-,Global,Concentrate feed
-"Soybean, at farm",0.0055858181,kg CO2 eq,134,7,133,-,Global,Soybean
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0042982735,kg CO2 eq,135,6,131,-,Global,Raw milk
-"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm (WFLDB 3.1)",0.0192954595,kg CO2 eq,136,5,130,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0085701936,kg CO2 eq,137,6,136,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0054478983,kg CO2 eq,138,6,136,-,Global,Concentrate feed
-"Soybean, at farm",0.0039875056,kg CO2 eq,139,7,138,-,Global,Soybean
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0030910474,kg CO2 eq,140,6,136,-,Global,Raw milk
-"Manure management at farm, liquid-slurry, temperate, per kg VS (WFLDB 3.1)",0.0085447984,kg CO2 eq,141,5,130,-,Global,Manure management at farm
-"Raw milk, at farm (Q 1.0) | Dairy farm exploitation, mechanized, allocated to 1 kg milk (WFLDB 3.1)",0.0044140955,kg CO2 eq,142,5,130,-,Germany,Raw milk
-"raw milk, production mix, at farm/kg/U",0.045092853,kg CO2 eq,143,4,31,-,France,raw milk
-"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm (WFLDB 3.1)",0.0187047821,kg CO2 eq,144,5,143,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0083078407,kg CO2 eq,145,6,144,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0052811259,kg CO2 eq,146,6,144,-,Global,Concentrate feed
-"Soybean, at farm",0.0038654391,kg CO2 eq,147,7,146,-,Global,Soybean
-"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane (WFLDB 3.1)",0.0029964235,kg CO2 eq,148,6,144,-,Global,Raw milk
-"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0163947096,kg CO2 eq,149,5,143,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0070862137,kg CO2 eq,150,6,149,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0049319737,kg CO2 eq,151,6,149,-,Global,Concentrate feed
-"Soybean, at farm",0.0036098825,kg CO2 eq,152,7,151,-,Global,Soybean
-"Manure management at farm, liquid-slurry, temperate, per kg VS (WFLDB 3.1)",0.0065625534,kg CO2 eq,153,5,143,-,Global,Manure management at farm
-"raw milk, production mix, at farm/kg/U",0.0264857141,kg CO2 eq,154,4,31,-,United Kingdom,raw milk
-"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0113900088,kg CO2 eq,155,5,154,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.0049230538,kg CO2 eq,156,6,155,-,Global,Raw milk
-"Concentrate feed, protein concentrate, for dairy cows, at farm (WFLDB 3.1)",0.0034264238,kg CO2 eq,157,6,155,-,Global,Concentrate feed
-"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm (WFLDB 3.1)",0.0086632675,kg CO2 eq,158,5,154,-,Global,Raw milk
-"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane (WFLDB 3.1)",0.003847842,kg CO2 eq,159,6,158,-,Global,Raw milk
-"Manure management at farm, liquid-slurry, temperate, per kg VS (WFLDB 3.1)",0.0038364401,kg CO2 eq,160,5,154,-,Global,Manure management at farm
-"heat production, heavy fuel oil, at industrial furnace 1MW",0.0191296886,kg CO2 eq,161,3,30,-,Europe without Switzerland,heat production
-"electricity, medium voltage",0.0151711454,kg CO2 eq,162,3,30,-,Europe,electricity
-"transport, lorry 16-32t, EURO5/tkm",0.00677096,kg CO2 eq,163,3,30,-,Europe,transport
-"operation, lorry 16-32t, EURO5 | Operation, chilled, lorry 16-32t, EURO5 (WFLDB 3.1)",0.0060767342,kg CO2 eq,164,4,163,-,Europe,operation
-"Spray drying, dairy products, at dairy (WFLDB 3.1)",0.0150290695,kg CO2 eq,165,2,29,-,Global,Spray drying
-"heat production, natural gas, at industrial furnace >100kW",0.0136306509,kg CO2 eq,166,3,165,-,Europe without Switzerland,heat production
-"Evaporation, dairy products, at dairy (WFLDB 3.1)",0.0099712302,kg CO2 eq,167,2,29,-,Global,Evaporation
-"heat production, natural gas, at industrial furnace >100kW",0.0090516027,kg CO2 eq,168,3,167,-,Europe without Switzerland,heat production
-"Cocoa liquor, at plant (WFLDB 3.1)",0.6169234706,kg CO2 eq,169,1,0,-,Europe,Cocoa liquor
-"Cocoa beans, at farm",0.6042058389,kg CO2 eq,170,2,169,-,Global,Cocoa beans
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.3514731353,kg CO2 eq,171,3,170,-,Indonesia,Cocoa beans (ID)
-"Land use change, perennial crop (WFLDB 3.1)",0.3314413111,kg CO2 eq,172,4,171,-,Indonesia,Land use change
-"clear-cutting, primary forest to arable land",0.1758376767,kg CO2 eq,173,5,172,-,Indonesia,clear-cutting
-"clear-cutting, secondary forest to arable land",0.1203086058,kg CO2 eq,174,5,172,-,Indonesia,clear-cutting
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.1547179583,kg CO2 eq,175,3,170,-,Cote d'Ivoire,Cocoa beans (CI)
-"Land use change, perennial crop (WFLDB 3.1)",0.1337279956,kg CO2 eq,176,4,175,-,Cote d'Ivoire,Land use change
-"clear-cutting, secondary forest to arable land",0.1170658912,kg CO2 eq,177,5,176,-,Cote d'Ivoire,clear-cutting
-"clear-cutting, primary forest to arable land",0.0117346516,kg CO2 eq,178,5,176,-,Cote d'Ivoire,clear-cutting
-"land already in use, perennial cropland",0.0049352443,kg CO2 eq,179,5,176,-,Cote d'Ivoire,land already in use
-"Irrigating, surface, diesel powered",0.0051017936,kg CO2 eq,180,4,175,-,Global,Irrigating
-"diesel, burned water pump/MJ",0.003180914,kg CO2 eq,181,5,180,-,Global,diesel
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.0980147454,kg CO2 eq,182,3,170,-,Ghana,Cocoa beans (GH)
-"Land use change, perennial crop (WFLDB 3.1)",0.0893947271,kg CO2 eq,183,4,182,-,Ghana,Land use change
-"clear-cutting, secondary forest to arable land",0.0739259583,kg CO2 eq,184,5,183,-,Ghana,clear-cutting
-"clear-cutting, primary forest to arable land",0.00920245,kg CO2 eq,185,5,183,-,Ghana,clear-cutting
-"clear-cutting, grassland to arable land",0.0061635924,kg CO2 eq,186,5,183,-,Ghana,clear-cutting
-"Irrigating, surface, diesel powered",0.0033724399,kg CO2 eq,187,4,182,-,Global,Irrigating
-"Cocoa beans processing, at plant (WFLDB 3.1)",0.0127176317,kg CO2 eq,188,2,169,-,Europe,Cocoa beans processing
-"diesel, burned in building machine",0.0056355521,kg CO2 eq,189,3,188,-,Global,diesel
-"electricity, low voltage",0.1239541309,kg CO2 eq,190,1,0,-,Europe,electricity
-"Sugar, from sugar beet, at sugar refinery (WFLDB 3.1)",0.0657229719,kg CO2 eq,191,1,0,-,Global,Sugar
-"Sugar beet, at farm (WFLDB 3.1)",0.040173121,kg CO2 eq,192,2,191,-,Global,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.0139494526,kg CO2 eq,193,3,192,-,United States,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.0124469591,kg CO2 eq,194,3,192,-,Russia,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.0074058756,kg CO2 eq,195,3,192,-,France,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.0063708336,kg CO2 eq,196,3,192,-,Germany,Sugar beet
-"heat production, natural gas, at industrial furnace >100kW",0.012010114,kg CO2 eq,197,2,191,-,Europe without Switzerland,heat production
-"electricity, medium voltage",0.008005212,kg CO2 eq,198,2,191,-,Europe,electricity
-"heat production, natural gas, at industrial furnace low-NOx >100kW",0.0424058849,kg CO2 eq,199,1,0,-,Europe without Switzerland,heat production
-"Soybean oil, at oil mill",0.0075837547,kg CO2 eq,200,1,0,-,Global,Soybean oil
-"Soybean oil, at oil mill (WFLDB 3.1)",0.0054790174,kg CO2 eq,201,2,200,-,Argentina,Soybean oil
-"Soybean, at farm (WFLDB 3.1)",0.0053758052,kg CO2 eq,202,3,201,-,Argentina,Soybean
-"Land use change, annual crop (WFLDB 3.1)",0.0051413218,kg CO2 eq,203,4,202,-,Argentina,Land use change
-"clear-cutting, secondary forest to arable land",0.0047171898,kg CO2 eq,204,5,203,-,Argentina,clear-cutting
-"transport, freight, lorry, unspecified",0.0064961059,kg CO2 eq,205,1,0,-,Europe,transport
-"transport, freight, sea, transoceanic ship",0.0055976553,kg CO2 eq,206,1,0,-,Global,transport
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.022155037300000346,kg CO2 eq,207,4,3,-,Indonesia,Cocoa beans (ID)
-"Land use change, perennial crop (WFLDB 3.1)",0.07219220479999999,kg CO2 eq,208,5,4,-,Indonesia,Land use change
-"clear-cutting, primary forest to arable land",0.37032884239999997,kg CO2 eq,209,6,5,-,Indonesia,clear-cutting
-"clear-cutting, secondary forest to arable land",0.2533493987,kg CO2 eq,210,6,6,-,Indonesia,clear-cutting
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.013639269700000178,kg CO2 eq,211,4,9,-,Cote d'Ivoire,Cocoa beans (CI)
-"clear-cutting, secondary forest to arable land",0.2465207951,kg CO2 eq,212,6,11,-,Cote d'Ivoire,clear-cutting
-"clear-cutting, primary forest to arable land",0.024714157,kg CO2 eq,213,6,12,-,Cote d'Ivoire,clear-cutting
-"land already in use, perennial cropland",0.010390988399999999,kg CO2 eq,214,6,13,-,Cote d'Ivoire,land already in use
-"diesel, burned water pump/MJ",0.0057895901,kg CO2 eq,215,6,15,-,Global,diesel
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.0033848529000000127,kg CO2 eq,216,4,17,-,Ghana,Cocoa beans (GH)
-"clear-cutting, secondary forest to arable land",0.1556754561,kg CO2 eq,217,6,19,-,Ghana,clear-cutting
-"clear-cutting, primary forest to arable land",0.0193811288,kg CO2 eq,218,6,20,-,Ghana,clear-cutting
-"diesel, burned water pump/MJ",0.0038270941,kg CO2 eq,219,6,23,-,Global,diesel
-"clear-cutting, primary forest to arable land",0.0116796617,kg CO2 eq,220,11,38,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0105799699,kg CO2 eq,221,9,39,-,United States,soybeans
-"clear-cutting, secondary forest to arable land",0.0080564084,kg CO2 eq,222,11,42,-,Argentina,clear-cutting
-"clear-cutting, primary forest to arable land",0.0048712061999999995,kg CO2 eq,223,11,55,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0044125603,kg CO2 eq,224,9,56,-,United States,soybeans
-"clear-cutting, secondary forest to arable land",0.0033600653000000003,kg CO2 eq,225,11,59,-,Argentina,clear-cutting
-"clear-cutting, primary forest to arable land",0.0076976694,kg CO2 eq,226,11,83,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.0069728998,kg CO2 eq,227,9,84,-,United States,soybeans
-"clear-cutting, secondary forest to arable land",0.0053097058,kg CO2 eq,228,11,87,-,Argentina,clear-cutting
-"Rice, at farm (WFLDB 3.1)/kg",0.006701528499999999,kg CO2 eq,229,8,93,-,India,Rice
-"clear-cutting, primary forest to arable land",0.0097824577,kg CO2 eq,230,11,106,-,Brazil,clear-cutting
-"soybeans, at farm/kg",0.008861396300000001,kg CO2 eq,231,9,107,-,United States,soybeans
-"clear-cutting, secondary forest to arable land",0.0067477532,kg CO2 eq,232,11,110,-,Argentina,clear-cutting
-"operation, lorry 16-32t, EURO5 | Operation, chilled, lorry 16-32t, EURO5 (WFLDB 3.1)",0.0033612278000000003,kg CO2 eq,233,5,164,-,Europe,operation
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.010454282399999848,kg CO2 eq,234,4,171,-,Indonesia,Cocoa beans (ID)
-"Land use change, perennial crop (WFLDB 3.1)",0.03406528710000006,kg CO2 eq,235,5,172,-,Indonesia,Land use change
-"clear-cutting, primary forest to arable land",0.1747468222,kg CO2 eq,236,6,173,-,Indonesia,clear-cutting
-"clear-cutting, secondary forest to arable land",0.11954781069999999,kg CO2 eq,237,6,174,-,Indonesia,clear-cutting
-"Cocoa beans, sun-dried, at farm (WFLDB 3.1)/kg",0.006435953000000105,kg CO2 eq,238,4,175,-,Cote d'Ivoire,Cocoa beans (CI)
-"clear-cutting, secondary forest to arable land",0.116325602,kg CO2 eq,239,6,177,-,Cote d'Ivoire,clear-cutting
-"clear-cutting, primary forest to arable land",0.0116618526,kg CO2 eq,240,6,178,-,Cote d'Ivoire,clear-cutting
-"land already in use, perennial cropland",0.0049031887,kg CO2 eq,241,6,179,-,Cote d'Ivoire,land already in use
-"clear-cutting, secondary forest to arable land",0.0734584729,kg CO2 eq,242,6,184,-,Ghana,clear-cutting
-"clear-cutting, primary forest to arable land",0.0091453602,kg CO2 eq,243,6,185,-,Ghana,clear-cutting
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.005055656400000002,kg CO2 eq,244,4,193,-,United States,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.004106314599999997,kg CO2 eq,245,4,194,-,Russia,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.0040868602,kg CO2 eq,246,4,195,-,France,Sugar beet
-"Sugar beet, at farm (WFLDB 3.1)/kg",0.0034540806,kg CO2 eq,247,4,196,-,Germany,Sugar beet
-"clear-cutting, secondary forest to arable land",0.0046873597,kg CO2 eq,248,6,204,-,Argentina,clear-cutting
+"Milk chocolate (180g), average consumption mix",2.9660735345,kg CO2 eq,0,0,,root,Global,Milk chocolate
+"Cocoa liquor, at plant",1.3074032011,kg CO2 eq,1,1,0,processing,Europe,Cocoa liquor
+"Cocoa beans, at farm",1.2804516048,kg CO2 eq,2,2,1,farm,Global,Cocoa beans
+"Cocoa beans, sun-dried, at farm/kg",0.7448526828,kg CO2 eq,3,3,2,farm,Indonesia,Cocoa beans
+"Land use change, perennial crop",0.7024006247,kg CO2 eq,4,4,3,farm,Indonesia,Land use change
+"clear-cutting, primary forest to arable land",0.3726406148,kg CO2 eq,5,5,4,farm,Indonesia,clear-cutting
+"clear-cutting, secondary forest to arable land",0.2549616991,kg CO2 eq,6,5,4,farm,Indonesia,clear-cutting
+urea ammonium nitrate production,0.0043577746,kg CO2 eq,7,4,3,farm,Europe,urea ammonium nitrate production
+Rooting up trees,0.0039563648,kg CO2 eq,8,4,3,farm,Global,Rooting up trees
+"Cocoa beans, sun-dried, at farm/kg",0.3278830578,kg CO2 eq,9,3,2,farm,Cote d'Ivoire,Cocoa beans
+"Land use change, perennial crop",0.2834004831,kg CO2 eq,10,4,9,farm,Cote d'Ivoire,Land use change
+"clear-cutting, secondary forest to arable land",0.2480896387,kg CO2 eq,11,5,10,farm,Cote d'Ivoire,clear-cutting
+"clear-cutting, primary forest to arable land",0.0248684347,kg CO2 eq,12,5,10,farm,Cote d'Ivoire,clear-cutting
+"land already in use, perennial cropland",0.0104589215,kg CO2 eq,13,5,10,farm,Cote d'Ivoire,land already in use
+"Irrigating, surface, diesel powered",0.0108118779,kg CO2 eq,14,4,9,farm,Global,Irrigating
+"diesel, burned water pump/MJ",0.0067410908,kg CO2 eq,15,5,14,farm,Global,diesel
+Rooting up trees,0.0058203015,kg CO2 eq,16,4,9,farm,Global,Rooting up trees
+"Cocoa beans, sun-dried, at farm/kg",0.2077158642,kg CO2 eq,17,3,2,farm,Ghana,Cocoa beans
+"Land use change, perennial crop",0.1894480563,kg CO2 eq,18,4,17,farm,Ghana,Land use change
+"clear-cutting, secondary forest to arable land",0.1566661654,kg CO2 eq,19,5,18,farm,Ghana,clear-cutting
+"clear-cutting, primary forest to arable land",0.0195021152,kg CO2 eq,20,5,18,farm,Ghana,clear-cutting
+"clear-cutting, grassland to arable land",0.0130620747,kg CO2 eq,21,5,18,farm,Ghana,clear-cutting
+"Irrigating, surface, diesel powered",0.0071469784,kg CO2 eq,22,4,17,farm,Global,Irrigating
+"diesel, burned water pump/MJ",0.0044560649,kg CO2 eq,23,5,22,farm,Global,diesel
+"Cocoa beans processing, at plant",0.0269515963,kg CO2 eq,24,2,1,processing,Europe,Cocoa beans processing
+"diesel, burned in building machine",0.0119430353,kg CO2 eq,25,3,24,processing,Global,diesel
+"transport, freight, lorry 7.5-16 metric ton, EURO3",0.0052070069,kg CO2 eq,26,3,24,processing,Europe,transport
+"transport, freight, lorry 16-32 metric ton, EURO4",0.0039900256,kg CO2 eq,27,3,24,processing,Europe,transport
+"transport, freight, sea, transoceanic ship",0.0038639659,kg CO2 eq,28,3,24,processing,Global,transport
+"Milk powder, skimmed, spray dried, at dairy",0.7876136277,kg CO2 eq,29,1,0,processing,Global,Milk powder
+"Liquid milk, whole milk, pasteurised, at dairy",0.762613328,kg CO2 eq,30,2,29,processing,Global,Liquid milk
+"Raw milk, production mix, at farm",0.7189433106,kg CO2 eq,31,3,30,farm,Global,Raw milk
+"raw milk, production mix, at farm/kg/U",0.2679959004,kg CO2 eq,32,4,31,farm,United States,raw milk
+"Raw milk, large scale production, non-grazing, mechanized, at farm",0.0915006069,kg CO2 eq,33,5,32,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0490441389,kg CO2 eq,34,6,33,farm,Global,Concentrate feed
+"Soybean, at farm",0.0358971052,kg CO2 eq,35,7,34,farm,Global,Soybean
+"soybeans, at farm | Soybean, at farm",0.0153873303,kg CO2 eq,36,8,35,farm,Brazil,soybeans
+"Land use change, annual crop",0.0126801418,kg CO2 eq,37,9,36,farm,Brazil,Land use change
+"clear-cutting, primary forest to arable land",0.0117525718,kg CO2 eq,38,10,37,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0112700996,kg CO2 eq,39,8,35,farm,United States,soybeans
+"Soybean, at farm",0.0092396754,kg CO2 eq,40,8,35,farm,Argentina,Soybean
+"Land use change, annual crop",0.0088366567,kg CO2 eq,41,9,40,farm,Argentina,Land use change
+"clear-cutting, secondary forest to arable land",0.0081076789,kg CO2 eq,42,10,41,farm,Argentina,clear-cutting
+"Rapeseed, at farm",0.0044587997,kg CO2 eq,43,7,34,farm,Global,Rapeseed
+"Rapeseed, at farm",0.0031093488,kg CO2 eq,44,8,43,farm,Canada,Rapeseed
+maize starch production,0.0041137811,kg CO2 eq,45,7,34,farm,Germany,maize starch production
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0269471526,kg CO2 eq,46,6,33,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0098240407,kg CO2 eq,47,6,33,farm,Global,Raw milk
+"Hay, mechanized, irrigated, cold-air dried, at farm",0.0033251401,kg CO2 eq,48,6,33,farm,Global,Hay
+"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0679949009,kg CO2 eq,49,5,32,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0293891391,kg CO2 eq,50,6,49,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0204547118,kg CO2 eq,51,6,49,farm,Global,Concentrate feed
+"Soybean, at farm",0.0149715126,kg CO2 eq,52,7,51,farm,Global,Soybean
+"soybeans, at farm | Soybean, at farm",0.0064175539,kg CO2 eq,53,8,52,farm,Brazil,soybeans
+"Land use change, annual crop",0.0052884739,kg CO2 eq,54,9,53,farm,Brazil,Land use change
+"clear-cutting, primary forest to arable land",0.0049016146,kg CO2 eq,55,10,54,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0047003912,kg CO2 eq,56,8,52,farm,United States,soybeans
+"Soybean, at farm",0.0038535674,kg CO2 eq,57,8,52,farm,Argentina,Soybean
+"Land use change, annual crop",0.0036854815,kg CO2 eq,58,9,57,farm,Argentina,Land use change
+"clear-cutting, secondary forest to arable land",0.0033814486,kg CO2 eq,59,10,58,farm,Argentina,clear-cutting
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0115205425,kg CO2 eq,60,6,49,farm,Global,Raw milk
+"Hay, mechanized, irrigated, cold-air dried, at farm",0.0040037583,kg CO2 eq,61,6,49,farm,Global,Hay
+"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm",0.0387878114,kg CO2 eq,62,5,32,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0172278382,kg CO2 eq,63,6,62,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0109513874,kg CO2 eq,64,6,62,farm,Global,Concentrate feed
+"Soybean, at farm",0.0080157,kg CO2 eq,65,7,64,farm,Global,Soybean
+"soybeans, at farm | Soybean, at farm",0.0034359379,kg CO2 eq,66,8,65,farm,Brazil,soybeans
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.006213636,kg CO2 eq,67,6,62,farm,Global,Raw milk
+"Manure management at farm, liquid-slurry, temperate, per kg VS",0.0238237194,kg CO2 eq,68,5,32,farm,Global,Manure management at farm
+"Manure management at farm, lagooning, temperate, per kg VS",0.0228578819,kg CO2 eq,69,5,32,farm,Global,Manure management at farm
+"Raw milk, at farm/RER (Q 1.0)",0.018699573,kg CO2 eq,70,5,32,farm,United States,Raw milk
+"diesel, burned in building machine",0.0092360512,kg CO2 eq,71,6,70,farm,Global,diesel
+Milking,0.0073084358,kg CO2 eq,72,6,70,farm,United States,Milking
+"electricity, low voltage",0.0057200322,kg CO2 eq,73,7,72,farm,United States,electricity
+"Manure management at farm, solid storage, temperate, per kg VS",0.003881834,kg CO2 eq,74,5,32,farm,Global,Manure management at farm
+"raw milk, production mix, at farm/kg/U",0.1853251609,kg CO2 eq,75,4,31,farm,Pakistan,raw milk
+"Raw milk, micro scale production, non-grazing, non-mechanized, at farm",0.143650778,kg CO2 eq,76,5,75,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0443925938,kg CO2 eq,77,6,76,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0400029351,kg CO2 eq,78,6,76,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0323233306,kg CO2 eq,79,6,76,farm,Global,Concentrate feed
+"Soybean, at farm",0.023658566,kg CO2 eq,80,7,79,farm,Global,Soybean
+"soybeans, at farm | Soybean, at farm",0.0101412681,kg CO2 eq,81,8,80,farm,Brazil,soybeans
+"Land use change, annual crop",0.0083570519,kg CO2 eq,82,9,81,farm,Brazil,Land use change
+"clear-cutting, primary forest to arable land",0.007745722,kg CO2 eq,83,10,82,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0074277408,kg CO2 eq,84,8,80,farm,United States,soybeans
+"Soybean, at farm",0.006089557,kg CO2 eq,85,8,80,farm,Argentina,Soybean
+"Land use change, annual crop",0.0058239411,kg CO2 eq,86,9,85,farm,Argentina,Land use change
+"clear-cutting, secondary forest to arable land",0.0053434965,kg CO2 eq,87,10,86,farm,Argentina,clear-cutting
+"concentrate feed IP, cereal based, for dairy cows, at consumer/kg",0.0148080029,kg CO2 eq,88,6,76,farm,Switzerland,concentrate feed IP
+"Maize grain, at farm",0.0046025517,kg CO2 eq,89,7,88,farm,Global,Maize grain
+"Wheat grains, at farm",0.0044400945,kg CO2 eq,90,7,88,farm,Global,Wheat grains
+barley production,0.0034664224,kg CO2 eq,91,7,88,farm,Germany,barley production
+"Agricultural residues, non-mechanized, sun dried, at farm, 1 kg dry matter",0.0121239156,kg CO2 eq,92,6,76,farm,Global,Agricultural residues
+"Rice, at farm/kg",0.0090067945,kg CO2 eq,93,7,92,farm,India,Rice
+"Winter wheat grain, at farm",0.0031171211,kg CO2 eq,94,7,92,farm,Australia,Winter wheat grain
+"Manure management at farm, dry lot, warm, per kg VS",0.0197188672,kg CO2 eq,95,5,75,farm,Global,Manure management at farm
+"Raw milk, small scale production, grazing, non-mechanized, at farm",0.0093426935,kg CO2 eq,96,5,75,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0033909417,kg CO2 eq,97,6,96,farm,Global,Raw milk
+"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0074207633,kg CO2 eq,98,5,75,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0032074441,kg CO2 eq,99,6,98,farm,Global,Raw milk
+"raw milk, production mix, at farm/kg/U",0.1349125012,kg CO2 eq,100,4,31,farm,Russia,raw milk
+"Raw milk, large scale production, non-grazing, mechanized, at farm",0.0766375642,kg CO2 eq,101,5,100,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0410775783,kg CO2 eq,102,6,101,farm,Global,Concentrate feed
+"Soybean, at farm",0.0300661033,kg CO2 eq,103,7,102,farm,Global,Soybean
+"soybeans, at farm | Soybean, at farm",0.0128878655,kg CO2 eq,104,8,103,farm,Brazil,soybeans
+"Land use change, annual crop",0.0106204233,kg CO2 eq,105,9,104,farm,Brazil,Land use change
+"clear-cutting, primary forest to arable land",0.0098435246,kg CO2 eq,106,10,105,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0094394235,kg CO2 eq,107,8,103,farm,United States,soybeans
+"Soybean, at farm",0.0077388144,kg CO2 eq,108,8,103,farm,Argentina,Soybean
+"Land use change, annual crop",0.0074012607,kg CO2 eq,109,9,108,farm,Argentina,Land use change
+"clear-cutting, secondary forest to arable land",0.0067906955,kg CO2 eq,110,10,109,farm,Argentina,clear-cutting
+"Rapeseed, at farm",0.0037345277,kg CO2 eq,111,7,102,farm,Global,Rapeseed
+maize starch production,0.0034455527,kg CO2 eq,112,7,102,farm,Germany,maize starch production
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0225699501,kg CO2 eq,113,6,101,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0082282574,kg CO2 eq,114,6,101,farm,Global,Raw milk
+"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.018983348,kg CO2 eq,115,5,100,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0082050896,kg CO2 eq,116,6,115,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0057107063,kg CO2 eq,117,6,115,farm,Global,Concentrate feed
+"Soybean, at farm",0.0041798639,kg CO2 eq,118,7,117,farm,Global,Soybean
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0032163951,kg CO2 eq,119,6,115,farm,Global,Raw milk
+"Raw milk, small scale production, grazing, non-mechanized, at farm",0.0119499569,kg CO2 eq,120,5,100,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.004337251,kg CO2 eq,121,6,120,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0037112138,kg CO2 eq,122,6,120,farm,Global,Raw milk
+"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm",0.0108290844,kg CO2 eq,123,5,100,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0048098025,kg CO2 eq,124,6,123,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.003057494,kg CO2 eq,125,6,123,farm,Global,Concentrate feed
+"Raw milk, at farm/RER (Q 1.0) | Dairy farm exploitation, mechanized, allocated to 1 kg milk",0.0080293775,kg CO2 eq,126,5,100,farm,Russia,Raw milk
+"diesel, burned in building machine",0.0046414674,kg CO2 eq,127,6,126,farm,Global,diesel
+"Manure management at farm, liquid-slurry, cool, per kg VS",0.0045402915,kg CO2 eq,128,5,100,farm,Global,Manure management at farm
+"Manure management at farm, solid storage, cool, per kg VS",0.0036809638,kg CO2 eq,129,5,100,farm,Global,Manure management at farm
+"raw milk, production mix, at farm/kg/U",0.0591311808,kg CO2 eq,130,4,31,farm,Germany,raw milk
+"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0253686559,kg CO2 eq,131,5,130,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0109649834,kg CO2 eq,132,6,131,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0076315803,kg CO2 eq,133,6,131,farm,Global,Concentrate feed
+"Soybean, at farm",0.0055858181,kg CO2 eq,134,7,133,farm,Global,Soybean
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0042982735,kg CO2 eq,135,6,131,farm,Global,Raw milk
+"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm",0.0192954595,kg CO2 eq,136,5,130,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0085701936,kg CO2 eq,137,6,136,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0054478983,kg CO2 eq,138,6,136,farm,Global,Concentrate feed
+"Soybean, at farm",0.0039875056,kg CO2 eq,139,7,138,farm,Global,Soybean
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0030910474,kg CO2 eq,140,6,136,farm,Global,Raw milk
+"Manure management at farm, liquid-slurry, temperate, per kg VS",0.0085447984,kg CO2 eq,141,5,130,farm,Global,Manure management at farm
+"Raw milk, at farm (Q 1.0) | Dairy farm exploitation, mechanized, allocated to 1 kg milk",0.0044140955,kg CO2 eq,142,5,130,farm,Germany,Raw milk
+"raw milk, production mix, at farm/kg/U",0.045092853,kg CO2 eq,143,4,31,farm,France,raw milk
+"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm",0.0187047821,kg CO2 eq,144,5,143,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0083078407,kg CO2 eq,145,6,144,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0052811259,kg CO2 eq,146,6,144,farm,Global,Concentrate feed
+"Soybean, at farm",0.0038654391,kg CO2 eq,147,7,146,farm,Global,Soybean
+"Raw milk, at farm (Q 1.0) | Enteric emissions, dry cows and heifers, 1 kg methane",0.0029964235,kg CO2 eq,148,6,144,farm,Global,Raw milk
+"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0163947096,kg CO2 eq,149,5,143,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0070862137,kg CO2 eq,150,6,149,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0049319737,kg CO2 eq,151,6,149,farm,Global,Concentrate feed
+"Soybean, at farm",0.0036098825,kg CO2 eq,152,7,151,farm,Global,Soybean
+"Manure management at farm, liquid-slurry, temperate, per kg VS",0.0065625534,kg CO2 eq,153,5,143,farm,Global,Manure management at farm
+"raw milk, production mix, at farm/kg/U",0.0264857141,kg CO2 eq,154,4,31,farm,United Kingdom,raw milk
+"Raw milk, medium scale production, non-grazing, mechanized, at farm",0.0113900088,kg CO2 eq,155,5,154,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.0049230538,kg CO2 eq,156,6,155,farm,Global,Raw milk
+"Concentrate feed, protein concentrate, for dairy cows, at farm",0.0034264238,kg CO2 eq,157,6,155,farm,Global,Concentrate feed
+"Raw milk, medium scale production, grazing, mechanized, at farm | Raw milk archetype, medium scale production, grazing, mechanized, at farm",0.0086632675,kg CO2 eq,158,5,154,farm,Global,Raw milk
+"Raw milk, at farm (Q 1.0) | Enteric emissions, lactating cows, 1 kg methane",0.003847842,kg CO2 eq,159,6,158,farm,Global,Raw milk
+"Manure management at farm, liquid-slurry, temperate, per kg VS",0.0038364401,kg CO2 eq,160,5,154,farm,Global,Manure management at farm
+"heat production, heavy fuel oil, at industrial furnace 1MW",0.0191296886,kg CO2 eq,161,3,30,processing,Europe without Switzerland,heat production
+"electricity, medium voltage",0.0151711454,kg CO2 eq,162,3,30,processing,Europe,electricity
+"transport, lorry 16-32t, EURO5/tkm",0.00677096,kg CO2 eq,163,3,30,processing,Europe,transport
+"operation, lorry 16-32t, EURO5 | Operation, chilled, lorry 16-32t, EURO5",0.0060767342,kg CO2 eq,164,4,163,processing,Europe,operation
+"Spray drying, dairy products, at dairy",0.0150290695,kg CO2 eq,165,2,29,processing,Global,Spray drying
+"heat production, natural gas, at industrial furnace >100kW",0.0136306509,kg CO2 eq,166,3,165,processing,Europe without Switzerland,heat production
+"Evaporation, dairy products, at dairy",0.0099712302,kg CO2 eq,167,2,29,processing,Global,Evaporation
+"heat production, natural gas, at industrial furnace >100kW",0.0090516027,kg CO2 eq,168,3,167,processing,Europe without Switzerland,heat production
+"Cocoa liquor, at plant",0.6169234706,kg CO2 eq,169,1,0,processing,Europe,Cocoa liquor
+"Cocoa beans, at farm",0.6042058389,kg CO2 eq,170,2,169,farm,Global,Cocoa beans
+"Cocoa beans, sun-dried, at farm/kg",0.3514731353,kg CO2 eq,171,3,170,farm,Indonesia,Cocoa beans
+"Land use change, perennial crop",0.3314413111,kg CO2 eq,172,4,171,farm,Indonesia,Land use change
+"clear-cutting, primary forest to arable land",0.1758376767,kg CO2 eq,173,5,172,farm,Indonesia,clear-cutting
+"clear-cutting, secondary forest to arable land",0.1203086058,kg CO2 eq,174,5,172,farm,Indonesia,clear-cutting
+"Cocoa beans, sun-dried, at farm/kg",0.1547179583,kg CO2 eq,175,3,170,farm,Cote d'Ivoire,Cocoa beans
+"Land use change, perennial crop",0.1337279956,kg CO2 eq,176,4,175,farm,Cote d'Ivoire,Land use change
+"clear-cutting, secondary forest to arable land",0.1170658912,kg CO2 eq,177,5,176,farm,Cote d'Ivoire,clear-cutting
+"clear-cutting, primary forest to arable land",0.0117346516,kg CO2 eq,178,5,176,farm,Cote d'Ivoire,clear-cutting
+"land already in use, perennial cropland",0.0049352443,kg CO2 eq,179,5,176,farm,Cote d'Ivoire,land already in use
+"Irrigating, surface, diesel powered",0.0051017936,kg CO2 eq,180,4,175,farm,Global,Irrigating
+"diesel, burned water pump/MJ",0.003180914,kg CO2 eq,181,5,180,farm,Global,diesel
+"Cocoa beans, sun-dried, at farm/kg",0.0980147454,kg CO2 eq,182,3,170,farm,Ghana,Cocoa beans
+"Land use change, perennial crop",0.0893947271,kg CO2 eq,183,4,182,farm,Ghana,Land use change
+"clear-cutting, secondary forest to arable land",0.0739259583,kg CO2 eq,184,5,183,farm,Ghana,clear-cutting
+"clear-cutting, primary forest to arable land",0.00920245,kg CO2 eq,185,5,183,farm,Ghana,clear-cutting
+"clear-cutting, grassland to arable land",0.0061635924,kg CO2 eq,186,5,183,farm,Ghana,clear-cutting
+"Irrigating, surface, diesel powered",0.0033724399,kg CO2 eq,187,4,182,farm,Global,Irrigating
+"Cocoa beans processing, at plant",0.0127176317,kg CO2 eq,188,2,169,processing,Europe,Cocoa beans processing
+"diesel, burned in building machine",0.0056355521,kg CO2 eq,189,3,188,processing,Global,diesel
+"electricity, low voltage",0.1239541309,kg CO2 eq,190,1,0,processing,Europe,electricity
+"Sugar, from sugar beet, at sugar refinery",0.0657229719,kg CO2 eq,191,1,0,processing,Global,Sugar
+"Sugar beet, at farm",0.040173121,kg CO2 eq,192,2,191,farm,Global,Sugar beet
+"Sugar beet, at farm/kg",0.0139494526,kg CO2 eq,193,3,192,farm,United States,Sugar beet
+"Sugar beet, at farm/kg",0.0124469591,kg CO2 eq,194,3,192,farm,Russia,Sugar beet
+"Sugar beet, at farm/kg",0.0074058756,kg CO2 eq,195,3,192,farm,France,Sugar beet
+"Sugar beet, at farm/kg",0.0063708336,kg CO2 eq,196,3,192,farm,Germany,Sugar beet
+"heat production, natural gas, at industrial furnace >100kW",0.012010114,kg CO2 eq,197,2,191,processing,Europe without Switzerland,heat production
+"electricity, medium voltage",0.008005212,kg CO2 eq,198,2,191,processing,Europe,electricity
+"heat production, natural gas, at industrial furnace low-NOx >100kW",0.0424058849,kg CO2 eq,199,1,0,processing,Europe without Switzerland,heat production
+"Soybean oil, at oil mill",0.0075837547,kg CO2 eq,200,1,0,processing,Global,Soybean oil
+"Soybean oil, at oil mill",0.0054790174,kg CO2 eq,201,2,200,processing,Argentina,Soybean oil
+"Soybean, at farm",0.0053758052,kg CO2 eq,202,3,201,farm,Argentina,Soybean
+"Land use change, annual crop",0.0051413218,kg CO2 eq,203,4,202,farm,Argentina,Land use change
+"clear-cutting, secondary forest to arable land",0.0047171898,kg CO2 eq,204,5,203,farm,Argentina,clear-cutting
+"transport, freight, lorry, unspecified",0.0064961059,kg CO2 eq,205,1,0,processing,Europe,transport
+"transport, freight, sea, transoceanic ship",0.0055976553,kg CO2 eq,206,1,0,processing,Global,transport
+"Cocoa beans, sun-dried, at farm/kg",0.022155037300000346,kg CO2 eq,207,4,3,farm,Indonesia,Cocoa beans
+"Land use change, perennial crop",0.07219220479999999,kg CO2 eq,208,5,4,farm,Indonesia,Land use change
+"clear-cutting, primary forest to arable land",0.37032884239999997,kg CO2 eq,209,6,5,farm,Indonesia,clear-cutting
+"clear-cutting, secondary forest to arable land",0.2533493987,kg CO2 eq,210,6,6,farm,Indonesia,clear-cutting
+"Cocoa beans, sun-dried, at farm/kg",0.013639269700000178,kg CO2 eq,211,4,9,farm,Cote d'Ivoire,Cocoa beans
+"clear-cutting, secondary forest to arable land",0.2465207951,kg CO2 eq,212,6,11,farm,Cote d'Ivoire,clear-cutting
+"clear-cutting, primary forest to arable land",0.024714157,kg CO2 eq,213,6,12,farm,Cote d'Ivoire,clear-cutting
+"land already in use, perennial cropland",0.010390988399999999,kg CO2 eq,214,6,13,farm,Cote d'Ivoire,land already in use
+"diesel, burned water pump/MJ",0.0057895901,kg CO2 eq,215,6,15,farm,Global,diesel
+"Cocoa beans, sun-dried, at farm/kg",0.0033848529000000127,kg CO2 eq,216,4,17,farm,Ghana,Cocoa beans
+"clear-cutting, secondary forest to arable land",0.1556754561,kg CO2 eq,217,6,19,farm,Ghana,clear-cutting
+"clear-cutting, primary forest to arable land",0.0193811288,kg CO2 eq,218,6,20,farm,Ghana,clear-cutting
+"diesel, burned water pump/MJ",0.0038270941,kg CO2 eq,219,6,23,farm,Global,diesel
+"clear-cutting, primary forest to arable land",0.0116796617,kg CO2 eq,220,11,38,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0105799699,kg CO2 eq,221,9,39,farm,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0080564084,kg CO2 eq,222,11,42,farm,Argentina,clear-cutting
+"clear-cutting, primary forest to arable land",0.0048712061999999995,kg CO2 eq,223,11,55,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0044125603,kg CO2 eq,224,9,56,farm,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0033600653000000003,kg CO2 eq,225,11,59,farm,Argentina,clear-cutting
+"clear-cutting, primary forest to arable land",0.0076976694,kg CO2 eq,226,11,83,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.0069728998,kg CO2 eq,227,9,84,farm,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0053097058,kg CO2 eq,228,11,87,farm,Argentina,clear-cutting
+"Rice, at farm/kg",0.006701528499999999,kg CO2 eq,229,8,93,farm,India,Rice
+"clear-cutting, primary forest to arable land",0.0097824577,kg CO2 eq,230,11,106,farm,Brazil,clear-cutting
+"soybeans, at farm/kg",0.008861396300000001,kg CO2 eq,231,9,107,farm,United States,soybeans
+"clear-cutting, secondary forest to arable land",0.0067477532,kg CO2 eq,232,11,110,farm,Argentina,clear-cutting
+"operation, lorry 16-32t, EURO5 | Operation, chilled, lorry 16-32t, EURO5",0.0033612278000000003,kg CO2 eq,233,5,164,processing,Europe,operation
+"Cocoa beans, sun-dried, at farm/kg",0.010454282399999848,kg CO2 eq,234,4,171,farm,Indonesia,Cocoa beans
+"Land use change, perennial crop",0.03406528710000006,kg CO2 eq,235,5,172,farm,Indonesia,Land use change
+"clear-cutting, primary forest to arable land",0.1747468222,kg CO2 eq,236,6,173,farm,Indonesia,clear-cutting
+"clear-cutting, secondary forest to arable land",0.11954781069999999,kg CO2 eq,237,6,174,farm,Indonesia,clear-cutting
+"Cocoa beans, sun-dried, at farm/kg",0.006435953000000105,kg CO2 eq,238,4,175,farm,Cote d'Ivoire,Cocoa beans
+"clear-cutting, secondary forest to arable land",0.116325602,kg CO2 eq,239,6,177,farm,Cote d'Ivoire,clear-cutting
+"clear-cutting, primary forest to arable land",0.0116618526,kg CO2 eq,240,6,178,farm,Cote d'Ivoire,clear-cutting
+"land already in use, perennial cropland",0.0049031887,kg CO2 eq,241,6,179,farm,Cote d'Ivoire,land already in use
+"clear-cutting, secondary forest to arable land",0.0734584729,kg CO2 eq,242,6,184,farm,Ghana,clear-cutting
+"clear-cutting, primary forest to arable land",0.0091453602,kg CO2 eq,243,6,185,farm,Ghana,clear-cutting
+"Sugar beet, at farm/kg",0.005055656400000002,kg CO2 eq,244,4,193,farm,United States,Sugar beet
+"Sugar beet, at farm/kg",0.004106314599999997,kg CO2 eq,245,4,194,farm,Russia,Sugar beet
+"Sugar beet, at farm/kg",0.0040868602,kg CO2 eq,246,4,195,farm,France,Sugar beet
+"Sugar beet, at farm/kg",0.0034540806,kg CO2 eq,247,4,196,farm,Germany,Sugar beet
+"clear-cutting, secondary forest to arable land",0.0046873597,kg CO2 eq,248,6,204,farm,Argentina,clear-cutting

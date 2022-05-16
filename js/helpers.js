@@ -1,16 +1,19 @@
-Array.prototype.sample = function () {
-    return this[Math.floor(Math.random() * this.length)];
-}
-
+// this function computes the clipping polygon (i.e. the boundary shape of the treemap)
+// adapted from https://bl.ocks.org/Kcnarf/fa95aa7b076f537c00aed614c29bb568
 function computeCirclingPolygon(radius) {
-    //this function draws the clipping polygon in which the voronoi is drawn
 
-    const edgeCount = 100 //4>square | 100>circle
+    const edgeCount = 100 //3:triangle, 4:square, 5:pentagon, 100:circle
 
     let rotation = 0
-    if (edgeCount === 3) { rotation = 30 * 2 * Math.PI / 360 }
-    if (edgeCount === 4) { rotation = 45 * 2 * Math.PI / 360 }
-    if (edgeCount === 5) { rotation = 54 * 2 * Math.PI / 360 }
+    if (edgeCount === 3) {
+        rotation = 30 * 2 * Math.PI / 360
+    }
+    if (edgeCount === 4) {
+        rotation = 45 * 2 * Math.PI / 360
+    }
+    if (edgeCount === 5) {
+        rotation = 54 * 2 * Math.PI / 360
+    }
 
     const shape = d3.range(edgeCount).map(i => {
         const rad = rotation + i / edgeCount * 2 * Math.PI;
@@ -20,14 +23,9 @@ function computeCirclingPolygon(radius) {
     return shape;
 };
 
-function maxTreeValue(node) {
-    return node.ancestors().filter(d => { return d.depth === 0 })[0].value
-}
 
-function flattenHierarchy(node) {
-    return node.descendants().sort(function (a, b) { return b.depth - a.depth })
-}
-
+// this function determines the point of an input polygon closest to another arbitrary point
+// adapted from https://bl.ocks.org/mbostock/8027637
 function closestPoint(pathNode, point) {
     var pathLength = pathNode.getTotalLength(),
         precision = 8,
@@ -50,9 +48,12 @@ function closestPoint(pathNode, point) {
             afterLength,
             beforeDistance,
             afterDistance;
-        if ((beforeLength = bestLength - precision) >= 0 && (beforeDistance = distance2(before = pathNode.getPointAtLength(beforeLength))) < bestDistance) {
+        if ((beforeLength = bestLength - precision) >= 0 &&
+            (beforeDistance = distance2(before = pathNode.getPointAtLength(beforeLength))) < bestDistance) {
             best = before, bestLength = beforeLength, bestDistance = beforeDistance;
-        } else if ((afterLength = bestLength + precision) <= pathLength && (afterDistance = distance2(after = pathNode.getPointAtLength(afterLength))) < bestDistance) {
+        } else if (
+            (afterLength = bestLength + precision) <= pathLength &&
+            (afterDistance = distance2(after = pathNode.getPointAtLength(afterLength))) < bestDistance) {
             best = after, bestLength = afterLength, bestDistance = afterDistance;
         } else {
             precision /= 2;
@@ -70,11 +71,54 @@ function closestPoint(pathNode, point) {
     }
 }
 
-function leaveValues(hierarchy) {
+
+// this function finds the numerical value of an array that is closest to another arbitrary numerical value
+// adapted from https://jsbin.com/woqoju/2/edit?js,console,output
+const findClosest = (arr, num) => {
+    if (arr == null) {
+        return
+    }
+
+    let closest = arr[0];
+    for (let item of arr) {
+        if (Math.abs(item - num) < Math.abs(closest - num)) {
+            closest = item;
+        }
+    }
+    return closest;
+}
+
+
+// this function scans of two html DOM objects colide with each other (overlap)
+// adapted from https://gist.github.com/yckart/7177551
+function colide(el1, el2) {
+    var rect1 = el1.getBoundingClientRect();
+    var rect2 = el2.getBoundingClientRect();
+
+    return !(
+        rect1.top > rect2.bottom ||
+        rect1.right < rect2.left ||
+        rect1.bottom < rect2.top ||
+        rect1.left > rect2.right
+    )
+}
+
+
+// this function determines the maximum impact value in a contribution tree from the perspective of an input node
+function maxTreeValue(node) {
+    return node.ancestors().filter(d => { return d.depth === 0 })[0].value
+}
+
+
+// this function determines the impact values of the leaves in a contribution tree from the perspective of an input node
+function leaveValues(node) {
 
     const leaveValues = []
 
-    hierarchy.descendants().forEach(d => { return d.depth != 0 ? leaveValues.push(d.value) : null })
+    node.descendants().forEach(d => {
+        if (d.depth != 0) { return leaveValues.push(d.value) }
+        else { return null }
+    })
 
     const leaveMin = d3.min(leaveValues)
     const leaveMax = d3.max(leaveValues)
@@ -83,68 +127,38 @@ function leaveValues(hierarchy) {
     return [leaveMin, leaveMax, leaveMiddle]
 }
 
-function lineGenerator(parentElement, background, fill, size, improv) {
+
+// this function converts the hierarchical tree structure to a flattened array from the perspective of an input node
+function flattenHierarchy(node) {
+    return node.descendants().sort(function (a, b) { return b.depth - a.depth })
+}
+
+
+// implementing a sample method for the standard javascript array
+Array.prototype.sample = function () {
+    return this[Math.floor(Math.random() * this.length)];
+}
+
+
+// this function generates a random line pattern fill to resemble agricultural fields from an aerial perspective
+function lineGenerator(parentElement, background, fill, size) {
     const texture = textures
         .lines()
         .thicker()
         .stroke(fill)
         .background(background)
         .orientation(`${[1, 2, 3, 5, 6, 7].sample()}/8`)
-    
+
     if (size) {
         texture.size(size);
     }
 
-    if (improv) {
-        texture.lighter(5)
-        // texture.stroke("firebrick")
-    }
-
     parentElement.call(texture);
     return texture.url()
 }
 
-function waveGenerator(parentElement, background, fill, size) {
-    const texture = textures
-        .paths()
-        .d('waves')
-        // .thicker()
-        .stroke(fill)
-        .background(background)
-        .size(size);
 
-    parentElement.call(texture);
-    return texture.url()
-}
-
-function groupAnnotationCreator(children) {
-    let annotations = []
-    children.forEach(d => {
-
-        let labelX = d3.polygonCentroid(d.polygon)[0]
-        let labelY = d3.polygonCentroid(d.polygon)[1]
-
-        const annotationLength = 3
-        annotations.push({
-            note: {
-                label: `${d3.format('.' + 3 + 'f')(d.value)} ${d.data.Unit}`,//<br>(${d3.format('.'+0+'f')((d.value / maxTreeValue(children)) * 100, 2)}%)`,
-                title: `${d.data.Process_shorthand}`.split(' ').slice(0, annotationLength).join(' ') + (`${d.data.Process_shorthand}`.split(' ').length > annotationLength ? ' ...' : '')
-            },
-            x: labelX,
-            y: labelY,
-            ox: labelX,
-            oy: labelY,
-            id: d.id,
-            polygon: d.polygon
-        })
-    })
-    return annotations
-}
-
-function retrieveVisible(element) {
-    return d3.selectAll(element).filter(function (d, i) { return d3.select(this).style('fill-opacity') == 1 })
-}
-
+// this function is used to make the annotations manually dragable
 function drag() {
 
     function dragged(event, d) {
@@ -173,10 +187,12 @@ function drag() {
         .on("drag", dragged)
 }
 
+
+// this function synchronizes some global variables to facilitate multi product system (i.e. impact landscape) comparison
 function landscapeValueSync(vis, hierarchy) {
     if (landscapeGlobalValues) {
         let index
-        landscapes.forEach((landscape,i) => {
+        landscapes.forEach((landscape, i) => {
             if (landscape === vis) {
                 index = i
             }
