@@ -33,5 +33,7 @@ To use Impact Landscapes with your own data, you should add the contribution tre
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | _the id of the process_ | _the id of the process' parent process in the contribution tree_ | _the level at which the process is located in the contribution tree_ | _the full descriptive name of the process_ | _the shorthand name of the process (3 words max recommended)_ | _the environmental impact amount_ | _the unit of the environmental impact_ | _the life cycle phase in which the process occurs_ | _the reference location of the process_ | 
 
+\* _required attribute_
+
 ## Acknowledgements
 Impact Landscapes was develop by M. Scheve during his thesis graduation project for the master's Data Science and Entrepreneurship at the Jheronimus Academy of Data Science ([JADS](https://www.jads.nl/?gclid=CjwKCAjws8yUBhA1EiwAi_tpEe67t-rCGWOklGZmwLknaH3mbQDmufj1ChbiHjh_J_vUnxLhs7OmJRoCni4QAvD_BwE)). The project was carried out through an internship at [Deloitte Consulting NL](https://www2.deloitte.com/nl/nl/services/consulting-deloitte.html), which provided financial compensation to the author. Special thanks go out to the supervisors R. Brussee (JADS), F. Geurts (Deloitte), and J. de Vlieg (JADS) for their guidance and support during the project!
