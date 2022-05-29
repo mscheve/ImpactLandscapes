@@ -3,6 +3,8 @@ Impact Landscapes is an interactive visualization system based on Voronoi treema
 
 A live demo version is hosted at: https://mscheve.github.io/ImpactLandscapes/
 
+![](/pics/ImpactLandscapes_ReadMe_Demo.png)
+
 ## Background
 In recent years, the relevance of sustainable decision-making has continuously increased in solving society’s environmental challenges. Such decision-making should take a facts-based life cycle perspective to prevent burden-shifting and effectively tackle these challenges. Life Cycle Assessment (LCA) is an internationally standardized four-phase framework that aims to facilitate this by quantifying sustainability through a wide range of environmental impact indicators. While LCA has seen increased adoption since the 1990s, the visualization of its results does often not capture the complex underlying hierarchical structure and has predominantly been geared towards LCA experts. Consequently, LCA results are often hard to understand for, and communicate to, non-LCA experts like policy and decision-makers. 
 
