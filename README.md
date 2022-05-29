@@ -1,12 +1,12 @@
 # Impact Landscapes
-Impact Landscapes is an interactive visualization system based on Voronoi treemaps that supports the interpretability and communication of Life Cycle Assessments (LCA).
+<p align="justify">Impact Landscapes is an interactive visualization system based on Voronoi treemaps that supports the interpretability and communication of Life Cycle Assessments (LCA).</p>
 
 <p align="center">A live demo version is hosted at: https://mscheve.github.io/ImpactLandscapes/</p>
 
 ![](/pics/ImpactLandscapes_ReadMe_Demo.png)
 
 ## Background
-In recent years, the relevance of sustainable decision-making has continuously increased in solving society’s environmental challenges. Such decision-making should take a facts-based life cycle perspective to prevent burden-shifting and effectively tackle these challenges. Life Cycle Assessment (LCA) is an internationally standardized four-phase framework that aims to facilitate this by quantifying sustainability through a wide range of environmental impact indicators. While LCA has seen increased adoption since the 1990s, the visualization of its results does often not capture the complex underlying hierarchical structure and has predominantly been geared towards LCA experts. Consequently, LCA results are often hard to understand for, and communicate to, non-LCA experts like policy and decision-makers. 
+<p align="justify">In recent years, the relevance of sustainable decision-making has continuously increased in solving society’s environmental challenges. Such decision-making should take a facts-based life cycle perspective to prevent burden-shifting and effectively tackle these challenges. Life Cycle Assessment (LCA) is an internationally standardized four-phase framework that aims to facilitate this by quantifying sustainability through a wide range of environmental impact indicators. While LCA has seen increased adoption since the 1990s, the visualization of its results does often not capture the complex underlying hierarchical structure and has predominantly been geared towards LCA experts. Consequently, LCA results are often hard to understand for, and communicate to, non-LCA experts like policy and decision-makers.</p>
 
 Therefore, Impact Landscapes was developed in response to the following question:
 <p align="center">
@@ -15,7 +15,7 @@ Therefore, Impact Landscapes was developed in response to the following question
 
 
 ## Implementation and Repo details
-Impact Landscapes was implemented as a single web page application. Most of its features have been developed and implemented with the open-source D3.js JavaScript library by [Bostock et al. (2011)](http://dx.doi.org/10.1109/TVCG.2011.185). 
+<p align="justify">Impact Landscapes was implemented as a single web page application. Most of its features have been developed and implemented with the open-source D3.js JavaScript library by [Bostock et al. (2011)](http://dx.doi.org/10.1109/TVCG.2011.185).</p>
 
 File structure:
 - _/\_data_preparation_: contains the raw data used for the demo cases and the scripts required to extract and transform the raw data from openLCA.
@@ -29,7 +29,7 @@ File structure:
   - _indicators.js_: a JSON object that specifies indicator descriptions
  - _/pics_: contains the images used throughout Impact Landscapes (e.g. tutorial) and this repo
 
-To use Impact Landscapes with your own data, you should add the contribution tree CSVs to the /data folder. Subsequently, you should specify the path of the newly added CSVs in datasets.js. The structure of the CSVs should be as follows:
+<p align="justify">To use Impact Landscapes with your own data, you should add the contribution tree CSVs to the /data folder. Subsequently, you should specify the path of the newly added CSVs in datasets.js. The structure of the CSVs should be as follows:</p>
 
 | **id\*** | **parent_id\*** | **hierarchy_level** | **Process\*** | **Process_shorthand\*** | **Amount\*** | **Unit\*** | **Phase\*** | **Location\*** |
 |:--|:--|:--|:--|:--|:--|:--|:--|:--|
@@ -38,4 +38,4 @@ To use Impact Landscapes with your own data, you should add the contribution tre
 \* _required attribute_
 
 ## Acknowledgements
-Impact Landscapes was develop by M. Scheve during his thesis graduation project for the master's Data Science and Entrepreneurship at the Jheronimus Academy of Data Science ([JADS](https://www.jads.nl/?gclid=CjwKCAjws8yUBhA1EiwAi_tpEe67t-rCGWOklGZmwLknaH3mbQDmufj1ChbiHjh_J_vUnxLhs7OmJRoCni4QAvD_BwE)). The project was carried out through an internship at [Deloitte Consulting NL](https://www2.deloitte.com/nl/nl/services/consulting-deloitte.html), which provided financial compensation to the author. Special thanks go out to the supervisors R. Brussee (JADS), F. Geurts (Deloitte), and J. de Vlieg (JADS) for their guidance and support during the project!
+<p align="justify">Impact Landscapes was develop by M. Scheve during his thesis graduation project for the master's Data Science and Entrepreneurship at the Jheronimus Academy of Data Science (<a href="https://www.jads.nl/?gclid=CjwKCAjws8yUBhA1EiwAi_tpEe67t-rCGWOklGZmwLknaH3mbQDmufj1ChbiHjh_J_vUnxLhs7OmJRoCni4QAvD_BwE">JADS</a>). The project was carried out through an internship at <a href="https://www2.deloitte.com/nl/nl/services/consulting-deloitte.html">Deloitte Consulting NL</a>, which provided financial compensation to the author. Special thanks go out to the supervisors R. Brussee (JADS), F. Geurts (Deloitte), and J. de Vlieg (JADS) for their guidance and support during the project!</p>
