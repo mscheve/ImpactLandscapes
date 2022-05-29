@@ -1,7 +1,7 @@
 # Impact Landscapes
 Impact Landscapes is an interactive visualization system based on Voronoi treemaps that supports the interpretability and communication of Life Cycle Assessments (LCA).
 
-A live demo version is hosted at: https://mscheve.github.io/ImpactLandscapes/
+<p align="center">A live demo version is hosted at: https://mscheve.github.io/ImpactLandscapes/</p>
 
 ![](/pics/ImpactLandscapes_ReadMe_Demo.png)
 
