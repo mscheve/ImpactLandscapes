@@ -15,7 +15,7 @@ Therefore, Impact Landscapes was developed in response to the following question
 
 
 ## Implementation and Repo details
-<p align="justify">Impact Landscapes was implemented as a single web page application. Most of its features have been developed and implemented with the open-source D3.js JavaScript library by [Bostock et al. (2011)](http://dx.doi.org/10.1109/TVCG.2011.185).</p>
+<p align="justify">Impact Landscapes was implemented as a single web page application. Most of its features have been developed and implemented with the open-source D3.js JavaScript library by <a href="http://dx.doi.org/10.1109/TVCG.2011.185">Bostock et al. (2011)</a>.</p>
 
 File structure:
 - _/\_data_preparation_: contains the raw data used for the demo cases and the scripts required to extract and transform the raw data from openLCA.
